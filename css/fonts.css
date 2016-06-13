@@ -1,0 +1,42 @@
+/* font-family: "GothamProRegular"; */
+@font-face {
+    font-family: "GothamProRegular";
+    src:url("../fonts/GothamProRegular.ttf") format("truetype");
+      font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "GothamProBold"; */
+@font-face {
+    font-family: "GothamProBold";
+    src:url("../fonts/GothamProBold.ttf");
+   
+}
+/* font-family: "GothamProBlack"; */
+@font-face {
+    font-family: "GothamProBlack";
+    src:url("../fonts/GothamProBlack.ttf");
+   
+}
+/* font-family: "GothamProItalic"; */
+@font-face {
+    font-family: "GothamProItalic";
+    src:url("../fonts/GothamProItalic.ttf");
+
+}
+/* font-family: "GothamProMedium"; */
+@font-face {
+    font-family: "GothamProMedium";
+    src:url("../fonts/GothamProMedium.ttf");
+ 
+}
+/* font-family: "GothamProLight"; */
+@font-face {
+    font-family: "GothamProLight";
+    src:url("../fonts/GothamProLight.ttf");
+}
+/* font-family: "GothamProMediumItalic"; */
+@font-face {
+    font-family: "GothamProMediumItalic";
+    src:url("../fonts/GothamProMediumItalic.ttf");
+}
+
