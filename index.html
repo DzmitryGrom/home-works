@@ -11,31 +11,42 @@
  
 </head>
 <body>
-   <div class="bg"></div>
+ <div class="bg"></div>
   <!-- nav -->
    
     <nav class="navbar navbar-default">
        	<div class="navbar-header-top">
+            <a class="navbar-brand" href="#"></a>
             <div class="navbar-header-top_box-location">
                 <a href="#">
                     <i class=" fa fa-map-marker" aria-hidden="true"></i>
                     <span class="navbar-header-top_box-location-text">Ваш город:</span>
                     <span class="navbar-header-top_box-location-text text-dotted">Москва</span>
                     <i class="navbar-header-top_box-location-text fa fa-angle-down" aria-hidden="true"></i>
-                </a>	
+                </a>
+                <span class="navbar-header-top_box-location_number"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 777 77 77</span>	
             </div>
-            <button type="button" class="btn-login btn btn-enter btn-pop-up-xl  pull-right">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                ЛИЧНЫЙ КАБИНЕТ
-            </button>
-            <button  type="button" class="btn btn-call-me   btn-pop-up-xl pull-right">
-                <i class="fa fa-mobile" aria-hidden="true"></i>
-                ПЕРЕЗВОНИТЕ МНЕ
-            </button>
+            <div class="navbar-header-top_evaluation">
+              <i class="fa fa-check" aria-hidden="true"></i>Средний бал
+              <span class="navbar-header-top_evaluatio-value">4,9</span>
+            
+            </div>
+            <div class="navbar-header-top_buttons">
+               <button  type="button" class="btn btn-call-me   btn-pop-up-xl">
+                  <i class="fa fa-mobile" aria-hidden="true"></i>
+                  ПЕРЕЗВОНИТЕ МНЕ
+              </button>
+              <button type="button" class="btn-login btn btn-enter btn-pop-up-xl">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                  ЛИЧНЫЙ КАБИНЕТ
+              </button>
+             
+            </div>
        	</div>
-        <div class="container-fluid ">
+        <div class="container-fluid navbar-header-bottom">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
+          <a class="navbar-brand_mobile" href="#"></a>
+           <div class="navbar-header">
             <button id="show_button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -54,7 +65,7 @@
 				  <i class="fa fa-times" aria-hidden="true"></i>
 				</button>
            </div>
-            <a class="navbar-brand" href="#"></a>
+            
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -66,8 +77,8 @@
               <li><a href="#">СТАТЬ АВТОРОМ</a></li>
               <li><a href="#">О КОМПАНИИ</a></li>
               <li><a href="#">КОНТАКТЫ</a></li>
-              <li class="navbar-nav_li-sub-nav"><a href="#">ГАРАНТИИ</a></li>
-              <li class="navbar-nav_li-sub-nav"><a href="#">ОТЗЫВЫ</a></li>
+              <li><a href="#">ГАРАНТИИ</a></li>
+              <li><a href="#">ОТЗЫВЫ</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -117,19 +128,19 @@
                         <i class="fa fa-envelope i_right" aria-hidden="true"></i>
                     </div>
                     <div class="col-xs-12  col-md-2 pull-left">
-                      <button type="button" class="btn btn-danger btn-lg btn-block">Узнать стоимость</button>
+                      <button class="btn btn-danger btn-lg btn-block">Узнать стоимость</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 text-center border-right content-box-top-caption">
                       <p class="content-box-top_text-bottom-question">Вы автор?</p>
                       <p class="content-box-top-text-xs">Зарабатывайте от 25 000 до 60 000 руб. не выходя из дома</p>
-                      <button  type="button" class="btn btn-default btn-lg more">УЗНАТЬ БОЛЬШЕ</button>
+                      <a href="#" class="btn btn-default btn-lg more">УЗНАТЬ БОЛЬШЕ</a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 text-center content-box-top-caption">
                       <p class="content-box-top_text-bottom-question">Хотите купить дешевле?</p>
                       <p class="content-box-top-text-xs">Для тех кто хочет сэкономить у нас есть специальные предложения</p>
-                        <button  type="button" class="btn btn-default btn-lg more">УЗНАТЬ БОЛЬШЕ</button>
+                        <a href="#" class="btn btn-default btn-lg more">УЗНАТЬ БОЛЬШЕ</a>
                     </div>
                 </div>
               </form>
@@ -145,7 +156,7 @@
                   <div class="content-box-percent_text-value-caption">
                     <p class="label label-default">до 20 мая</p>
                     <h3 class="content-box-percent-item_text-value">Скидка на все услуги 10%! Успей заказать</h3>
-                    <button  type="button" class="btn btn-primary btn-lg price">Узнать стоимость</button>
+                    <a href="#" class="btn btn-primary btn-lg price">Узнать стоимость</a>
                   </div>
                 </div>
                 <div class="content-box-percent-item  content-box-percent-item_second">
@@ -156,181 +167,264 @@
                   <div class="content-box-percent_text-value-caption">
                     <p class="label label-default">до 20 мая</p>
                     <h3 class="content-box-percent-item_text-value">Предоплата всего 50%! Успей заказать</h3>
-                    <button  type="button" class="btn btn-primary btn-lg price">Узнать стоимость</button>
+                    <a  href="#" class="btn btn-primary btn-lg price">Узнать стоимость</a>
                   </div>
                 </div>
         </div>
     <!-- content-box-reklam-->    
-    <div class="content-box-reklam">
-          <div class="container"> 
-            <div class="row row-margin">
-              <div class="col-xs-12 col-md-12 text-center">
-               <div class="row">
-                   <button class="btn btn-default btn-lg content-box-reklam_btn-top"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-                 <div class="col-xs-12 col-md-12 content-box-reklam-text-top-caption">
-                   <h2 class="content-box-reklam-text-top">У нас Вы можете заказать</h2>
-                 </div>
-                   <button class="btn btn-default btn-lg content-box-reklam_btn-top"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-                </div>      
-              </div>
-            </div>
-              <div class="content-box-reklam-list">
-					<div class=" content-box-reklam-list-item text-center">
-						<span><i class="i i_diplom"></i></span>
-						<h3 class="content-box-reklam-list-item-text-top">Дипломную работу</h3>
-						<p class="content-box-reklam-list-item-price">от 6000 <i class="fa fa-rub" aria-hidden="true"></i></p>
-						<span>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-o" aria-hidden="true"></i>
-						</span>
-                       <div class="content-box-reklam-list-item_information-list text-center">
-                          <div class="content-box-reklam-list-item_information-list-item">
-                              <span class="content-box-reklam-list-item_information-list-item-icon">
-                                  <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-                              </span>
-                              <span class="content-box-reklam-list-item_information-list-item-number">21</span>
-                              <span class="content-box-reklam-list-item_information-list-item-text">Стандартный срок</span>
-                          </div>
-                          <div class="content-box-reklam-list-item_information-list-item">
-                              <span class="content-box-reklam-list-item_information-list-item-icon">
-                                  <i class="fa fa-check" aria-hidden="true"></i>
-                              </span>
-                              <span class="content-box-reklam-list-item_information-list-item-number">4,7</span>
-                              <span class="content-box-reklam-list-item_information-list-item-text">Средний бал</span>
-                          </div>
-                          <div class="content-box-reklam-list-item_information-list-item">
-                              <span class="content-box-reklam-list-item_information-list-item-icon">
-                                  <i class="fa fa-comments-o" aria-hidden="true"></i>
-                              </span>
-                              <span class="content-box-reklam-list-item_information-list-item-number">353</span>
-                              <span class="content-box-reklam-list-item_information-list-item-text">Отзывов клиентов</span>
-                          </div>
-                      </div>
-                      <button type="button" class="btn btn-primary btn-lg price">Узнать стоимость</button>
-					  </div>
-                 	<div class=" content-box-reklam-list-item text-center">
-						<span><i class="i i_kurs"></i></span>
-						<h3 class="content-box-reklam-list-item-text-top">Курсовую работу</h3>
-						<p class="content-box-reklam-list-item-price">от 1500 <i class="fa fa-rub" aria-hidden="true"></i></p>
-						<span>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-o" aria-hidden="true"></i>
-						</span>
-							 <div class="content-box-reklam-list-item_information-list text-center">
-								<div class="content-box-reklam-list-item_information-list-item">
-									<span class="content-box-reklam-list-item_information-list-item-icon">
-										<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-									</span>
-									<span class="content-box-reklam-list-item_information-list-item-number">7</span>
-									<span class="content-box-reklam-list-item_information-list-item-text">Стандартный срок</span>
-								</div>
-								<div class="content-box-reklam-list-item_information-list-item">
-									<span class="content-box-reklam-list-item_information-list-item-icon">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</span>
-									<span class="content-box-reklam-list-item_information-list-item-number">4,6</span>
-									<span class="content-box-reklam-list-item_information-list-item-text">Средний бал</span>
-								</div>
-								<div class="content-box-reklam-list-item_information-list-item">
-									<span class="content-box-reklam-list-item_information-list-item-icon">
-										<i class="fa fa-comments-o" aria-hidden="true"></i>
-									</span>
-									<span class="content-box-reklam-list-item_information-list-item-number">544</span>
-									<span class="content-box-reklam-list-item_information-list-item-text">Отзывов клиентов</span>
-								</div>
-							</div>
-							<button type="button" class="btn btn-primary btn-lg price">Узнать стоимость</button>
-					  </div>
-                 	<div class=" content-box-reklam-list-item text-center">
-						<span><i class="i i_kontr"></i></span>
-						<h3 class="content-box-reklam-list-item-text-top">Контрольную работу</h3>
-						<p class="content-box-reklam-list-item-price">от<span class="content-box-reklam-list-item-price">190</span> 150 <i class="fa fa-rub" aria-hidden="true"></i></p>
-						<span>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-o" aria-hidden="true"></i>
-						</span>
-							 <div class="content-box-reklam-list-item_information-list text-center">
-								<div class="content-box-reklam-list-item_information-list-item">
-									<span class="content-box-reklam-list-item_information-list-item-icon">
-										<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-									</span>
-									<span class="content-box-reklam-list-item_information-list-item-number">7</span>
-									<span class="content-box-reklam-list-item_information-list-item-text">Стандартный  срок</span>
-								</div>
-								<div class="content-box-reklam-list-item_information-list-item">
-									<span class="content-box-reklam-list-item_information-list-item-icon">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</span>
-									<span class="content-box-reklam-list-item_information-list-item-number">4,7</span>
-									<span class="content-box-reklam-list-item_information-list-item-text">Средний бал</span>
-								</div>
-								<div class="content-box-reklam-list-item_information-list-item">
-									<span class="content-box-reklam-list-item_information-list-item-icon">
-										<i class="fa fa-comments-o" aria-hidden="true"></i>
-									</span>
-									<span class="content-box-reklam-list-item_information-list-item-number">668</span>
-									<span class="content-box-reklam-list-item_information-list-item-text">Отзывов клиентов</span>
-								</div>
-							</div>
-							<button type="button" class="btn btn-primary btn-lg price">Узнать стоимость</button>
-					  </div>
-                 	<div class=" content-box-reklam-list-item text-center">
-						<span><i class="i i_ref"></i></span>
-						<h3 class="content-box-reklam-list-item-text-top">Реферат</h3>
-						<p class="content-box-reklam-list-item-price">от 600 <i class="fa fa-rub" aria-hidden="true"></i></p>
-						<span class="content-box-reklam-list-item-stars">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-o" aria-hidden="true"></i>
-						</span>
-							 <div class="content-box-reklam-list-item_information-list text-center">
-								<div class="content-box-reklam-list-item_information-list-item">
-									<span class="content-box-reklam-list-item_information-list-item-icon">
-										<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-									</span>
-									<span class="content-box-reklam-list-item_information-list-item-number">7</span>
-									<span class="content-box-reklam-list-item_information-list-item-text">Стандартный срок</span>
-								</div>
-								<div class="content-box-reklam-list-item_information-list-item">
-									<span class="content-box-reklam-list-item_information-list-item-icon">
-										<i class="fa fa-check" aria-hidden="true"></i>
-									</span>
-									<span class="content-box-reklam-list-item_information-list-item-number">4,6</span>
-									<span class="content-box-reklam-list-item_information-list-item-text">Средний бал</span>
-								</div>
-								<div class="content-box-reklam-list-item_information-list-item">
-									<span class="content-box-reklam-list-item_information-list-item-icon">
-										<i class="fa fa-comments-o" aria-hidden="true"></i>
-									</span>
-									<span class="content-box-reklam-list-item_information-list-item-number">262</span>
-									<span class="content-box-reklam-list-item_information-list-item-text">Отзывов клиентов</span>
-								</div>
-							</div>
-							<button type="button" class="btn btn-primary btn-lg price">Узнать стоимость</button>
-					  </div>
-                      
-               </div>
-                <div class="col-xs-12 col-md-12 text-center btn-more-caption">
-                        <button class="btn btn-default btn-lg btn-more ">
-                          ПОКАЗАТЬ ВСЕ ТИПЫ РАБОТ
-                          <span class="btn_sub-balue">(23)</span>
+    <div  class="content-box-reklam">
+      <div class="container">
+        <div class="row row-margin">
+          <div class="col-xs-12 col-md-12 text-center slidernav">
+           <div id="navbtns" class="row">
+               <button class="previous btn btn-default btn-lg content-box-reklam_btn-top"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+             <div class="col-xs-12 col-md-12 content-box-reklam-text-top-caption">
+               <h2 class="content-box-reklam-text-top">У нас Вы можете заказать</h2>
+             </div>
+               <button class="next btn btn btn-default btn-lg content-box-reklam_btn-top"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+            </div>      
+          </div>
+        </div>
 
-                        </button>
+        <div class="content-box-reklam-list">
+          <div class="crsl-items" data-navigation="navbtns">
+            <div class="crsl-wrap">
+                <div class="crsl-item content-box-reklam-list-item text-center">
+                    <span><i class="i i_diplom"></i></span>
+                    <h3 class="content-box-reklam-list-item-text-top">Дипломную работу</h3>
+                    <p class="content-box-reklam-list-item-price">от 6000 <i class="fa fa-rub" aria-hidden="true"></i></p>
+                    <span>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </span>
+                   <div class="content-box-reklam-list-item_information-list text-center">
+                      <div class="content-box-reklam-list-item_information-list-item">
+                          <span class="content-box-reklam-list-item_information-list-item-icon">
+                              <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                          </span>
+                          <span class="content-box-reklam-list-item_information-list-item-number">21</span>
+                          <span class="content-box-reklam-list-item_information-list-item-text">Стандартный срок</span>
+                      </div>
+                      <div class="content-box-reklam-list-item_information-list-item">
+                          <span class="content-box-reklam-list-item_information-list-item-icon">
+                              <i class="fa fa-check" aria-hidden="true"></i>
+                          </span>
+                          <span class="content-box-reklam-list-item_information-list-item-number">4,7</span>
+                          <span class="content-box-reklam-list-item_information-list-item-text content-box-reklam-list-item_information-list-item-text_middle">Средний бал</span>
+                      </div>
+                      <div class="content-box-reklam-list-item_information-list-item">
+                          <span class="content-box-reklam-list-item_information-list-item-icon">
+                              <i class="fa fa-comments-o" aria-hidden="true"></i>
+                          </span>
+                          <span class="content-box-reklam-list-item_information-list-item-number">353</span>
+                          <span class="content-box-reklam-list-item_information-list-item-text">Отзывов клиентов</span>
+                      </div>
+                  </div>
+                  <a href="#" class="btn btn-primary btn-lg price">Узнать стоимость</a>
                 </div>
-			
-          </div> 
-        </div> 
+                <!-- post #1 -->
+                <div class="crsl-item content-box-reklam-list-item text-center">
+                  <span><i class="i i_kurs"></i></span>
+                  <h3 class="content-box-reklam-list-item-text-top">Курсовую работу</h3>
+                  <p class="content-box-reklam-list-item-price">от 1500 <i class="fa fa-rub" aria-hidden="true"></i></p>
+                  <span>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </span>
+                     <div class="content-box-reklam-list-item_information-list text-center">
+                      <div class="content-box-reklam-list-item_information-list-item">
+                        <span class="content-box-reklam-list-item_information-list-item-icon">
+                          <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="content-box-reklam-list-item_information-list-item-number">7</span>
+                        <span class="content-box-reklam-list-item_information-list-item-text">Стандартный срок</span>
+                      </div>
+                      <div class="content-box-reklam-list-item_information-list-item">
+                        <span class="content-box-reklam-list-item_information-list-item-icon">
+                          <i class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                        <span class="content-box-reklam-list-item_information-list-item-number">4,6</span>
+                        <span class="content-box-reklam-list-item_information-list-item-text content-box-reklam-list-item_information-list-item-text_middle">Средний бал</span>
+                      </div>
+                      <div class="content-box-reklam-list-item_information-list-item">
+                        <span class="content-box-reklam-list-item_information-list-item-icon">
+                          <i class="fa fa-comments-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="content-box-reklam-list-item_information-list-item-number">544</span>
+                        <span class="content-box-reklam-list-item_information-list-item-text">Отзывов клиентов</span>
+                      </div>
+                    </div>
+                      <a href="#" class="btn btn-primary btn-lg price">Узнать стоимость</a>
+                  </div>
+                <!-- post #2 -->
+                <div class="crsl-item content-box-reklam-list-item text-center">
+                  <span><i class="i i_kontr"></i></span>
+                  <h3 class="content-box-reklam-list-item-text-top">Контрольную работу</h3>
+                  <p class="content-box-reklam-list-item-price">от<span class="content-box-reklam-list-item-price">190</span> 150 <i class="fa fa-rub" aria-hidden="true"></i></p>
+                  <span>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </span>
+                     <div class="content-box-reklam-list-item_information-list text-center">
+                      <div class="content-box-reklam-list-item_information-list-item">
+                        <span class="content-box-reklam-list-item_information-list-item-icon">
+                          <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="content-box-reklam-list-item_information-list-item-number">7</span>
+                        <span class="content-box-reklam-list-item_information-list-item-text">Стандартный  срок</span>
+                      </div>
+                      <div class="content-box-reklam-list-item_information-list-item">
+                        <span class="content-box-reklam-list-item_information-list-item-icon">
+                          <i class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                        <span class="content-box-reklam-list-item_information-list-item-number">4,7</span>
+                        <span class="content-box-reklam-list-item_information-list-item-text content-box-reklam-list-item_information-list-item-text_middle">Средний бал</span>
+                      </div>
+                      <div class="content-box-reklam-list-item_information-list-item">
+                        <span class="content-box-reklam-list-item_information-list-item-icon">
+                          <i class="fa fa-comments-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="content-box-reklam-list-item_information-list-item-number">668</span>
+                        <span class="content-box-reklam-list-item_information-list-item-text">Отзывов клиентов</span>
+                      </div>
+                    </div>
+                     <a href="#" class="btn btn-primary btn-lg price">Узнать стоимость</a>
+                  </div>
+                <!-- post #3 -->
+                <div class=" crsl-item content-box-reklam-list-item text-center">
+                  <span><i class="i i_ref"></i></span>
+                  <h3 class="content-box-reklam-list-item-text-top">Реферат</h3>
+                  <p class="content-box-reklam-list-item-price">от 600 <i class="fa fa-rub" aria-hidden="true"></i></p>
+                  <span class="content-box-reklam-list-item-stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </span>
+                     <div class="content-box-reklam-list-item_information-list text-center">
+                      <div class="content-box-reklam-list-item_information-list-item">
+                        <span class="content-box-reklam-list-item_information-list-item-icon">
+                          <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="content-box-reklam-list-item_information-list-item-number">7</span>
+                        <span class="content-box-reklam-list-item_information-list-item-text">Стандартный срок</span>
+                      </div>
+                      <div class="content-box-reklam-list-item_information-list-item">
+                        <span class="content-box-reklam-list-item_information-list-item-icon">
+                          <i class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                        <span class="content-box-reklam-list-item_information-list-item-number">4,6</span>
+                        <span class="content-box-reklam-list-item_information-list-item-text content-box-reklam-list-item_information-list-item-text_middle">Средний бал</span>
+                      </div>
+                      <div class="content-box-reklam-list-item_information-list-item">
+                        <span class="content-box-reklam-list-item_information-list-item-icon">
+                          <i class="fa fa-comments-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="content-box-reklam-list-item_information-list-item-number">262</span>
+                        <span class="content-box-reklam-list-item_information-list-item-text">Отзывов клиентов</span>
+                      </div>
+                    </div>
+                     <a href="#" class="btn btn-primary btn-lg price">Узнать стоимость</a>
+                  </div>
+                <!-- post #4 -->
+                <div class=" crsl-item content-box-reklam-list-item text-center">
+                  <span><i class="i i_ref"></i></span>
+                  <h3 class="content-box-reklam-list-item-text-top">Реферат</h3>
+                  <p class="content-box-reklam-list-item-price">от 600 <i class="fa fa-rub" aria-hidden="true"></i></p>
+                  <span class="content-box-reklam-list-item-stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </span>
+                     <div class="content-box-reklam-list-item_information-list text-center">
+                      <div class="content-box-reklam-list-item_information-list-item">
+                        <span class="content-box-reklam-list-item_information-list-item-icon">
+                          <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="content-box-reklam-list-item_information-list-item-number">7</span>
+                        <span class="content-box-reklam-list-item_information-list-item-text">Стандартный срок</span>
+                      </div>
+                      <div class="content-box-reklam-list-item_information-list-item">
+                        <span class="content-box-reklam-list-item_information-list-item-icon">
+                          <i class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                        <span class="content-box-reklam-list-item_information-list-item-number">4,6</span>
+                        <span class="content-box-reklam-list-item_information-list-item-text content-box-reklam-list-item_information-list-item-text_middle">Средний бал</span>
+                      </div>
+                      <div class="content-box-reklam-list-item_information-list-item">
+                        <span class="content-box-reklam-list-item_information-list-item-icon">
+                          <i class="fa fa-comments-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="content-box-reklam-list-item_information-list-item-number">262</span>
+                        <span class="content-box-reklam-list-item_information-list-item-text">Отзывов клиентов</span>
+                      </div>
+                    </div>
+                     <a href="#" class="btn btn-primary btn-lg price">Узнать стоимость</a>
+                  </div>
+                <!-- post #5 -->
+                <div class=" crsl-item content-box-reklam-list-item text-center">
+                  <span><i class="i i_ref"></i></span>
+                  <h3 class="content-box-reklam-list-item-text-top">Реферат</h3>
+                  <p class="content-box-reklam-list-item-price">от 600 <i class="fa fa-rub" aria-hidden="true"></i></p>
+                  <span class="content-box-reklam-list-item-stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </span>
+                     <div class="content-box-reklam-list-item_information-list text-center">
+                      <div class="content-box-reklam-list-item_information-list-item">
+                        <span class="content-box-reklam-list-item_information-list-item-icon">
+                          <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="content-box-reklam-list-item_information-list-item-number">7</span>
+                        <span class="content-box-reklam-list-item_information-list-item-text">Стандартный срок</span>
+                      </div>
+                      <div class="content-box-reklam-list-item_information-list-item">
+                        <span class="content-box-reklam-list-item_information-list-item-icon">
+                          <i class="fa fa-check" aria-hidden="true"></i>
+                        </span>
+                        <span class="content-box-reklam-list-item_information-list-item-number">4,6</span>
+                        <span class="content-box-reklam-list-item_information-list-item-text content-box-reklam-list-item_information-list-item-text_middle">Средний бал</span>
+                      </div>
+                      <div class="content-box-reklam-list-item_information-list-item">
+                        <span class="content-box-reklam-list-item_information-list-item-icon">
+                          <i class="fa fa-comments-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="content-box-reklam-list-item_information-list-item-number">262</span>
+                        <span class="content-box-reklam-list-item_information-list-item-text">Отзывов клиентов</span>
+                      </div>
+                    </div>
+                     <a href="#" class="btn btn-primary btn-lg price">Узнать стоимость</a>
+                  </div>
+              <!-- post #6 -->
+            </div><!-- @end .crsl-wrap -->
+          </div><!-- @end .crsl-items -->
+        </div>
+        <div class="row">
+           <div class="col-xs-12 col-md-12 text-center btn-more-caption">
+                <a href="#" class="btn btn-default btn-lg btn-more ">
+                  ПОКАЗАТЬ ВСЕ ТИПЫ РАБОТ
+                  <span class="btn_sub-balue">(23)</span>
+
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>  
     <!-- content-box-select-->    
     <div class="content-box-select">
         	<div class="container">
@@ -592,7 +686,7 @@
 					</p>
 				</div>
 				<div class="col-xs-12 col-sm-12-col-md-12 content-box-work-text-bottom-btn-caption">
-					<button class="btn btn-default btn-lg btn-more">ОСТАВИТЬ ЗАЯВКУ</button>
+					<a href="#" class="btn btn-retain btn-default btn-lg btn-more">ОСТАВИТЬ ЗАЯВКУ</a>
 				</div>
 
     			
@@ -609,111 +703,191 @@
     					<h2 class="content-box-reviews_box-text">Отзывы клиентов</h2>
     				</div>
     				<div class="col-xs-12 col-sm-3 col-md-3 content-box-reviews_box-btn-caption">
-    					<button class="btn btn-default btn-lg btn-block btn-reviews ">НАПИСАТЬ ОТЗЫВ</button>
+    					<a href="#" class="btn btn-default btn-lg btn-block btn-reviews ">НАПИСАТЬ ОТЗЫВ</a>
     				</div>
     			</div>
     		</div>
     	</div>
-    	<div class="content-box-reviews_box-middle">
-    		<div class="container">
-    			<div class="row target-row content-box-reviews_box-middle-list">
-    				<div class="col-xs-0 col-sm-1 col-md-1 ">
-    					<div class="content-box-reviews_box-middle_arrows-list arrows-list_left">
-    						<button class="i content-box-reviews_box-middle_arrows-list-item">
-    							<i class="fa fa-angle-left" aria-hidden="true"></i>
-    						</button>
-						</div>
-    				</div>
-    			
-                    <div class="col-xs-12 col-sm-5 col-md-5 content-box-reviews_box-middle-list-item content-box-reviews_box-middle-list-item_first">
-                        <div class="content-box-reviews_box-middle-list-item_bg">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-2 content-box-reviews_box-middle-list-item-quotes">
-                                    <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-6">
-                                    <p class="content-box-reviews_box-middle-list-item-caption_name">
-                                        <span>Светлана Иванова</span>
-                                    </p>
-                                    <p class="content-box-reviews_box-middle-list-item-caption_type">
-                                        <i class="fa fa-book" aria-hidden="true"></i>
-                                        <span>Аспирантский реферат</span>
-                                    </p>
-                                    <p class="content-box-reviews_box-middle-list-item-caption_date">
-                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        <span>17 мая 2016</span>
-                                    </p>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-4">
-                                    <span class="content-box-reviews_box-middle-list-item-caption_stare">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    </span>
-                                </div>
+         
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="carousel-caption">
+                <div class=" content-box-reviews_box-middle-list-item content-box-reviews_box-middle-list-item_first">
+                    <div class="content-box-reviews_box-middle-list-item_bg">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-2 content-box-reviews_box-middle-list-item-quotes">
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
                             </div>
-                            <div class="content-box-reviews_box-middle-list-item-caption_text">
-                                <span class="text-target">
-                                    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.&ensp;Lorem Ipsum используют потому, &ensp;что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получаеться при простой дубликации "Здесь ваш текст. Здесь ваш текст. Lorem Ipsum используют потому,что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение &ensp;букв
-                                    
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <p class="content-box-reviews_box-middle-list-item-caption_name">
+                                    <span>Светлана Иванова</span>
+                                </p>
+                                <p class="content-box-reviews_box-middle-list-item-caption_type">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                    <span>Аспирантский реферат</span>
+                                </p>
+                                <p class="content-box-reviews_box-middle-list-item-caption_date">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    <span>17 мая 2016</span>
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <span class="content-box-reviews_box-middle-list-item-caption_stare">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
                                 </span>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="col-xs-12 col-sm-5 col-md-5 content-box-reviews_box-middle-list-item  content-box-reviews_box-middle-list-item_second ">
-                        <div class="content-box-reviews_box-middle-list-item_bg">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-2 content-box-reviews_box-middle-list-item-quotes">
-                                    <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-6">
-                                    <p class="content-box-reviews_box-middle-list-item-caption_name">
-                                        <span>Юлия</span>
-                                    </p>
-                                    <p class="content-box-reviews_box-middle-list-item-caption_type">
-                                        <i class="fa fa-book" aria-hidden="true"></i>
-                                        <span>Тест / экзамен Online</span>
-                                    </p>
-                                    <p class="content-box-reviews_box-middle-list-item-caption_date">
-                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        <span>17 мая 2016</span>
-                                    </p>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-4">
-                                    <span class="content-box-reviews_box-middle-list-item-caption_stare">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="content-box-reviews_box-middle-list-item-caption_text">
-                                <span >
-                                    Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.Lorem Ipsum используют потому,что тот обеспечивает более или менее стандартное заполнение шаблона
+                        <div class="content-box-reviews_box-middle-list-item-caption_text">
+                            <span class="text-target">
+                                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому,  что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получаеться при простой дубликации "Здесь ваш текст. Здесь ваш текст. Lorem Ipsum используют потому,что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение  букв
 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box-reviews_box-middle-list-item  content-box-reviews_box-middle-list-item_second">
+                                <div class="content-box-reviews_box-middle-list-item_bg">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-2 content-box-reviews_box-middle-list-item-quotes">
+                                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6">
+                                            <p class="content-box-reviews_box-middle-list-item-caption_name">
+                                                <span>Юлия</span>
+                                            </p>
+                                            <p class="content-box-reviews_box-middle-list-item-caption_type">
+                                                <i class="fa fa-book" aria-hidden="true"></i>
+                                                <span>Тест / экзамен Online</span>
+                                            </p>
+                                            <p class="content-box-reviews_box-middle-list-item-caption_date">
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                <span>17 мая 2016</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-4">
+                                            <span class="content-box-reviews_box-middle-list-item-caption_stare">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="content-box-reviews_box-middle-list-item-caption_text">
+                                        <span>
+                                            Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.Lorem Ipsum используют потому,что тот обеспечивает более или менее стандартное заполнение шаблона
+
+                                        </span>
+                                    </div>
+                                </div>
+</div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-caption">
+                <div class=" content-box-reviews_box-middle-list-item content-box-reviews_box-middle-list-item_first ">
+                    <div class="content-box-reviews_box-middle-list-item_bg">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-2 content-box-reviews_box-middle-list-item-quotes">
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <p class="content-box-reviews_box-middle-list-item-caption_name">
+                                    <span>Светлана Иванова</span>
+                                </p>
+                                <p class="content-box-reviews_box-middle-list-item-caption_type">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                    <span>Аспирантский реферат</span>
+                                </p>
+                                <p class="content-box-reviews_box-middle-list-item-caption_date">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    <span>17 мая 2016</span>
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <span class="content-box-reviews_box-middle-list-item-caption_stare">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
                                 </span>
                             </div>
                         </div>
+                        <div class="content-box-reviews_box-middle-list-item-caption_text">
+                            <span class="text-target">
+                                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому,  что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получаеться при простой дубликации "Здесь ваш текст. Здесь ваш текст. Lorem Ipsum используют потому,что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение  букв
+
+                            </span>
+                        </div>
                     </div>
-    				
-    				<div class="col-xs-0 col-sm-1 col-md-1">
-   						<div class="content-box-reviews_box-middle_arrows-list arrows-list_right">
-    						<button class="i content-box-reviews_box-middle_arrows-list-item ">
-    							<i class="fa fa-angle-right" aria-hidden="true"></i>
-    						</button>
-    					</div>
-    				</div>
-    			</div>
-    		</div>		
-    	</div>
-        <div class=" content-box-reviews_box-bottom">
-            <button class="btn btn-default btn-block  btn-reviews">ВСЕ ОТЗЫВЫ НАШИХ КЛИЕНТОВ</button>
+                </div>
+
+                <div class=" content-box-reviews_box-middle-list-item  content-box-reviews_box-middle-list-item_second ">
+                    <div class="content-box-reviews_box-middle-list-item_bg">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-2 content-box-reviews_box-middle-list-item-quotes">
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                <p class="content-box-reviews_box-middle-list-item-caption_name">
+                                    <span>Юлия</span>
+                                </p>
+                                <p class="content-box-reviews_box-middle-list-item-caption_type">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                    <span>Тест / экзамен Online</span>
+                                </p>
+                                <p class="content-box-reviews_box-middle-list-item-caption_date">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    <span>17 мая 2016</span>
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <span class="content-box-reviews_box-middle-list-item-caption_stare">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="content-box-reviews_box-middle-list-item-caption_text">
+                            <span>
+                                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.Lorem Ipsum используют потому,что тот обеспечивает более или менее стандартное заполнение шаблона
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
         </div>
+
+          <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span  class="i content-box-reviews_box-middle_arrows-list-item  content-box-reviews_box-middle_arrows-list-item_left">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span  class="i content-box-reviews_box-middle_arrows-list-item content-box-reviews_box-middle_arrows-list-item_right">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </span>
+        </a>
+      </div>
+                  
+      <div class=" content-box-reviews_box-bottom">
+          <a href="#" id="btn_review" class="btn btn-default btn-block  btn-reviews">ВСЕ ОТЗЫВЫ НАШИХ КЛИЕНТОВ</a>
+      </div>
     </div>
     
     <!-- content-box-autor-->
@@ -732,7 +906,7 @@
                         <i class="i i_arrow_bg-blue"></i>
 					</div>
    			<div class="row btn-autor-caption">
-   				<div class="col-xs-12 col-sm-12 col-md-12"><button class="btn btn-default  btn-autor">СТАТЬ АВТОРОМ</button></div>
+   				<div class="col-xs-12 col-sm-12 col-md-12"><a href="#" class="btn btn-default  btn-autor">СТАТЬ АВТОРОМ</a></div>
    			</div>
     	</div>
     </div>
@@ -779,7 +953,7 @@
                   <a href="#" class="i social-circle"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
                   <a href="#" class="i social-circle"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                   <p class="footer_text_box-bottom">
-                    <span class="footer_text">© 2001-2016 HomeWorks 5.</span>
+                    <span class="footer_text footer_text-coperation">© 2001-2016 HomeWorks 5.</span>
                     <span class="footer_text">Все права защищены.</span>
                   </p>
                   <div class="footer_btn-caption">
@@ -843,31 +1017,11 @@
      </div>
     <script src="jquery/jquery-1.12.4.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
-    	
-    
+    <script  src="jquery/responsiveCarousel.min.js"></script>
     
     <script>
-		$(document).ready(function(){
-             
-           /*
-          
-             function setEqualHeight(columns){
-                var tallestcolumn = 0;
-                columns.each( function(){
-                    currentHeight = $(this).height();
-                    var arrowPosition = (currentHeight / 2) + 30;
-                    $(".content-box-reviews_box-middle_arrows-list-item").css("top", arrowPosition);
-                    if(currentHeight > tallestcolumn){
-                        tallestcolumn = (currentHeight);
-                    }
-                  }
-              );
-              columns.height(tallestcolumn);
-            }
-              setEqualHeight($(".content-box-reviews_box-middle-list-item"));
-          
-          
-         */ 
+      $(document).ready(function(){
+     
             //// Кнопки Pop-up
           
           
@@ -888,10 +1042,10 @@
                 $(".pop-up-login").toggleClass("show");
                
             }) 
-		    $("#open_rewiev").on("click", function(){
-                 $(".content-box-reviews_box-middle-list-item").addClass("show");
-            })
-		  
+            
+       
+            
+          /// Скрытие Pop-up
 		
             $(document).mouseup(function (e){
                 var toggleMenu = $(".pop-up"); 
@@ -906,7 +1060,7 @@
           
           ///Кнопка Up
           
-              $( document ).ready(function() {
+            $( document ).ready(function() {
                   $('#btn-up').mouseover( function(){
                       $( this ).animate({opacity: 0.65},100);
                   }).mouseout( function(){
@@ -926,32 +1080,55 @@
               });
           
             
+        
+                
+                
+            
+            
+              $(function(){
+                $('.carousel').carousel({
+                  interval: false
+                });
+
+               
+              });
+
+         
+              
+                
+        
           
-          
-          
+           
+              $(function(){
+                $('.crsl-items').cacheli({
+                  visible: 4,
+                  itemMinWidth: 235,
+                  itemEqualHeight: 414,
+                });
+
+               ;
+              });
+
+
+                     
            function checkWidth() {
         var windowSize = $(window).width();
             console.log(windowSize)
-        if (windowSize > 768) {
-            $(".content-box-reviews_box-middle-list-item").addClass("show");
-        }
-        else{
-            $(".content-box-reviews_box-middle-list-item").removeClass("show");
-            $(".content-box-reviews_box-middle-list-item:first").addClass("show");
-            
+        if (windowSize <= 768) {
+            $(".content-box-reklam-list-item").addClass("content-box-reklam-list-item_block");
+             $(".crsl-wrap").addClass("crsl-wrap_block");
+          
         }
        
     }
-
       // Execute on load
       checkWidth();
       // Bind event listener
       $(window).resize(checkWidth);
           
-          
-          
-         
-        });
+           
+
+      });
 	</script>
 </body>
 </html>
