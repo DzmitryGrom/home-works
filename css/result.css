@@ -390,6 +390,7 @@ button.more.btn-enter {
   height: 78px;
   padding: 0px 80px 0px 80px;
   font-size: 0;
+  white-space: nowrap;
 }
 .navbar-header-top_box-location-text {
   color: black;
@@ -615,6 +616,11 @@ a.navbar-brand {
   }
   .navbar-header-top_evaluation {
     font-size: 10px;
+  }
+}
+@media (min-width: 1251px) {
+  .navbar > .navbar-header-top .navbar-brand {
+    margin: 15px 43px 10px 0px;
   }
 }
 /* content-box-top */
