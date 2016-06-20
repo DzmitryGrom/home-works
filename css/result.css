@@ -5,6 +5,9 @@ html {
   margin: 0px;
   padding: 0px;
 }
+a:hover {
+  text-decoration: none;
+}
 body {
   font-family: "GothamProRegular";
   position: relative;
@@ -62,7 +65,6 @@ button.btn-pop-up-xl .fa {
 }
 select.input-lg {
   padding-left: 37px;
-  -webkit-appearance: none;
   line-height: 1;
 }
 .btn-today {
@@ -85,7 +87,7 @@ button.btn.btn-tomorrow:hover {
   color: #fff;
 }
 .btn-enter {
-  background-color: #95a4cd;
+  background-color: #383760;
   color: #fff;
 }
 .btn-more {
@@ -120,18 +122,27 @@ input[type=file] {
   left: 15px;
   top: 0;
   font-family: "Gotham Pro Medium";
-  border-bottom-style: dotted;
   white-space: nowrap;
   font-weight: bold;
+  border-bottom: 1px dashed #000;
+  padding-bottom: 5px;
 }
 .btn-add-caption-icon {
   position: absolute;
   left: -12px;
   top: 5px;
 }
-.btn-add-caption:hover {
+.btn-add-caption-element:hover {
+  cursor: pointer;
+}
+.btn-add-caption:hover > .btn-add-caption-text {
   cursor: pointer;
   color: red;
+  border-bottom: 1px dashed red;
+}
+.btn-add-caption:hover > .btn-add-caption-icon {
+  color: red;
+  cursor: pointer;
 }
 .btn-reviews {
   margin-top: 13px;
@@ -257,6 +268,15 @@ select:focus {
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
+}
+.i_dotted {
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  border-bottom: 1px dashed #65beee;
+  padding-bottom: 5px;
 }
 .i_diplom {
   background-image: url(../img/diplom.png);
@@ -428,7 +448,7 @@ button.more.btn-enter {
   font-size: 0;
 }
 .text-dotted {
-  border-bottom-style: dotted;
+  position: relative;
   color: #65BEEE;
   font-weight: bold;
   margin-left: 2px;
@@ -461,7 +481,8 @@ a.navbar-brand {
 }
 .navbar-default .navbar-nav .active a {
   background-color: transparent;
-  border-bottom-style: dotted;
+  border-bottom: 1px dashed #fff;
+  padding-bottom: 5px;
   color: #fff;
   font-weight: bold;
 }
@@ -625,7 +646,7 @@ a.navbar-brand {
 }
 /* content-box-top */
 .content-box-top_bg {
-  background-image: url(../img/bg.jpg);
+  background-image: url(../img/bg_top.jpg);
   background-size: cover;
   background-position: center center;
   padding-top: 75px;
@@ -807,7 +828,8 @@ a.price {
   }
 }
 .content-box-percent-item:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 .content-box-percent_value-caption .fa-percent {
   bottom: 40px;
@@ -914,8 +936,12 @@ a.more {
 .content-box-reklam-list-item {
   background-color: #f7fcff;
   padding: 27px 0px 25px 0px;
-  border: 2px solid #e6e6e6;
+  border: 1px solid #e6e6e6;
   margin-bottom: 15px;
+}
+.content-box-reklam-list-item:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .content-box-reklam-list-item_block {
   position: static!important;
@@ -945,6 +971,9 @@ a.more {
   font-family: "GothamProBold";
   margin: 15px 0px 15px 0px;
 }
+.content-box-reklam-list-item-text-top:hover {
+  color: #65beee;
+}
 .content-box-reklam_btn-top {
   background-color: white;
   width: 80px;
@@ -972,7 +1001,8 @@ a.more {
 .content-box-reklam-list-item-price span {
   color: #7f8892;
   text-decoration: line-through;
-  font-size: 11px;
+  font-size: 13px;
+  margin-left: 5px;
 }
 .content-box-reklam-list-item_information-list {
   font-size: 0;
@@ -993,7 +1023,7 @@ a.more {
 .content-box-reklam-list-item_information-list-item-text {
   font-size: 12px;
   font-family: "GothamProRegular";
-  color: #b5bcc2;
+  color: #3d4955;
   margin-bottom: 25px;
 }
 .content-box-reklam-list-item_information-list-item-text_middle {
@@ -1013,7 +1043,7 @@ a.more {
 .label-default {
   background-color: transparent;
   border-radius: 0;
-  color: #fff;
+  color: #3d4955;
   margin: 0;
   padding: 2px;
 }
@@ -1051,7 +1081,7 @@ a.more {
 }
 .content-box-reklam .btn-more-caption a {
   height: 55px;
-  padding-top: 18px;
+  padding-top: 16px;
 }
 @media (max-width: 768px) {
   .content-box-reklam-list {
@@ -1591,6 +1621,9 @@ a.more {
 .content-box-work-text-bottom-list-item {
   color: #fff;
 }
+.content-box-work-text-bottom-list-item_number {
+  font-weight: bold;
+}
 .content-box-work-text-bottom-btn-caption {
   text-align: center;
 }
@@ -1913,7 +1946,7 @@ a.more {
     padding-bottom: 45px;
   }
   .content-box-reviews_box-middle-list-item_bg {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
   .content-box-reviews_box-middl {
     padding: 27px 0px 15px 0px;
@@ -2172,10 +2205,12 @@ span.footer_number {
 }
 .footer-menu-list li a {
   color: #d1d1d2;
+  position: relative;
 }
 .footer-menu-list li a:hover {
-  border-bottom-style: dotted;
   text-decoration: none;
+  border-bottom: 1px dashed #d1d1d2;
+  padding-bottom: 5px;
 }
 .footer-menu-list_first-col {
   padding-left: 16px;
@@ -2265,11 +2300,13 @@ span.footer_number {
 }
 .pop-up-login_sub-text {
   color: #3d4955;
-  border-bottom-style: dotted;
+  border-bottom: 1px dashed #000;
+  padding-bottom: 5px;
 }
 .pop-up-login_sub-text:hover {
   text-decoration: none;
   color: red;
+  border-bottom: 1px dashed red;
 }
 .pop-up-item_phone {
   display: none;

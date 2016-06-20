@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Home work</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/select.css">
+</head>
+<body>
+   <div class="bg"></div>
+  <!-- nav --> 
+  <nav class="navbar navbar-default">
+        <div class="navbar-header-top">
+            <a class="navbar-brand" href="#"></a>
+            <div class="navbar-header-top_box-location">
+                <a href="#">
+                    <i class=" fa fa-map-marker" aria-hidden="true"></i>
+                    <span class="navbar-header-top_box-location-text">Ваш город:</span>
+                    <span class="navbar-header-top_box-location-text text-dotted">Москва<i class=" i_dotted"></i></span>
+                    <i class="navbar-header-top_box-location-text fa fa-angle-down" aria-hidden="true"></i>
+                </a>
+                <span class="navbar-header-top_box-location_number"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 777 77 77</span>	
+            </div>
+            <div class="navbar-header-top_evaluation">
+              <i class="fa fa-check" aria-hidden="true"></i>Средний бал
+              <span class="navbar-header-top_evaluatio-value">4,9</span>
+            
+            </div>
+            <div class="navbar-header-top_buttons">
+               <button type="button" class="btn btn-call-me   btn-pop-up-xl">
+                  <i class="fa fa-mobile" aria-hidden="true"></i>
+                  ПЕРЕЗВОНИТЕ МНЕ
+              </button>
+              <button type="button" class="btn-login btn btn-enter btn-pop-up-xl">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                  ЛИЧНЫЙ КАБИНЕТ
+              </button>
+             
+            </div>
+       	</div> 
+        <div class="container-fluid navbar-header-bottom">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand_mobile" href="#"></a>
+           <div class="navbar-header">
+            <button id="show_button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+             <div class="btn-togle-list">
+				
+				<button type="button" class="btn btn-login btn-enter btn-lg btn-togle pull-right ">
+					<i class="fa fa-user" aria-hidden="true"></i>
+				</button>
+				<button type="button" class="btn btn-call-me btn-lg btn-togle pull-right">
+					<i class="fa fa-mobile" aria-hidden="true"></i>
+				</button>
+				<button id="closet-button" type="button" class="navbar-toggle collapsed btn-togle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				  <i class="fa fa-times" aria-hidden="true"></i>
+				</button>
+           </div>
+            
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#">УСЛУГИ<span class="sr-only">(current)</span></a></li>
+              <li><a href="#">ЦЕНЫ И АКЦИИ</a></li>
+              <li><a href="#">ГОТОВЫЕ РАБОТЫ</a></li>
+              <li class="active"><a href="#">УСЛОВИЯ</a></li>
+              <li><a href="#">СТАТЬ АВТОРОМ</a></li>
+              <li><a href="#">О КОМПАНИИ</a></li>
+              <li><a href="#">КОНТАКТЫ</a></li>
+              <li><a href="#">ГАРАНТИИ</a></li>
+              <li><a href="#">ОТЗЫВЫ</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+  </nav>
+  <!-- Breadcrumb -->
+  <div class="content-box-breadcrumb">
+    <p>
+      <span class="content-box-breadcrumb-text"><i class="fa fa-home" aria-hidden="true"></i>Главная<i class="fa fa-angle-right" aria-hidden="true"></i></span><span class="content-box-breadcrumb-text_active">Оформление заявки</span>
+    </p>
+  </div>
+   <!-- content-box-select-->    
+  <div class="content-box-select">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-xs-12 col-sm-12 text-center">
+                      <h3 class="content-box-select-caption-text-top">ОДИН ИЗ ЛИДЕРОВ РЫНКА РОСИИ</h3>
+        		      <h2 class="content-box-select-caption-text-middle">Оформить заявку</h2>
+        		      <h4 class="content-box-select-caption-text-bottom">Вы просто оставляете заявку,а все остальное делаем мы!</h4>
+        			</div>
+        		</div>
+        		<form>
+                  <div class="row">
+                      <div class="col-xs-12 col-sm-4 col-md-4 form-item">
+                        
+                           <select class="form-control input-lg">
+                            <option>Выберите ТИП работы</option>
+                            <option>Диплом</option>
+                            <option>Контрольная</option>
+                            <option>Курсовая</option>
+                          </select>
+                          <i class="fa fa-book i_left" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4">
+                           <select class="form-control input-lg input-no-padding_l">
+                            <option>Ваш предмет</option>
+                            <option>Физика</option>
+                            <option>Алгебра</option>
+                            <option>Биология</option>
+                          </select>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4">
+                           <select class="form-control input-lg input-no-padding_l">
+                            <option>Тема предмета</option>
+                            <option>Молекулярная физика</option>
+                            <option>Избавление от ирроциональности</option>
+                            <option>Примитивные оргонизмы</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-xs-12 col-sm-4 col-md-4 form-item">
+                              <input type="text" class="form-control input-lg"  placeholder="Ваше имя">
+                              <i class="fa fa-user i_right" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4 form-item">
+                              <input type="email" class="form-control input-lg"  placeholder="Ваше E-mail">
+                              <i class="fa fa-envelope i_right" aria-hidden="true"></i>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4 form-item">
+                              <input type="text" class="form-control input-lg"  placeholder="Ваше номер телефона">
+                              <i class="fa fa-phone i_right" aria-hidden="true"></i>
+                      </div>
+                     
+                  </div>
+                  <div class="row">
+                       <div class="col-xs-12  col-md-12 text-center">
+                          <button type="button" class="btn btn-danger btn-lg btn-send">Отправить заявку</button>
+                          <div  class="btn-add-caption">
+                              <i class="fa fa-paperclip btn-add-caption-icon"></i>
+                              <input class="btn-add-caption-element" type="file" name="photo" multiple accept="image/*,image/jpeg">
+                              <span class="btn-add-caption-text">Прикрепить файл<i class="i_dotted_add-file">-----------------------</i></span>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+        	</div>
+        </div>
+  
+  <!-- content-box-reklam -->
+  <div class="content-box-reklam">
+       <div id="navbtns">
+           <button class="previous btn btn-default btn-lg content-box-reklam_btn"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+           <button class="next btn btn btn-default btn-lg content-box-reklam_btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+      <div class="container">
+        <div  class="content-box-reklam-list">
+          <div class="crsl-items" data-navigation="navbtns" style="width: 100%; overflow: hidden;">
+            <div class="crsl-wrap" style="width: 1752px; margin-left: -292px;">
+                <div class=" crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                  <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ VISA</h3>
+                  <div class="content-box-reklam-list-item-icon-box"><i class="i i_visa"></i></div>
+                </div>
+                <div class="crsl-item content-box-reklam-list-item crsl-active" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                    <h3 class="content-box-reklam-list-item-text">ОПЕРАТОР СВЯЗИ МТС</h3>
+                    <div  class="content-box-reklam-list-item-icon-box"><i class="i i_mts"></i></div>
+                </div>
+                <!-- post #1 -->
+                <div class="crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                  <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ MASTERCARD</h3>
+                  <div  class="content-box-reklam-list-item-icon-box"><i class="i i_mc"></i></div>
+                </div>
+                <!-- post #2 -->
+                <div class="crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                   <h3 class="content-box-reklam-list-item-text">ОПЕРАТОР СВЯЗИ МЕГАФОН</h3>
+                   <div  class="content-box-reklam-list-item-icon-box"><i class="i i_mg"></i></div>
+                </div>
+                <!-- post #3 -->
+                <div class=" crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                   <h3 class="content-box-reklam-list-item-text">САЛОН СОТОВОЙ СВЯЗИ ЕВРОСЕТЬ</h3>
+                   <div  class="content-box-reklam-list-item-icon-box"><i class="i i_evr"></i></div>
+                </div>
+                <!-- post #4 -->
+                <div class=" crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                   <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ GIWI КОШЕЛЕК</h3>
+                   <div  class="content-box-reklam-list-item-icon-box"><i class="i i_giwi"></i></div>
+                </div>
+                <!-- post #5 -->
+                 <div class=" crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                   <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖИ ЯНДЕКС.ДЕНЬГИ</h3>
+                   <div  class="content-box-reklam-list-item-icon-box"><i class="i i_yandex"></i></div>
+                </div>
+              <!-- post #6 -->
+                <div class=" crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                   <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ WEBMONEY</h3>
+                   <div  class="content-box-reklam-list-item-icon-box"><i class="i i_webmoney"></i></div>
+                </div>
+                <!-- post #7 -->
+                <div class=" crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                   <h3 class="content-box-reklam-list-item-text">ОПЛАТА ЧЕРЕЗ БАНК</h3>
+                   <div  class="content-box-reklam-list-item-icon-box"><i class="i i_bank"></i></div>
+                </div>
+                <!-- post #8 -->
+                <div class=" crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                   <h3 class="content-box-reklam-list-item-text">НАЛИЧНЫЕ ДЕНЬГИ</h3>
+                   <div  class="content-box-reklam-list-item-icon-box"><i class="i i_money"></i></div>
+                </div>
+            </div><!-- @end .crsl-wrap -->
+          </div><!-- @end .crsl-items -->
+        </div>
+       
+      </div>
+    </div>
+  <!-- footer -->
+  <div class="footer">
+          <div class="container">
+  
+              	<div class="footer-menu">
+              			<div class="footer-menu-list-cols footer-menu-list_first-col">
+							<ul class="footer-menu-list">
+								<li class="footer-menu-list-item_caption">УСЛУГИ</li>
+								<li class="footer-menu-list-item">
+                                  <a href="#">Курсовые работы</a>
+                                </li>
+								<li class="footer-menu-list-item">
+								  <a href="#">Диплом</a>
+								</li>
+								<li class="footer-menu-list-item">
+								  <a href="#">Контрольные работы</a>
+								</li>
+								<li class="footer-menu-list-item">
+								  <a href="#">Рефераты</a>
+								</li>
+								<li class="footer-menu-list-item">
+								  <a href="#">Эссе</a>
+								</li>
+								<li class="footer-menu-list-item">
+								  <a href="#">Рецензии</a>
+								</li>
+								<li class="footer-menu-list-item">
+								  <a href="#">Другие виды работ</a>
+								</li>
+								<li class="footer-menu-list-item">
+								  <a href="#">Готовые работы</a>
+								</li>
+
+							</ul>
+             			</div>
+             			<div class="footer-menu-list-cols footer-menu-list_second-col">
+							<ul class="footer-menu-list footer-menu-list_second-col">
+								<li class="footer-menu-list-item_caption">О НАС</li>
+								<li class="footer-menu-list-item">
+								  <a href="#">Цены и акции</a>
+								</li>
+								<li class="footer-menu-list-item">
+								  <a href="#">Условия работы</a>
+								</li>
+								<li class="footer-menu-list-item">
+								  <a href="#">О компании</a>
+								</li>
+								<li class="footer-menu-list-item">
+								  <a href="#">Отзывы</a>
+								</li>
+								<li class="footer-menu-list-item">
+								  <a href="#">Контакты</a>
+								</li>
+							</ul>
+              			</div>
+              			<div class="footer-menu-list-cols footer-menu-list_third-col">
+              				<ul class="footer-menu-list">
+              					<li class="footer-menu-list-item_caption">СОТРУДНИЧЕСТВО</li>
+              					<li class="footer-menu-list-item">
+              					  <a href="#">Стать автором</a>
+              				    </li>
+              				</ul>
+              			</div>
+              	</div>
+               <div class="text-center footer-information-col">
+                  <span class="footer_number">8 800 100 00 31</span>
+                  <span class="footer_text">Бесплатный звонок по России</span>
+                  <a href="#" class="i social-circle"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                  <a href="#" class="i social-circle"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+                  <a href="#" class="i social-circle social-circle_last"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <p class="footer_text_box-bottom">
+                    <span class="footer_text footer_text-coperation">© 2001-2016 HomeWorks 5.</span>
+                    <span class="footer_text">Все права защищены.</span>
+                  </p>
+                  <div class="footer_btn-caption">
+                    <button id="btn-up" type="button" class="btn btn-default btn-lg btn-block ">НАВЕРХ</button>
+                  </div>
+              </div>
+    
+          </div>  
+     </div>
+  <!-- pop-up -->
+  <div class="pop-up-call_me pop-up">
+         <div class="pop-up_tr"></div>
+     	<form class="form-horizontal form-group">
+     		<p class="pop-up-item_phone"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 777 77 77</p>
+            <div class="pop-up-item">
+     			<input type="tel" class="form-control input-lg input-position"  placeholder="Ваш номер телефона">
+				<i class="fa fa-phone" aria-hidden="true"></i>
+     		</div>  
+			<div class="pop-up-item">
+     			<input type="text" class="form-control input-lg input-position"  placeholder="Ваше имя">
+				<i class="fa fa-user" aria-hidden="true"></i>
+     		</div>
+			<div class="pop-up-item pop-up-item_select">
+				<select class="form-control input-lg" >
+					  <option>В какое время Вам удобно?</option>
+					  <option>В любое время</option>
+					  <option>До обеда</option>
+					  <option>После обеда</option>
+					  <option>Вечером</option>
+					  
+				</select>
+				<i class="fa fa-clock-o i_time-pop-up" aria-hidden="true"></i>
+			</div>  
+			<div class="btn-group btn-group-justified pop-up-item" role="group" aria-label="...">
+			  <div class="btn-group" role="group">
+				<button type="button" class="btn btn-default btn-today">СЕГОДНЯ</button>
+			  </div>
+			  <div class="btn-group" role="group">
+				<button type="button" class="btn btn-default btn-tomorrow">ЗАВТРА</button>
+			  </div>
+			</div>
+   			<button type="button" class="btn btn-danger btn-block btn-lg btn-pop-up">Отправить заявку</button>
+    	</form>
+     </div>
+  <div class="pop-up-login pop-up">
+      <div class="pop-up_tr"></div>
+      <form class="form-horizontal form-group">
+          <div class="pop-up-item">
+              <input type="email" class="form-control input-lg input-position"  placeholder="Логин/E-mail">
+              <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+          <div class="pop-up-item">
+              <input type="password" class="form-control input-lg input-position"  placeholder="Пороль">
+              <i class="fa fa-key" aria-hidden="true"></i>
+          </div>
+            <button type="button" class="btn btn-danger btn-block btn-lg btn-pop-up">ВОЙТИ</button>
+             <div class="pop-up-login_sub-text-caption">
+                <a href="#" class="pop-up-login_sub-text">Забыли пароль?</a>
+             </div>   
+      </form>
+  </div>
+  <script src="jquery/jquery-1.12.4.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <script  src="jquery/responsiveCarousel.min.js"></script>
+      <script>
+      $(document).ready(function(){
+     
+            //// Кнопки Pop-up
+          
+          
+			$('#show_button').on("click", function(){
+				$(document).find(".btn-togle-list").toggleClass("show");
+				$(document).find("#show_button").toggleClass("hidden");
+			})
+			$('#closet-button').on("click", function(){
+				$(document).find(".btn-togle-list").removeClass("show");
+				$(document).find("#show_button").toggleClass("hidden");
+               
+			})
+			$(".btn-call-me").on("click", function(){
+				$(".pop-up-call_me").toggleClass("show");
+               
+			})
+            $(".btn-login").on("click", function(){
+                $(".pop-up-login").toggleClass("show");
+               
+            }) 
+            
+       
+            
+          /// Скрытие Pop-up
+		
+            $(document).mouseup(function (e){
+                var toggleMenu = $(".pop-up"); 
+                if (!toggleMenu.is(e.target)
+                    && toggleMenu.has(e.target).length === 0) { 
+                    toggleMenu.removeClass("show");
+                }
+                $(".btn-pop-up").on("click", function(){
+                    toggleMenu.removeClass("show");
+                })
+           });
+          
+          ///Кнопка Up
+          
+            $( document ).ready(function() {
+                  $('#btn-up').mouseover( function(){
+                      $( this ).animate({opacity: 0.65},100);
+                  }).mouseout( function(){
+                      $( this ).animate({opacity: 1},100);
+                  }).click( function(){
+                      window.scroll(0 ,0); 
+                      return false;
+                  });
+
+                  $(window).scroll(function(){
+                      if ( $(document).scrollTop() > 0 ) {
+                          $('#btn-up').fadeIn('fast');
+                      } else {
+                          $('#btn-up').fadeOut('fast');
+                      }
+                  });
+              });
+            
+       
+                
+           
+              $(function(){
+                $('.crsl-items').cacheli({
+                  visible: 4,
+                  itemMinWidth: 285,
+                  itemEqualHeight: 414,
+                });
+
+               ;
+              });
+
+
+                     
+           function checkWidth() {
+        var windowSize = $(window).width();
+            console.log(windowSize)
+        if (windowSize <= 768) {
+            $(".content-box-reklam-list-item").addClass("content-box-reklam-list-item_block");
+             $(".crsl-wrap").addClass("crsl-wrap_block");
+          
+        }
+       
+    }
+      // Execute on load
+      checkWidth();
+      // Bind event listener
+      $(window).resize(checkWidth);
+          
+
+      });
+	</script>
+</body>
+</html>
