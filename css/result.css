@@ -242,6 +242,7 @@ input[placeholder] {
 button.btn-danger {
   background-color: #eb4855;
   border-color: #eb4855;
+  padding-top: 11px;
 }
 button.btn-danger:hover {
   background-color: #ee6a75;
@@ -1114,6 +1115,9 @@ a.more {
     width: 90%;
     margin: 0px 0px 15px 0px;
   }
+  div.content-box-reklam .btn-more-caption a {
+    padding-top: 18px;
+  }
   .content-box-reklam-list-item:nth-child(4) {
     margin-bottom: 20px;
   }
@@ -1248,6 +1252,9 @@ a.more {
   }
   .btn-retain {
     width: 100%;
+  }
+  div.content-box-work-text-bottom-btn-caption a {
+    padding-top: 13px;
   }
   select.form-item_last-child {
     margin-bottom: 7px;
@@ -1894,8 +1901,14 @@ a.more {
   .content-box-reviews_box-text {
     margin-bottom: 0;
   }
+  .content-box-reviews_box-btn-caption a {
+    padding-top: 18px;
+  }
   .content-box-reviews_box-middle-list-item-caption_name {
     margin-top: 35px;
+  }
+  .content-box-reviews_box-bottom a {
+    padding-top: 17px;
   }
   .col-xs-12 .content-box-reviews_box-middle-list-item-caption_stare {
     position: absolute;
