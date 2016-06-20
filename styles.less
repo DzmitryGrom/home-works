@@ -1,5 +1,13 @@
 
-
+.bg{
+  background-image: url(../img/d.png);
+  position: absolute;
+  opacity: 0.8;
+  z-index: 20;
+  display: none;
+  width: 320px;
+ height: 9120px;
+}
 body,html {
   width: 100%;
   min-height: 100%;
@@ -10,9 +18,18 @@ body,html {
 a:hover{
   text-decoration: none;
 }
+a:focus{
+  text-decoration: none;
+}
+.form-control{
+  box-shadow: none;
+  webkit-box-shadow: none;
+}
 body{
   font-family: "GothamProRegular";
   position: relative;
+
+  
 }
 .row-margin{
   margin: 0px 1px 0px 1px;
@@ -60,13 +77,12 @@ button.btn-pop-up-xl .fa{
   right: 33px;
 }
 .form-item .i_left{
-  left: 33px;
+  left: 40px;
 }
 .input-lg,.btn-lg {
   border-radius: 2px;
 }
 select.input-lg{
-  padding-left: 37px;
   line-height: 1;
 }
 .btn-today{
@@ -404,7 +420,7 @@ input,button,select:focus{
   display: inline-block;
   padding: 15px 10px 14px 37px;
   margin-top: 0px;
-  width: 26%;
+  width: 27%;
   vertical-align: top;
   text-align: left;
   border-left: 1px solid #eeeeee;
@@ -664,7 +680,7 @@ a.navbar-brand{
 }
 @media(min-width: 1251px){
   .navbar > .navbar-header-top .navbar-brand{
-    margin: 15px 43px 10px 0px;
+    margin: 15px 30px 10px 0px;
   }
 }
 /* content-box-top */
@@ -772,13 +788,12 @@ a.navbar-brand{
     margin-top: 27px;
   }
   .content-box-top_bg form{
-    margin: 13px 8px 92px 0px;
+    margin: 11px 8px 94px 0px;
   }
   .content-box-top button{
     width: 165px;
   }
   .content-box-top select.input-lg{
-    padding-left: 37px;
     margin-left: 10px;
   }
   .content-box-top_text-bottom-question{
@@ -1136,6 +1151,11 @@ a.more{
   height: 55px;
   padding-top: 16px;
 } 
+@media(max-width: 361px){
+  h2.content-box-reklam-text-top{
+    margin: 11px 4px 4px 4px;
+  }
+}
 @media(max-width: 768px){
   .content-box-reklam-list{
     text-align: center;
@@ -1149,15 +1169,13 @@ a.more{
     width: 100%;
   }
   .content-box-reklam-text-top{
-    margin: 7px 4px 4px 4px;
+    margin: 20px 4px 4px 4px;
   }
   .content-box-reklam-text-top-caption{
     height: 71px;
     margin-top: -2px;
   }
-  .content-box-reklam-text-top{
-    margin-top: 11px;
-  }
+  
 }
 @media(min-width: 768px){
   .content-box-reklam-list{
