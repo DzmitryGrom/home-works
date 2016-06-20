@@ -20,6 +20,12 @@ a:hover{
 }
 a:focus{
   text-decoration: none;
+  outline: none;
+}
+.form-control:focus{
+  outline: none!important;
+  border-color: inherit!important;
+  box-shadow: none!important;
 }
 .form-control{
   box-shadow: none;
@@ -29,7 +35,6 @@ body{
   font-family: "GothamProRegular";
   position: relative;
 
-  
 }
 .row-margin{
   margin: 0px 1px 0px 1px;
@@ -52,9 +57,13 @@ body{
 /* btn */
 button.btn-pop-up-xl{
   border-radius: 0;
-  padding: 26px 21px 26px 23px;
+  padding: 28px 21px 28px 23px;
   font-size: 14px;
 }
+button.btn-pop-up-xl:focus{
+  color: #fff;
+}
+.button.btn-pop-up-xl
 button.btn-pop-up-xl .fa{
   font-size: 22px;
 }
@@ -84,6 +93,7 @@ button.btn-pop-up-xl .fa{
 }
 select.input-lg{
   line-height: 1;
+  padding-left: 10px;
 }
 .btn-today{
   color: #fff;
@@ -120,14 +130,14 @@ button.btn.btn-tomorrow:hover{
   width: 260px;
 }
 input[type=file] {
-  border: none;
   opacity: 0;
-  color: transparent;
   display: inline-block;
   width: 120px;
+  cursor: pointer;
   position: relative;
-  z-index: 10;
-  background-color: transparent;
+  z-index: 100;
+  top: -20px;
+  left: 18px;
   border-bottom-style: dotted;
 }
 .btn-add-caption{
@@ -145,7 +155,7 @@ input[type=file] {
   white-space: nowrap;
   font-weight: bold;
   border-bottom: 1px dashed #000;
-  padding-bottom: 5px;
+  padding-bottom: 1px;
 }
 
 .btn-add-caption-icon{
@@ -154,18 +164,14 @@ input[type=file] {
   top: 5px;
 }
 
-.btn-add-caption-element:hover{
-  cursor: pointer;
-}
+
 .btn-add-caption:hover>
 .btn-add-caption-text{
-  cursor: pointer;
   color: red;
    border-bottom: 1px dashed red; 
 }
 .btn-add-caption:hover>.btn-add-caption-icon{
   color: red;
-  cursor: pointer;
 }
 .btn-reviews{
   margin-top: 13px;
@@ -242,15 +248,15 @@ select.input-no-padding_l{
 input[placeholder]{
   color: black!important;
 }
-.btn-danger{
+button.btn-danger{
   background-color: #eb4855;
   border-color: #eb4855; 
 }
-a.btn-danger:hover{
+button.btn-danger:hover{
   background-color: #ee6a75;
 }
-a.btn-danger:active,
-a.btn-danger:focus{
+button.btn-danger:active,
+button.btn-danger:focus{
   font-weight: bold;
 }
 a.btn-default:hover{
@@ -418,7 +424,7 @@ input,button,select:focus{
 }
 .navbar-header-top_box-location{
   display: inline-block;
-  padding: 15px 10px 14px 37px;
+  padding: 15px 10px 15px 37px;
   margin-top: 0px;
   width: 27%;
   vertical-align: top;
@@ -438,10 +444,11 @@ button.more.btn-enter{
 }
 .navbar-header-top{
   background-color: #fff;
-  height: 78px;
+  height: 80px;
   padding: 0px 80px 0px 80px;
   font-size: 0;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .navbar-header-top_box-location-text{
@@ -641,6 +648,9 @@ a.navbar-brand{
   .navbar-header-top_evaluation{
     display: none;
   }
+  .navbar-nav > li{
+    padding: 10px 15px 0px 12px;
+  }
 }
 @media(max-width: 1251px){
   .navbar-header-top{
@@ -693,7 +703,8 @@ a.navbar-brand{
   background-image: url(../img/bg_top.jpg);
   background-size: cover;
   background-position: center center;
-   padding-top: 75px;
+  padding-top: 75px;
+  margin-top: -1px;
 }
 .content-box-top_bg form{
   margin: 19px 0px 33px 0px;
@@ -815,7 +826,11 @@ a.navbar-brand{
   background-color: #fff;
 }
 
-
+@media(max-width: 1300px){
+  .content-box-top_bg{
+    margin-top: -3px;
+  }
+}
 /* content-box-percent */
 
 
@@ -962,7 +977,7 @@ a.more{
     padding-left: 25px;
   }
   .content-box-percent{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     text-align: center;
   }
   .content-box-percent-item .container-no-padding{
@@ -972,6 +987,7 @@ a.more{
   .content-box-percent_value{
     margin: 45px 0px 0px 23px;
     position: relative;
+    bottom: 5px;
   }
   .content-box-percent-item_first .content-box-percent_value{
     margin: 45px 0px 0px 31px;
@@ -995,6 +1011,7 @@ a.more{
   background-size: cover;
   padding-top: 60px;
 }
+
 
 .content-box-reklam-list .btn-more a{
   margin-top: 0px;
@@ -1026,7 +1043,9 @@ a.more{
 .content-box-reklam-text-top{
   font-size: 24px;
   font-family: "GothamProRegular";
+  line-height: 30px;
   margin: 10px;
+  letter-spacing: -0.8px;
 }
 .content-box-reklam-text-top-caption{
   height: 75px;
@@ -1057,7 +1076,8 @@ a.more{
 }
 
 .content-box-reklam_btn-top i{
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .content-box-reklam-list-item-price{
@@ -1076,7 +1096,7 @@ a.more{
 .content-box-reklam-list-item_information-list{
   font-size: 0;
   margin-bottom: 0px;
-  margin-top: 15px;
+  margin-top: 12px;
 }
 .content-box-reklam-list-item_information-list-item{
   width: 33.3%;
@@ -1155,6 +1175,7 @@ a.more{
 @media(max-width: 361px){
   h2.content-box-reklam-text-top{
     margin: 11px 4px 4px 4px;
+    line-height: 25px;
   }
 }
 @media(max-width: 768px){
@@ -1179,6 +1200,11 @@ a.more{
   
 }
 @media(min-width: 768px){
+  .content-box-reklam{
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+    padding-top: 60px;
+  }
   .content-box-reklam-list{
     font-size: 0;
     text-align: center;
@@ -1198,9 +1224,6 @@ a.more{
   }
   .i_diplom{
     margin-top: 0;
-  }
-  .content-box-reklam{
-    padding-top: 65px;
   }
   .content-box-reklam .container{
     max-width: 1168px;
@@ -1228,7 +1251,7 @@ a.more{
     font-size: 20px;
   }
   .content-box-reklam .btn-more-caption a{
-    margin-top: 31px;
+    margin-top: 28px;
   }
 }
 
@@ -1243,9 +1266,11 @@ a.more{
 }
 .content-box-select input, .content-box-select select{
   font-size: 14px;
-  margin-bottom: 12px;
-  height: 45px;
+  margin-bottom: 10px;
+  height: 48px;
+  padding-left: 20px;
   font-family: "GothamProLight";
+  border: 1px solid #7f8892;
 }
 .content-box-select-caption-text-top{
   color: #eb4855;
@@ -1272,10 +1297,14 @@ a.more{
 @media(max-width: 768px){
   .btn-send{
      width: 100%;
-    margin: 35px 0px 8px 0px;
+    margin: 34px 0px 12px 0px;
+    height: 50px;
   }
   .btn-retain{
     width: 100%;
+  }
+  select.form-item_last-child{
+    margin-bottom: 7px;
   }
   .btn-add-caption {
     position: absolute!important;
@@ -1311,13 +1340,14 @@ a.more{
     margin-top: 17px;
   }
   .content-box-select form{
-    margin-top: 15px;
+    margin-top: 17px;
+    padding: 0px 12px 0px 12px;
   }
   .content-box-select form .row{
     margin-bottom: 20px;
   }
   .content-box-select form button.btn-send{
-    margin: 10px 0px 40px 0px;
+    margin: 6px 0px 37px 0px;
   }
 }
 @media(max-width: 993px){
@@ -1916,6 +1946,7 @@ a.more{
 }
 .content-box-reviews_box-middle_arrows-list-item i{
   font-size: 35px;
+  font-weight: bold;
   color: #fff;
   position: absolute;
   right: 40%;
@@ -2282,6 +2313,9 @@ span.footer_number{
   position: relative;
   bottom: 4px;
 }
+a.social-circle:focus{
+  color: #c8c1c0;
+}
 .social-circle .fa{
   font-size: 25px;
   position: absolute;
@@ -2388,7 +2422,7 @@ span.footer_number{
   background-color: #fff;
   position: absolute;
   width: 360px;
-  top: 72px;
+  top: 80px;
   display: none;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   padding: 20px 20px 10px 20px;
@@ -2396,6 +2430,7 @@ span.footer_number{
 .pop-up .input-position,
 .pop-up select{
   height: 50px;
+  border: 1px solid #7f8892;
 }
 .pop-up button{
   height: 55px;
@@ -2534,7 +2569,6 @@ span.footer_number{
 }
 
 .crsl-item {
-  padding: 8px;
   padding-top: 30px;
   height: 414px!important;
 }
