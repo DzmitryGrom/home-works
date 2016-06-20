@@ -679,6 +679,9 @@ a.navbar-brand {
 .content-box-top_bg form {
   margin: 19px 0px 33px 0px;
 }
+.content-box-top input.form-control:focus {
+  border: 1px solid #ccc!important;
+}
 .content-box-top {
   color: #fff;
 }
@@ -1858,8 +1861,14 @@ a.more {
   font-weight: bold;
   color: #fff;
   position: absolute;
-  right: 40%;
+  right: 38%;
   top: 25%;
+}
+.content-box-reviews_box-middle_arrows-list-item .fa-angle-left {
+  left: 25px;
+}
+.content-box-reviews_box-middle_arrows-list-item .fa-angle-right {
+  right: 25px;
 }
 .content-box-reviews_box-middle_arrows-list {
   position: absolute;
@@ -1983,7 +1992,7 @@ a.more {
   .content-box-reviews_box-bottom a.btn-reviews {
     width: 358px;
     margin: 4px auto;
-    padding-top: 16px;
+    padding-top: 14px;
   }
   .content-box-reviews_box .content-box-reviews_box-btn-caption {
     padding: 0px 26px 0px 9px;
