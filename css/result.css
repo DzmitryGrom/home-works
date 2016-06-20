@@ -956,6 +956,7 @@ a.more {
 .content-box-reklam-list-item:hover {
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 .content-box-reklam-list-item_block {
   position: static!important;
@@ -1148,7 +1149,7 @@ a.more {
     padding-top: 65px;
   }
   .content-box-reklam .container {
-    max-width: 1200px;
+    max-width: 1168px;
   }
   .content-box-reklam-list-item .price {
     margin-top: 27px;
