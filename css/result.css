@@ -1271,6 +1271,9 @@ a.more {
   .content-box-select {
     background-image: url(../img/bg2_form.jpg);
   }
+  div.content-box-work-text-bottom-btn-caption a {
+    padding-top: 13px;
+  }
 }
 @media (min-width: 992px) {
   .content-box-select-caption-text-middle {
@@ -1747,6 +1750,9 @@ a.more {
   .content-box-work .btn-more {
     height: 55px;
   }
+  div.content-box-work-text-bottom-btn-caption a {
+    padding-top: 16px;
+  }
   .content-box-work-text-bottom-list-item {
     margin-bottom: 3px;
   }
@@ -1962,6 +1968,15 @@ a.more {
   .carousel-control {
     display: block;
   }
+  .content-box-reviews_box-btn-caption a {
+    padding-top: 18px;
+  }
+  .content-box-reviews_box-bottom {
+    margin: 0px 15px 0px 15px;
+  }
+  .content-box-reviews_box-bottom a {
+    padding-top: 17px;
+  }
   .content-box-reviews_box .content-box-reviews_box-btn-caption {
     padding-left: 0;
     padding-right: 26px;
@@ -2000,6 +2015,9 @@ a.more {
   }
   a.btn-reviews {
     font-size: 18px;
+  }
+  .content-box-reviews_box-btn-caption a {
+    padding-top: 15px;
   }
   .content-box-reviews_box-bottom {
     background-color: #fff;
