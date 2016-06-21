@@ -90,7 +90,7 @@ select.input-lg {
 }
 button.btn-send {
   font-size: 16px;
-  font-family: "Gotham Pro Medium";
+  font-family: "GothamProMedium";
 }
 .btn.btn-tomorrow {
   color: #7f8892;
@@ -401,6 +401,7 @@ select:focus {
   margin-bottom: 0;
   background-color: transparent;
   border: none;
+  text-align: center;
 }
 .navbar-header-top_box-location {
   display: inline-block;
@@ -604,6 +605,7 @@ a.navbar-brand {
 @media (min-width: 768px) {
   .navbar-nav {
     text-align: center;
+    float: none;
   }
   .navbar-nav > li {
     display: inline-block;
@@ -665,6 +667,11 @@ a.navbar-brand {
     margin: 15px 30px 10px 0px;
   }
 }
+@media (min-width: 1301px) {
+  .navbar-header-top_buttons {
+    float: right;
+  }
+}
 /* content-box-top */
 .content-box-top_bg {
   background-image: url(../img/bg_top.jpg);
@@ -678,6 +685,10 @@ a.navbar-brand {
 }
 .content-box-top input.form-control:focus {
   border: 1px solid #ccc!important;
+}
+.content-box-top button {
+  font-size: 16px;
+  font-family: "GothamProMedium";
 }
 .content-box-top {
   color: #fff;
