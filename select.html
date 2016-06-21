@@ -143,7 +143,7 @@
                           <div  class="btn-add-caption">
                               <i class="fa fa-paperclip btn-add-caption-icon"></i>
                               <input class="btn-add-caption-element" type="file" name="photo" multiple accept="image/*,image/jpeg">
-                              <span class="btn-add-caption-text">Прикрепить файл<i class="i_dotted_add-file">-----------------------</i></span>
+                              <span class="btn-add-caption-text">Прикрепить файл</span>
                           </div>
                       </div>
                   </div>
@@ -159,9 +159,14 @@
         </div>
       <div class="container">
         <div  class="content-box-reklam-list">
-          <div class="crsl-items" data-navigation="navbtns" style="width: 100%; overflow: hidden;">
+          <div class="crsl-items" data-navigation="navbtns" style="width: 100%;">
             <div class="crsl-wrap" style="width: 1752px; margin-left: -292px;">
-                <div class=" crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                <div id="btnVisa" class=" crsl-item content-box-reklam-list-item" style="position: relative; float: left; height: 414px; width: 292px; margin-right: 0px;">
+                   <div class="content-box-reklam-list-item_sub-item">
+                      <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ VISA</h3>
+                      <p class="content-box-reklam-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашей банковской карточки</p>
+                      <div class="content-box-reklam-list-item-icon-box"><i class="i i_visa_act"></i></div>
+                   </div>
                   <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ VISA</h3>
                   <div class="content-box-reklam-list-item-icon-box"><i class="i i_visa"></i></div>
                 </div>
@@ -370,7 +375,13 @@
                
             }) 
             
-       
+          ////актив слайдера
+            $("#btnVisa").on("click", function(){
+               
+              
+            }) 
+            
+           
             
           /// Скрытие Pop-up
 		

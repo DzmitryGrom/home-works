@@ -1,13 +1,5 @@
 
-.bg{
-  background-image: url(../img/d.png);
-  position: absolute;
-  opacity: 0.8;
-  z-index: 20;
-  display: none;
-  width: 320px;
- height: 9120px;
-}
+
 body,html {
   width: 100%;
   min-height: 100%;
@@ -24,7 +16,7 @@ a:focus{
 }
 .form-control:focus{
   outline: none!important;
-  border-color: inherit!important;
+  border: 1px solid #7f8892!important;
   box-shadow: none!important;
 }
 .form-control{
@@ -34,6 +26,7 @@ a:focus{
 body{
   font-family: "GothamProRegular";
   position: relative;
+
 
 }
 .row-margin{
@@ -144,8 +137,10 @@ input[type=file] {
 }
 .btn-add-caption{
   display: inline-block;
-  position: relative;
-  margin-right: -115px;
+  position: absolute;
+  width: 150px;
+  bottom: 10px;
+  margin-left: 40px;
 }
 
 
@@ -253,7 +248,7 @@ input[placeholder]{
 button.btn-danger{
   background-color: #eb4855;
   border-color: #eb4855; 
-  padding-top: 11px;
+  padding-top: 12px;
 }
 button.btn-danger:hover{
   background-color: #ee6a75;
@@ -311,9 +306,6 @@ input,button,select:focus{
   border-bottom: 1px dashed #65beee;
   padding-bottom: 5px;
 }
-
-
-
 .i_diplom{
   background-image: url(../img/diplom.png);
   width: 90px;
@@ -488,6 +480,7 @@ button.more.btn-enter{
   width: 39%;
   white-space: nowrap;
   font-size: 0;
+  text-align: right;
 }
 .text-dotted{
   position: relative;
@@ -1302,12 +1295,18 @@ a.more{
   font-family: "GothamProRegular";
   padding: 0px 32px 0px 32px;
 }
-
+.content-box-select_box-bottom{
+  position: relative;
+}
 @media(max-width: 768px){
   .btn-send{
      width: 100%;
     margin: 34px 0px 12px 0px;
     height: 50px;
+  }
+   label.btn-add-caption{
+    bottom: 33px;
+    margin-left: -68px;
   }
   .btn-retain{
     width: 100%;
@@ -1318,17 +1317,14 @@ a.more{
   select.form-item_last-child{
     margin-bottom: 7px;
   }
-  .btn-add-caption {
-    position: absolute!important;
-    top: 0;
-    right: initial!important;
-    left: 50%;
-    margin-left: -65px;
-  }
+  
 }
 @media(min-width: 768px){
   .content-box-select{
     background-image: url(../img/bg2_form.jpg);
+  }
+  .content-box-select_box-bottom{
+    margin-bottom: 20px;
   }
   div.content-box-work-text-bottom-btn-caption a{
     padding-top: 13px;
@@ -1338,13 +1334,13 @@ a.more{
   .content-box-select-caption-text-middle{
     font-size: 36px;
   }
+  .content-box-select_box-bottom{
+    margin-bottom: 0px;
+  }
   .content-box-select-caption-text-bottom{
     font-size: 16px;
   }
-  .btn-add-caption{
-    left: 37px;
-    bottom: 12px;
-  }
+  
   .btn-add-caption-icon{
     left: -5px;
   }
@@ -1366,21 +1362,18 @@ a.more{
   }
 }
 @media(max-width: 993px){
-  .i_rocket {
-    background-size: 75%;
-  }
-  .block_i_roket{
-    bottom: -24px;
-    right: -30px;
+   .btn-add-caption{
+    bottom: -26px;
   }
 }
-@media(max-width: 993px){
-  .btn-add-caption{
-    position: relative;
-    right: -26px;
-  }
-}
+
+
+
+
 /* content-box-advantages */
+
+
+
 .content-box-advantages{
   background-color: #fff;
 }
@@ -1685,6 +1678,16 @@ a.more{
   }
 }
 
+@media(max-width: 993px){
+  .i_rocket {
+    background-size: 75%;
+  }
+  .block_i_roket{
+    bottom: -24px;
+    right: -30px;
+  }
+ 
+}
 
 
 /*	content-box-work */
@@ -2603,7 +2606,11 @@ a.social-circle:focus{
     padding: 5px 15px 15px 15px;
   }
 }
-
+@media(max-width: 1252px){
+  .pop-up{
+    top: 76px;
+  }
+}
 /* Slider reklam   */
 
 .crsl-items {
