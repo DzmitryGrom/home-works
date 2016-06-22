@@ -50,7 +50,7 @@ body{
 /* btn */
 button.btn-pop-up-xl{
   border-radius: 0;
-  padding: 28px 21px 28px 23px;
+  padding: 28px 21px 28px 21px;
   font-size: 14px;
 }
 button.btn-pop-up-xl:focus{
@@ -91,7 +91,7 @@ select.input-lg{
 .btn-today{
   color: #fff;
   background-color: #7f8892;
-  border-right: 0;
+  border: 0;
 }
 button.btn-send{
   font-size: 16px;
@@ -117,13 +117,10 @@ button.btn.btn-tomorrow:hover{
   background-color: transparent;
   color: white;
   margin-bottom: 30px;
-  width: 360px;
   font-size: 14px;
   font-family: "GothamProBold";
 }
-.btn-send{
-  width: 260px;
-}
+
 input[type=file] {
   opacity: 0;
   display: inline-block;
@@ -170,22 +167,20 @@ input[type=file] {
 .btn-add-caption:hover>.btn-add-caption-icon{
   color: red;
 }
-.btn-reviews{
+a.btn-reviews{
   margin-top: 13px;
   background-color: transparent;
   font-size: 14px;
   font-family: "GothamProBold";
   color: #7f8892;
-  height: 55px;
-  padding-top: 18px;
+  padding: 15px 14px 14px 15px;
 }
-.btn-reviews .btn-lg{
-  padding-top: 19px;
-}
+.a.btn-reviews_all{
+    padding: 14px 18px 14px 18px;
+} 
 a.btn-default.btn-reviews:active,
-a.btn-default.btn-reviews:focus{
-  color: #7f8892;
-  border: 2px solid #7f8892;
+a.btn-default.btn-reviews:focus{  color: #7f8892;
+  border: 1px solid #7f8892;
 }
 a.btn-default.btn-reviews:hover{
   color: #fff;
@@ -194,7 +189,7 @@ a.btn-default.btn-reviews:hover{
 .btn-autor{
   background-color: transparent;
   color: #fff;
-  height: 55px;
+  padding: 15px 46px 15px 46px;
   margin-left: 200px;
   font-size: 14px;
   font-family: "GothamProBold";
@@ -236,9 +231,7 @@ button.btn-togle{
   right: 0;
   display: none;
 }
-.btn_sub-balue{
-  margin-left: 5px;
-}
+
 select.input-no-padding_l{
   padding-left: 10px;
 }
@@ -673,7 +666,7 @@ a.navbar-brand{
     padding-left: 0;
   }
   .navbar-header-top{
-    height: 76px;
+    height: 75px;
   }
   .navbar-header-top,.navbar-header-top_box-location, .navbar-header-top_evaluation{
     text-align: center
@@ -821,7 +814,8 @@ a.navbar-brand{
     margin: 11px 8px 94px 0px;
   }
   .content-box-top button{
-    width: 165px;
+    width: auto;
+    padding: 14px 8px 14px 8px;
   }
   .content-box-top select.input-lg{
     margin-left: 10px;
@@ -894,13 +888,12 @@ a.navbar-brand{
 }
 
 a.price{
-  width: 165px;
+  width: auto;
   background-color: #65beee;
   font-size: 16px;
-  height: 50px;
   font-family: "GothamProRegular";
   border: none;
-  padding: 15px 0px 15px 0px;
+  padding: 15px 10px 14px 10px;
   margin-top: 5px;
 }
 
@@ -927,7 +920,8 @@ a.price{
   }
  
 a.more{
-  width: 165px; 
+  width: auto; 
+  padding: 13px 16px 13px 16px;
   border-radius: 2px;
   background-color: transparent;
   font-size: 14px;
@@ -1155,6 +1149,9 @@ a.more{
   margin: 0;
   padding: 2px;
 }
+.content-box-reklam .btn-more-caption a{
+  padding: 16px 16px 15px 16px;
+}
 @media(max-width: 768px){
   .content-box-reklam_btn-top{  
     display: none;
@@ -1183,17 +1180,12 @@ a.more{
 	width: 90%;
 	margin: 0px 0px 15px 0px;
   }
-  div.content-box-reklam .btn-more-caption a{
-    padding-top: 18px;
-  }
+  .content-box-reklam .btn-more-caption a
   .content-box-reklam-list-item:nth-child(4){
     margin-bottom: 20px;		
   }
 }
-.content-box-reklam .btn-more-caption a{
-  height: 55px;
-  padding-top: 16px;
-} 
+ 
 @media(max-width: 361px){
   h2.content-box-reklam-text-top{
     margin: 11px 4px 4px 4px;
@@ -1205,7 +1197,7 @@ a.more{
     text-align: center;
     height: auto;
     margin-top: 81px;
-    height: 1717px;
+    height: 1715px;
     overflow: hidden;
   }
   .content-box-reklam-list-item{
@@ -1318,21 +1310,23 @@ a.more{
 .content-box-select_box-bottom{
   position: relative;
 }
+.content-box-select form button.btn-send{
+  padding: 15px 56px 15px 56px;
+}
+
 @media(max-width: 768px){
   .btn-send{
      width: 100%;
     margin: 34px 0px 12px 0px;
-    height: 50px;
   }
    label.btn-add-caption{
     bottom: 33px;
     margin-left: -68px;
   }
-  .btn-retain{
+  a.btn.btn-retain {
     width: 100%;
-  }
-  div.content-box-work-text-bottom-btn-caption a{
-    padding-top: 13px;
+    padding: 16px 50px 16px 50px;
+    text-align: center;
   }
   select.form-item_last-child{
     margin-bottom: 7px;
@@ -1345,9 +1339,6 @@ a.more{
   }
   .content-box-select_box-bottom{
     margin-bottom: 20px;
-  }
-  div.content-box-work-text-bottom-btn-caption a{
-    padding-top: 13px;
   }
 }
 @media(min-width: 992px){
@@ -1724,8 +1715,7 @@ a.more{
 .content-box-work a{
   font-size: 16px;
   font-family: "GothamProBold";
-  height: 50px;
-  padding-top: 16px;
+  padding: 16px 95px 16px 95px;
   margin-bottom: 30px;
 }
 .content-box-work-text-top{
@@ -1852,12 +1842,7 @@ a.more{
     position: relative;
     margin-bottom: 25px;
   }
-  .content-box-work .btn-more{
-    height: 55px;
-  }
-  div.content-box-work-text-bottom-btn-caption a {
-    padding-top: 16px;
-  }
+  
   .content-box-work-text-bottom-list-item{
     margin-bottom: 3px;
   }
@@ -1991,14 +1976,13 @@ a.more{
   font-weight: bold;
   color: #fff;
   position: absolute;
-  right: 38%;
-  top: 25%;
+  top: 17px;
 }
 .content-box-reviews_box-middle_arrows-list-item .fa-angle-left{
-  left: 25px;
+  left: 27px;
 }
 .content-box-reviews_box-middle_arrows-list-item .fa-angle-right{
-  right: 25px;
+  right: 27px;
 }
 .content-box-reviews_box-middle_arrows-list{
   position: absolute;
@@ -2022,16 +2006,12 @@ a.more{
   .content-box-reviews_box-text{
     margin-bottom: 0;
   }
-  .content-box-reviews_box-btn-caption a{
-    padding-top: 18px;
-  }
+  
   .content-box-reviews_box-middle-list-item-caption_name{
     margin-top: 35px;
 
   }
-  .content-box-reviews_box-bottom a{
-    padding-top: 17px;
-  }
+ 
   .col-xs-12 .content-box-reviews_box-middle-list-item-caption_stare{
     position: absolute;
     bottom: 85px;
@@ -2065,6 +2045,23 @@ a.more{
   .item{
     height: inherit;
   }
+  .content-box-reviews_box-btn-caption{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .content-box-reviews_box .text-center{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+   .content-box-reviews_box-bottom{
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+  .btn-reviews_all{
+    width: 100%;
+  }
   .carousel-caption {
     position: static;
     margin: 15px 0px 15px 0px;
@@ -2086,15 +2083,11 @@ a.more{
   .carousel-control{
     display: block;
   }
-  .content-box-reviews_box-btn-caption a{
-    padding-top: 18px;
-  }
+
   .content-box-reviews_box-bottom{
-    margin: 0px 15px 0px 15px;
+    margin: 0px;
   }
-  .content-box-reviews_box-bottom a{
-    padding-top: 17px;
-  }
+  
    .content-box-reviews_box .content-box-reviews_box-btn-caption{
     padding-left: 0;
     padding-right: 26px;
@@ -2114,7 +2107,11 @@ a.more{
     height: 575px;
   }
 }
-
+@media(max-width: 992px){
+  .content-box-reviews_box a{
+    margin-top: 15px;
+  }
+}
 @media(min-width: 992px){
   .content-box-reviews_box-middle-list{
     text-align: center;
@@ -2136,17 +2133,13 @@ a.more{
   a.btn-reviews{
     font-size: 18px;
   }
-  .content-box-reviews_box-btn-caption a{
-    padding-top: 15px;
-  }
+  
   .content-box-reviews_box-bottom{
     background-color: #fff;
     padding-top: 28px;
   }
   .content-box-reviews_box-bottom a.btn-reviews{
-    width: 358px;
     margin: 4px auto;
-    padding-top: 14px;
   }
   .content-box-reviews_box .content-box-reviews_box-btn-caption{
     padding: 0px 26px 0px 9px;
@@ -2206,6 +2199,9 @@ a.more{
   .i_arrow_bg-blue{
     display: none;
   }
+  .content-box-reviews_box a{
+    padding: 15px 5px 14px 5px;
+  }
 }
  /* content-box-autor */
 
@@ -2252,7 +2248,6 @@ a.more{
   .btn-autor {
     width: 100%;
     margin: 0;
-    padding-top: 16px;
   }
   .content-box-autor{
     position: relative;
@@ -2260,7 +2255,7 @@ a.more{
 }
 
 
-@media(min-width: 768px){
+@media(min-width: 769px){
   .content-box-autor .container{
     font-size: 0;
   }
@@ -2295,9 +2290,7 @@ a.more{
     bottom: 62px;
   }
   .btn-autor{
-    width: 260px;
     margin-left: 410px;
-    padding-top: 15px;
     font-size: 18px;
   }
 }
@@ -2316,7 +2309,8 @@ a.more{
   font-size: 0;
   background-size: cover;
   & #btn-up{
-    height: 55px;
+    padding-bottom: 17px;
+    padding-top: 17px;
     font-size: 14px;
     font-family: "GothamProBold";
 	background-color: transparent;
@@ -2614,10 +2608,7 @@ a.social-circle:focus{
   .navbar-nav > li.navbar-nav_li-sub-nav{
     display: block;
   }
-  .content-box-reviews_box-bottom{
-    padding-right: 13px;
-    padding-left: 13px;
-  }
+ 
   .footer-menu{
     display: none;
   }
