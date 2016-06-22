@@ -613,7 +613,7 @@ a.navbar-brand {
 }
 @media (max-width: 820px) {
   .navbar-header-top_box-location {
-    margin-left: -100px;
+    margin-left: 1px;
   }
 }
 @media (max-width: 970px) {
@@ -630,6 +630,8 @@ a.navbar-brand {
   }
   .navbar-header-top_buttons {
     text-align: right;
+    float: right;
+    margin-right: 30px;
   }
   button.btn-pop-up-xl {
     padding: 26px 10px 26px 10px;
@@ -664,6 +666,12 @@ a.navbar-brand {
 @media (min-width: 1251px) {
   .navbar > .navbar-header-top .navbar-brand {
     margin: 15px 30px 10px 0px;
+  }
+}
+@media (max-width: 962px) {
+  .navbar-header-top_buttons {
+    width: 400px;
+    margin-right: 10px;
   }
 }
 @media (min-width: 1301px) {
