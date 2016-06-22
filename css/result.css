@@ -124,14 +124,22 @@ input[type=file] {
   z-index: 100;
   top: -20px;
   left: 18px;
-  border-bottom-style: dotted;
 }
 .btn-add-caption {
   display: inline-block;
   position: absolute;
   width: 150px;
-  bottom: 10px;
+  height: 25px;
+  bottom: 42px;
   margin-left: 40px;
+}
+.btn-add-caption:hover {
+  color: red;
+  cursor: pointer;
+}
+.btn-add-caption:hover .btn-add-caption-text {
+  border-bottom: 1px dashed red;
+  cursor: pointer;
 }
 .btn-add-caption-text {
   position: absolute;
@@ -148,20 +156,13 @@ input[type=file] {
   left: -12px;
   top: 5px;
 }
-.btn-add-caption:hover > .btn-add-caption-text {
-  color: red;
-  border-bottom: 1px dashed red;
-}
-.btn-add-caption:hover > .btn-add-caption-icon {
-  color: red;
-}
 a.btn-reviews {
   margin-top: 13px;
   background-color: transparent;
   font-size: 14px;
   font-family: "GothamProBold";
   color: #7f8892;
-  padding: 15px 14px 14px 15px;
+  padding: 15px 14px 15px 15px;
 }
 .a.btn-reviews_all {
   padding: 14px 18px 14px 18px;
@@ -178,7 +179,7 @@ a.btn-default.btn-reviews:hover {
 .btn-autor {
   background-color: transparent;
   color: #fff;
-  padding: 15px 46px 15px 46px;
+  padding: 15px 46px 16px 46px;
   margin-left: 200px;
   font-size: 14px;
   font-family: "GothamProBold";
@@ -1257,7 +1258,7 @@ a.more {
     margin: 34px 0px 12px 0px;
   }
   label.btn-add-caption {
-    bottom: 33px;
+    bottom: 67px;
     margin-left: -68px;
   }
   a.btn.btn-retain {
@@ -1309,7 +1310,7 @@ a.more {
 }
 @media (max-width: 993px) {
   .btn-add-caption {
-    bottom: -26px;
+    bottom: 7px;
   }
 }
 /* content-box-advantages */
@@ -2082,7 +2083,7 @@ a.more {
     display: none;
   }
   .content-box-reviews_box a {
-    padding: 15px 5px 14px 5px;
+    padding: 15px 5px 15px 5px;
   }
 }
 /* content-box-autor */
@@ -2357,7 +2358,8 @@ a.social-circle:focus {
   border: 1px solid #7f8892;
 }
 .pop-up button {
-  height: 55px;
+  padding-top: 17px;
+  padding-bottom: 18px;
 }
 .pop-up button {
   font-family: "GothamProBold";
