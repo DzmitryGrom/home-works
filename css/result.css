@@ -2015,6 +2015,12 @@ a.more {
   .content-box-reviews_box a {
     margin-top: 15px;
   }
+  div a.btn-reviews {
+    padding-bottom: 16px;
+  }
+  .content-box-reviews_box-bottom a {
+    padding-bottom: 16px;
+  }
 }
 @media (min-width: 992px) {
   .content-box-reviews_box-middle-list {
@@ -2036,6 +2042,9 @@ a.more {
   }
   a.btn-reviews {
     font-size: 18px;
+  }
+  a.btn-reviews_all {
+    padding-bottom: 16px;
   }
   .content-box-reviews_box-bottom {
     background-color: #fff;
@@ -2101,7 +2110,7 @@ a.more {
     display: none;
   }
   .content-box-reviews_box a {
-    padding: 15px 5px 16px 5px;
+    padding: 15px 5px 15px 5px;
   }
 }
 /* content-box-autor */
