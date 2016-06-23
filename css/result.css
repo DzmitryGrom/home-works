@@ -49,6 +49,9 @@ body {
   -webkit-appearance: button;
   border: 1px solid transparent;
   vertical-align: middle;
+  font-family: Aria, Helvetica;
+  font-weight: bold;
+  display: inline-block;
 }
 button.btn-pop-up-xl {
   border-radius: 0;
@@ -103,17 +106,21 @@ select.input-lg {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   font-size: 14px;
-  font-family: "Aria", "Helvetic";
-  font-weight: bold;
-  padding: 0px 10px 0px 10px;
-  line-height: 56px;
-  height: 56px;
+  padding: 20px 10px;
+  line-height: 1;
   width: 50%;
   vertical-align: middle;
 }
+.btns-send-pop-up {
+  width: 100%;
+  padding: 12px 0px;
+  background-color: #eb4855;
+  border-color: #eb4855;
+  color: #fff;
+}
 button.btn-send {
   font-size: 16px;
-  font-family: "Arial", "Helvetic";
+  font-family: Aria, Helvetica;
 }
 .btn-tomorrow {
   color: #3d4955;
@@ -125,11 +132,8 @@ button.btn-send {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   font-size: 14px;
-  font-family: "Aria", "Helvetic";
-  font-weight: bold;
-  padding: 0px 10px 0px 10px;
-  line-height: 56px;
-  height: 56px;
+  padding: 20px 10px;
+  line-height: 1;
   width: 50%;
 }
 button.btn.btn-tomorrow:hover {
