@@ -85,16 +85,18 @@ select.input-lg {
 }
 .btn-today {
   color: #fff;
+  border-color: #7f8892;
   background-color: #7f8892;
-  border: 0;
+  border-right: 0;
 }
 button.btn-send {
   font-size: 16px;
   font-family: "GothamProMedium";
 }
 .btn.btn-tomorrow {
-  color: #7f8892;
+  color: #3d4955;
   border-left: 0;
+  border-color: #7f8892;
 }
 button.btn.btn-tomorrow:hover {
   color: #fff;
@@ -693,11 +695,15 @@ a.navbar-brand {
 .content-box-top {
   color: #fff;
 }
+.content-box-top select,
+.content-box-top input {
+  border: none;
+}
 .content-box-top input,
 .content-box-top select {
   font-size: 14px;
   margin-bottom: 10px;
-  height: 50px;
+  height: 51px;
   font-family: "GothamProLight";
 }
 .content-box-top-text-xl {
@@ -996,6 +1002,9 @@ a.more {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
+.content-box-reklam-list-item:hover .content-box-reklam-list-item-text-top {
+  color: #65beee;
+}
 .content-box-reklam-list-item_block {
   position: static!important;
   float: none!important;
@@ -1025,9 +1034,6 @@ a.more {
   font-size: 18px;
   font-family: "GothamProBold";
   margin: 15px 0px 15px 0px;
-}
-.content-box-reklam-list-item-text-top:hover {
-  color: #65beee;
 }
 .content-box-reklam_btn-top {
   background-color: white;
