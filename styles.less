@@ -233,7 +233,7 @@ button.btn-togle.btn-call-me{
 }
 button.btn-togle{
   width: 60px;
-  height: 58px;
+  height: 60px;
   border-radius: 0;
   padding:  0px;
 	
@@ -534,9 +534,8 @@ a.navbar-brand{
   background-color: transparent;
   color: #eb4855;
 }
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  color: #eb4855;
-  font-weight: bolder;
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+  color: #eb4853;
 }
 .navbar-brand{
   height: 100%;
@@ -606,6 +605,10 @@ a.navbar-brand{
     position: absolute;
     left: 15px;
   }
+  .navbar-default{
+    position: relative;
+    z-index: 1;
+  }
 	
 }
 .navbar-header-bottom{
@@ -635,6 +638,7 @@ a.navbar-brand{
     text-align: center;
     float: none;
   }
+    
   .navbar-nav>li{
     display: inline-block;
     float: none;
@@ -806,6 +810,9 @@ a.navbar-brand{
   .content-box-top.form-item select.input-lg{
     padding-left: 32px;
     padding-bottom: 13px;
+  }
+  div.content-box-top_bg {
+      margin-top: 0;  
   }
   .content-box-top_bg form{
     margin: 18px 0px 35px 0px;
@@ -1356,8 +1363,21 @@ a.more{
   }
    label.btn-add-caption{
     bottom: 67px;
-    margin-left: -68px;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
   }
+  .btn-add-caption-icon{
+    position: static;
+    margin: 0px;
+  }
+  input[type=file]{
+    display: none;
+  }
+  .btn-add-caption-text{
+    position: static;
+  }    
   a.btn.btn-retain {
     width: 100%;
     padding: 16px 50px 16px 50px;
@@ -2612,7 +2632,7 @@ a.social-circle:focus{
   .pop-up-item_phone{
     display: block;
   }
-  .pop-up{
+  div.pop-up{
     z-index: 5;
     top: 60px;
     width: initial;
