@@ -48,6 +48,11 @@ button.btn-pop-up-xl {
   padding: 28px 21px 28px 21px;
   font-size: 14px;
 }
+.btn-primary:hover {
+  color: #fff;
+  background-color: #89cbee;
+  border-color: #89cbee;
+}
 button.btn-pop-up-xl:focus {
   color: #fff;
 }
@@ -2330,7 +2335,7 @@ a.social-circle:focus {
   color: #c8c1c0;
 }
 .footer-menu-list li a {
-  color: #d1d1d2;
+  color: #ededee;
   position: relative;
 }
 .footer-menu-list li a:hover {
