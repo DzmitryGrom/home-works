@@ -43,6 +43,13 @@ body {
   display: none;
 }
 /* btn */
+.btns {
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-appearance: button;
+  border: 1px solid transparent;
+  vertical-align: middle;
+}
 button.btn-pop-up-xl {
   border-radius: 0;
   padding: 28px 21px 28px 21px;
@@ -93,15 +100,37 @@ select.input-lg {
   border-color: #7f8892;
   background-color: #7f8892;
   border-right: 0;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 14px;
+  font-family: "Aria", "Helvetic";
+  font-weight: bold;
+  padding: 0px 10px 0px 10px;
+  line-height: 56px;
+  height: 56px;
+  width: 50%;
+  vertical-align: middle;
 }
 button.btn-send {
   font-size: 16px;
-  font-family: "GothamProMedium";
+  font-family: "Arial", "Helvetic";
 }
-.btn.btn-tomorrow {
+.btn-tomorrow {
   color: #3d4955;
   border-left: 0;
+  position: relative;
+  vertical-align: middle;
+  background-color: transparent;
   border-color: #7f8892;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  font-size: 14px;
+  font-family: "Aria", "Helvetic";
+  font-weight: bold;
+  padding: 0px 10px 0px 10px;
+  line-height: 56px;
+  height: 56px;
+  width: 50%;
 }
 button.btn.btn-tomorrow:hover {
   color: #fff;
@@ -565,6 +594,7 @@ a.navbar-brand {
   }
   div.content-box-top_bg {
     padding-top: 0;
+    margin-top: 0px;
   }
   .navbar {
     background-color: #fff;
@@ -2415,12 +2445,11 @@ a.social-circle:focus {
   height: 50px;
   border: 1px solid #7f8892;
 }
-.pop-up button {
-  padding-top: 17px;
-  padding-bottom: 18px;
+.pop-up-item_btn-days {
+  font-size: 0;
 }
-.pop-up button {
-  font-family: "GothamProBold";
+.pop-up-item_btn-days button {
+  font-size: 14px;
 }
 .pop-up .input-position,
 .pop-up select {
@@ -2557,6 +2586,9 @@ a.social-circle:focus {
   text-shadow: none;
   color: black;
   padding: 0;
+}
+.carousel-control {
+  z-index: 10;
 }
 .carousel-control.left,
 .carousel-control.right {
