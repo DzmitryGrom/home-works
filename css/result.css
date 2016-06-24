@@ -644,7 +644,7 @@ a.navbar-brand {
   position: absolute;
   z-index: 5;
   right: -1px;
-  top: 58px;
+  top: 60px;
   margin: 0;
   text-align: left;
 }
@@ -1173,7 +1173,7 @@ a.more {
   font-size: 12px;
   font-family: "GothamProRegular";
   color: #3d4955;
-  margin-bottom: 25px;
+  display: block;
 }
 .content-box-reklam-list-item_information-list-item-text_middle {
   display: inline-block;
@@ -1567,6 +1567,9 @@ a.more {
   .content-box-advantages-list-item_value-tab {
     display: none;
   }
+  span.block_i_roket {
+    bottom: -32px;
+  }
   .content-box-advantages-list-item_service h2 {
     padding: 7px 50px 0px 50px;
     margin-bottom: 5px;
@@ -1726,7 +1729,7 @@ a.more {
     background-size: 75%;
   }
   .block_i_roket {
-    bottom: -24px;
+    bottom: -27px;
     right: -30px;
   }
 }
