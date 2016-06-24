@@ -1065,11 +1065,11 @@
                     && toggleMenu.has(e.target).length === 0) { 
                     toggleMenu.removeClass("show");
                 }
-                $(".btns-send-pop-up").on("click", function(){
-                    toggleMenu.removeClass("show");
-                })
-           });
                
+            });
+                $(".btns-send-pop-up").on("click", function(){
+                    $(".pop-up").removeClass("show");
+                })
           ///Кнопка Up
           
          
