@@ -8,19 +8,19 @@ html {
 body {
   font-family: "GothamProRegular";
 }
-body a:hover {
+a:hover {
   text-decoration: none;
 }
-body a:focus {
+a:focus {
   text-decoration: none;
   outline: none;
 }
-body .form-control:focus {
+.form-control:focus {
   outline: none!important;
   border: 1px solid #7f8892!important;
   box-shadow: none!important;
 }
-body .form-control {
+.form-control {
   box-shadow: none;
   webkit-box-shadow: none;
 }
@@ -2028,6 +2028,7 @@ a.navbar-brand {
   .content-box-reviews_box-bottom {
     padding-right: 13px;
     padding-left: 13px;
+    margin-top: 15px;
   }
   .btn-reviews_all {
     width: 100%;
@@ -2207,6 +2208,7 @@ a.navbar-brand {
     text-align: center;
     width: inherit;
     margin-bottom: 30px;
+    margin-bottom: 35px;
   }
   .btn-autor {
     width: 100%;
@@ -2402,6 +2404,11 @@ a.social-circle:focus {
   }
   .footer-information-col {
     width: 100%;
+    text-align: center;
+  }
+  p.footer_text_box-bottom {
+    display: block;
+    margin: 0px 0px 30px 0px;
     text-align: center;
   }
 }
