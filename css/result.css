@@ -93,7 +93,6 @@ a:focus {
 }
 button.btn-pop-up-xl {
   border-radius: 0;
-  padding: 30px 26px;
   font-size: 14px;
   vertical-align: top;
   border: none;
@@ -180,10 +179,12 @@ button.btn.btn-tomorrow:hover {
 .btn-call-me {
   background-color: #65beee;
   color: #fff;
+  padding: 30px 26px;
 }
-.btn-enter {
+button.btn-enter {
   background-color: #383760;
   color: #fff;
+  padding: 29px 25px;
 }
 .btn-more {
   background-color: transparent;
@@ -504,9 +505,9 @@ button.more.btn-enter {
 .navbar-header-top {
   background-color: #fff;
   height: 80px;
-  padding: 0px 80px 0px 80px;
+  max-height: 80px;
+  padding: 0px 0px 0px 80px;
   font-size: 0;
-  white-space: nowrap;
   overflow: hidden;
 }
 .navbar-header-top_box-location-text {
@@ -540,10 +541,9 @@ button.more.btn-enter {
 }
 .navbar-header-top_buttons {
   display: inline-block;
-  width: 39%;
   white-space: nowrap;
   font-size: 0;
-  text-align: right;
+  float: right;
 }
 .text-dotted {
   position: relative;
@@ -709,15 +709,7 @@ a.navbar-brand {
 }
 @media (max-width: 1251px) {
   .navbar-header-top {
-    padding: 0px 10px 0px 10px;
-  }
-  .navbar-header-top_buttons {
-    text-align: right;
-    float: right;
-    margin-right: 30px;
-  }
-  button.btn-pop-up-xl {
-    padding: 28px 10px 28px 10px;
+    padding: 0px 0px 0px 10px;
   }
   .navbar-header-top_box-location {
     width: 18%;
@@ -728,9 +720,6 @@ a.navbar-brand {
   .navbar-header-top_evaluation {
     width: 15%;
     padding-left: 0;
-  }
-  .navbar-header-top {
-    height: 75px;
   }
   .navbar-header-top,
   .navbar-header-top_box-location,
@@ -755,12 +744,13 @@ a.navbar-brand {
 @media (max-width: 962px) {
   .navbar-header-top_buttons {
     width: 400px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
-}
-@media (min-width: 1301px) {
-  .navbar-header-top_buttons {
-    float: right;
+  button.btn-call-me {
+    padding: 30px 18px;
+  }
+  button.btn-enter {
+    padding: 29px 19px;
   }
 }
 /* content-box-top */
@@ -769,7 +759,7 @@ a.navbar-brand {
   background-size: cover;
   background-position: center center;
   padding-top: 75px;
-  margin-top: -1px;
+  margin-top: -3px;
 }
 .content-box-top_bg form {
   margin: 19px 0px 33px 0px;
@@ -793,9 +783,7 @@ a.navbar-brand {
 }
 .content-box-top-text-xl {
   font-size: 24px;
-  font-family: "GothamProLight";
-  margin: 22px 0px 0px 0px;
-  line-height: 30px;
+  line-height: 1;
 }
 .content-box-top-text-xs_top {
   font-size: 14px;
