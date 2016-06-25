@@ -100,11 +100,6 @@ button.btn-pop-up-xl {
   font-family: Aria, Helvetica;
   font-weight: bold;
 }
-.btn-primary:hover {
-  color: #fff;
-  background-color: #89cbee;
-  border-color: #89cbee;
-}
 button.btn-pop-up-xl:focus {
   color: #fff;
 }
@@ -113,10 +108,6 @@ button.btn-pop-up-xl:focus {
 }
 .btn-pop-up-xl .fa {
   margin-right: 17px;
-}
-.btn-default:active {
-  background-color: transparent;
-  color: #fff;
 }
 .form-item input {
   position: relative;
@@ -243,6 +234,29 @@ a.btn-reviews {
   padding: 17px 43px 16px 43px;
   border: 1px solid #7f8892;
 }
+a.more {
+  width: auto;
+  border-radius: 2px;
+  background-color: transparent;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 10px;
+  padding: 16px 20px;
+  border: 1px solid #fff;
+}
+a.price {
+  width: auto;
+  background-color: #65beee;
+  font-size: 15px;
+  padding: 18px;
+  border: none;
+  color: #fff;
+  margin-top: 5px;
+}
+.btn-lg {
+  font-size: 14px;
+  padding: 15px 0px 15px 0px;
+}
 .btn-reviews:hover,
 .btn-reviews_all:hover {
   color: #fff;
@@ -261,15 +275,6 @@ a.btn-reviews_all {
   color: #7f8892;
   border: 1px solid #7f8892;
   font-size: 18px;
-}
-a.btn-default.btn-reviews:active,
-a.btn-default.btn-reviews:focus {
-  color: #7f8892;
-  border: 1px solid #7f8892;
-}
-a.btn-default.btn-reviews:hover {
-  color: #fff;
-  background-color: #7f8892;
 }
 .btn-autor {
   background-color: transparent;
@@ -325,29 +330,6 @@ button.btn-togle {
 }
 select.input-no-padding_l {
   padding-left: 10px;
-}
-input[placeholder] {
-  color: black!important;
-}
-button.btn-danger {
-  background-color: #eb4855;
-  border-color: #eb4855;
-  padding-top: 12px;
-}
-button.btn-danger:hover {
-  background-color: #ee6a75;
-}
-button.btn-danger:active,
-button.btn-danger:focus {
-  font-weight: bold;
-}
-a.btn-default:hover {
-  background-color: #fff;
-}
-a.btn-default:focus {
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #fff;
 }
 button.btn-default.content-box-reklam_btn-top:hover {
   background-color: #65beee;
@@ -949,15 +931,6 @@ a.navbar-brand {
   margin-top: 8px;
   padding: 0px 5px 0px 2px;
 }
-a.price {
-  width: auto;
-  background-color: #65beee;
-  font-size: 15px;
-  padding: 18px;
-  border: none;
-  color: #fff;
-  margin-top: 5px;
-}
 @media (max-width: 768px) {
   .content-box-percent .content-box-percent-item {
     text-align: center;
@@ -978,20 +951,6 @@ a.price {
 }
 .content-box-percent_value-caption .fa-percent {
   bottom: 40px;
-}
-a.more {
-  width: auto;
-  border-radius: 2px;
-  background-color: transparent;
-  font-size: 14px;
-  color: #fff;
-  margin-top: 10px;
-  padding: 16px 20px;
-  border: 1px solid #fff;
-}
-.btn-lg {
-  font-size: 14px;
-  padding: 15px 0px 15px 0px;
 }
 @media (max-width: 993px) {
   .content-box-percent_value-caption {
@@ -1228,14 +1187,6 @@ a.more {
   .content-box-reklam .btn-more-caption a .content-box-reklam-list-item:nth-child(4) {
     margin-bottom: 20px;
   }
-}
-@media (max-width: 361px) {
-  h2.content-box-reklam-text-top {
-    margin: 11px 4px 4px 4px;
-    line-height: 25px;
-  }
-}
-@media (max-width: 768px) {
   .content-box-reklam-list {
     text-align: center;
     height: auto;
@@ -1253,6 +1204,12 @@ a.more {
   .content-box-reklam-text-top-caption {
     height: 71px;
     margin-top: -2px;
+  }
+}
+@media (max-width: 361px) {
+  h2.content-box-reklam-text-top {
+    margin: 11px 4px 4px 4px;
+    line-height: 25px;
   }
 }
 @media (min-width: 768px) {
@@ -2017,6 +1974,9 @@ a.more {
   .content-box-reviews_box-middle-list-item-caption_name {
     margin-top: 35px;
   }
+  div.content-box-reviews_box a {
+    width: 100%;
+  }
   .col-xs-12 .content-box-reviews_box-middle-list-item-caption_stare {
     position: absolute;
     bottom: 85px;
@@ -2112,11 +2072,6 @@ a.more {
   }
   .content-box-reviews_box-middle-list-item {
     height: 575px;
-  }
-}
-@media (max-width: 768px) {
-  div.content-box-reviews_box a {
-    width: 100%;
   }
 }
 @media (max-width: 992px) {
@@ -2441,7 +2396,7 @@ a.social-circle:focus {
 .footer-menu-list_third-col {
   padding-left: 78px;
 }
-@media (max-width: 993px) {
+@media (max-width: 1200px) {
   .footer-menu {
     width: 100%;
   }
