@@ -203,14 +203,7 @@ button.btn.btn-tomorrow:hover {
   padding: 16px 26px 15px 26px;
 }
 input[type=file] {
-  opacity: 0;
-  display: inline-block;
-  width: 120px;
-  cursor: pointer;
-  position: relative;
-  z-index: 100;
-  top: -20px;
-  left: 18px;
+  display: none;
 }
 .btn-add-caption {
   display: inline-block;
@@ -1422,7 +1415,7 @@ a.more {
     margin: 6px 0px 37px 0px;
   }
 }
-@media (max-width: 993px) {
+@media (max-width: 991px) {
   .btn-add-caption {
     bottom: 7px;
   }
