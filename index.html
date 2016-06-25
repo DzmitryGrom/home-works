@@ -1038,15 +1038,11 @@
             //// Кнопки Pop-up
           
           
-			$('#show_button').on("click", function(){
+			$('.navbar-toggle').on("click", function(){
 				$(".btn-togle-list").toggleClass("show");
 				$("#show_button").toggleClass("hidden");
 			})
-			$('#closet-button').on("click", function(){
-				$(".btn-togle-list").removeClass("show");
-				$("#show_button").toggleClass("hidden");
-               
-			})
+		
 			$(".btn-call-me").on("click", function(){
 				$(".pop-up-call_me").toggleClass("show");
                
