@@ -734,6 +734,7 @@ a.navbar-brand {
   }
   .navbar-header-top_evaluation {
     font-size: 10px;
+    vertical-align: middle;
   }
 }
 @media (min-width: 1251px) {
