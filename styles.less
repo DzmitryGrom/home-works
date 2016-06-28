@@ -18,8 +18,14 @@ a:focus{
 }
 .form-control:focus{
   outline: none!important;
-  border: 1px solid #7f8892!important;
+
   box-shadow: none!important;
+}
+.content-box-select .form-control:focus{
+  border: 1px solid #7f8892!important;
+}
+.pop-up select:focus{
+   border: 1px solid #7f8892!important;
 }
 .form-control{
   box-shadow: none;
@@ -1783,7 +1789,7 @@ a.navbar-brand{
 
 @media (min-width: 1200px){
   .content-box-advantages{
-    width: 1170px;
+    width: 100%;
     margin: 0 auto;
   }
 }
