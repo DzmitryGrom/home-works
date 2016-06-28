@@ -346,7 +346,19 @@ button.btn-togle{
   right: 0;
   display: none;
 }
-
+select.form-control{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background-image: url(../img/arrow_select.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+select::-ms-expand{
+  display:none;
+}
 select.input-no-padding_l{
   padding-left: 10px;
 }
