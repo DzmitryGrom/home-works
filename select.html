@@ -10,36 +10,35 @@
   <link rel="stylesheet" href="css/select.css">
 </head>
 <body>
-   <div class="bg"></div>
   <!-- nav --> 
   <nav class="navbar navbar-default">
-        <div class="navbar-header-top">
-            <a class="navbar-brand" href="#"></a>
-            <div class="navbar-header-top_box-location">
-                <a href="#">
-                    <i class=" fa fa-map-marker" aria-hidden="true"></i>
-                    <span class="navbar-header-top_box-location-text">Ваш город:</span>
-                    <span class="navbar-header-top_box-location-text text-dotted">Москва<i class=" i_dotted"></i></span>
-                    <i class="navbar-header-top_box-location-text fa fa-angle-down" aria-hidden="true"></i>
-                </a>
-                <span class="navbar-header-top_box-location_number"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 777 77 77</span>	
-            </div>
-            <div class="navbar-header-top_evaluation">
-              <i class="fa fa-check" aria-hidden="true"></i>Средний бал
-              <span class="navbar-header-top_evaluatio-value">4,9</span>
-            
-            </div>
-            <div class="navbar-header-top_buttons">
-               <button type="button" class="btn btn-call-me   btn-pop-up-xl">
-                  <i class="fa fa-mobile" aria-hidden="true"></i>
-                  ПЕРЕЗВОНИТЕ МНЕ
-              </button>
-              <button type="button" class="btn-login btn btn-enter btn-pop-up-xl">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  ЛИЧНЫЙ КАБИНЕТ
-              </button>
-             
-            </div>
+    <div class="navbar-header-top">
+          <a class="navbar-brand" href="#"></a>
+          <div class="navbar-header-top_box-location">
+                  <i class=" fa fa-map-marker" aria-hidden="true"></i>
+                  <span class="navbar-header-top_box-location-text">Ваш город:</span>
+              <a href="#">
+                  <span class="navbar-header-top_box-location-text text-dotted">Москва<i class=" i_dotted"></i></span>
+                  <i class="navbar-header-top_box-location-text fa fa-angle-down" aria-hidden="true"></i>
+              </a>
+              <span class="navbar-header-top_box-location_number"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 777 77 77</span> 
+          </div>
+          <div class="navbar-header-top_evaluation">
+            <i class="fa fa-check" aria-hidden="true"></i>Средний бал
+            <span class="navbar-header-top_evaluatio-value">4,9</span>
+          
+          </div>
+          <div class="navbar-header-top_buttons">
+             <button  type="button" class="btns btn-call-me btn-pop-up-xl">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                ПЕРЕЗВОНИТЕ МНЕ
+            </button>
+            <button type="button" class="btn-login  btn-enter btn-pop-up-xl">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                ЛИЧНЫЙ КАБИНЕТ
+            </button>
+          </div>
+      </div>
        	</div> 
         <div class="container-fluid navbar-header-bottom">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -83,21 +82,19 @@
   </nav>
   <!-- Breadcrumb -->
   <div class="content-box-breadcrumb">
-    <p>
-      <span class="content-box-breadcrumb-text"><i class="fa fa-home" aria-hidden="true"></i>Главная<i class="fa fa-angle-right" aria-hidden="true"></i></span><span class="content-box-breadcrumb-text_active">Оформление заявки</span>
-    </p>
+      <a href="#" class="content-box-breadcrumb-text"><i class="fa fa-home" aria-hidden="true"></i>Главная<i class="fa fa-angle-right" aria-hidden="true"></i></a><span class="content-box-breadcrumb-text_active">Оформление заявки</span>
   </div>
-   <!-- content-box-select-->    
+  <!-- content-box-select-->    
   <div class="content-box-select">
-        	<div class="container">
-        		<div class="row">
-        			<div class="col-xs-12 col-sm-12 text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 text-center">
                       <h3 class="content-box-select-caption-text-top">ОДИН ИЗ ЛИДЕРОВ РЫНКА РОСИИ</h3>
-        		      <h2 class="content-box-select-caption-text-middle">Оформить заявку</h2>
-        		      <h4 class="content-box-select-caption-text-bottom">Вы просто оставляете заявку,а все остальное делаем мы!</h4>
-        			</div>
-        		</div>
-        		<form>
+                  <h2 class="content-box-select-caption-text-middle">Оформить заявку</h2>
+                  <h4 class="content-box-select-caption-text-bottom">Вы просто оставляете заявку,а все остальное делаем мы!</h4>
+              </div>
+            </div>
+            <form>
                   <div class="row">
                       <div class="col-xs-12 col-sm-4 col-md-4 form-item">
                         
@@ -117,7 +114,7 @@
                           </select>
                       </div>
                       <div class="col-xs-12 col-sm-4 col-md-4">
-                           <select class="form-control input-lg input-no-padding_l">
+                           <select class="form-control input-lg input-no-padding_l form-item_last-child">
                             <option>Тема предмета</option>
                             <option>Молекулярная физика</option>
                             <option>Избавление от ирроциональности</option>
@@ -138,19 +135,18 @@
                      
                   </div>
                   <div class="row">
-                       <div class="col-xs-12  col-md-12 text-center">
-                          <button type="button" class="btn btn-danger btn-lg btn-send">Отправить заявку</button>
-                          <div  class="btn-add-caption">
+                       <div class="col-xs-12  col-md-12 text-center content-box-select_box-bottom">
+                          <button type="button" class="btns btn-send">Отправить заявку</button>
+                          <label  class="btn-add-caption">
                               <i class="fa fa-paperclip btn-add-caption-icon"></i>
                               <input class="btn-add-caption-element" type="file" name="photo" multiple accept="image/*,image/jpeg">
                               <span class="btn-add-caption-text">Прикрепить файл</span>
-                          </div>
+                          </label>
                       </div>
                   </div>
               </form>
-        	</div>
+          </div>
         </div>
-  
   <!-- content-box-reklam -->
   <div class="content-box-reklam">
        <div id="navbtns">
@@ -160,66 +156,134 @@
       <div class="container">
         <div  class="content-box-reklam-list">
           <div class="crsl-items" data-navigation="navbtns" style="width: 100%;">
-            <div class="crsl-wrap" style="width: 1752px; margin-left: -292px;">
-                <div id="btnVisa" class=" crsl-item content-box-reklam-list-item" style="position: relative; float: left; height: 414px; width: 292px; margin-right: 0px;">
-                   <div class="content-box-reklam-list-item_sub-item">
+            <div  class="crsl-wrap crsl-wrap_block" style="width: 1752px; margin-left: -292px;">
+                <div id="btnVisa" class="crsl-item content-box-reklam-list-item content-box-reklam-list-item_block" style="position: relative; float: left; height: 414px; width: 292px; margin-right: 0px;">
+                  <div class="content-box-reklam-list-item_sub-item">
                       <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ VISA</h3>
                       <p class="content-box-reklam-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашей банковской карточки</p>
                       <div class="content-box-reklam-list-item-icon-box"><i class="i i_visa_act"></i></div>
-                   </div>
-                  <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ VISA</h3>
-                  <div class="content-box-reklam-list-item-icon-box"><i class="i i_visa"></i></div>
+                  </div>
+                  <div  class="content-box-reklam-list-item_active-item">
+                    <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ VISA</h3>
+                    <div class="content-box-reklam-list-item-icon-box"><i class="i i_visa"></i></div>
+                  </div>
                 </div>
-                <div class="crsl-item content-box-reklam-list-item crsl-active" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                <div id="btnMts" class="crsl-item content-box-reklam-list-item crsl-active content-box-reklam-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                  <div class="content-box-reklam-list-item_sub-item">
+                      <h3 class="content-box-reklam-list-item-text">ОПЕРАТОР СВЯЗИ МТС</h3>
+                      <p class="content-box-reklam-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                      <div class="content-box-reklam-list-item-icon-box"><i class="i i_mts_act"></i></div>
+                  </div>
+                  <div class="content-box-reklam-list-item_active-item">  
                     <h3 class="content-box-reklam-list-item-text">ОПЕРАТОР СВЯЗИ МТС</h3>
                     <div  class="content-box-reklam-list-item-icon-box"><i class="i i_mts"></i></div>
+                  </div>                
                 </div>
                 <!-- post #1 -->
-                <div class="crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                  <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ MASTERCARD</h3>
-                  <div  class="content-box-reklam-list-item-icon-box"><i class="i i_mc"></i></div>
+                <div id="btnMc" class="crsl-item content-box-reklam-list-item content-box-reklam-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                  <div class="content-box-reklam-list-item_sub-item">
+                      <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ MASTERCARD</h3>
+                      <p class="content-box-reklam-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашей банковской карточки</p>
+                      <div class="content-box-reklam-list-item-icon-box"><i class="i i_mc i_mc-act"></i></div>
+                  </div>
+                  <div class="content-box-reklam-list-item_active-item">  
+                    <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ MASTERCARD</h3>
+                    <div  class="content-box-reklam-list-item-icon-box"><i class="i i_mc"></i></div>
+                  </div>                
                 </div>
                 <!-- post #2 -->
-                <div class="crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                   <h3 class="content-box-reklam-list-item-text">ОПЕРАТОР СВЯЗИ МЕГАФОН</h3>
-                   <div  class="content-box-reklam-list-item-icon-box"><i class="i i_mg"></i></div>
+                <div id="btnMg" class="crsl-item content-box-reklam-list-item content-box-reklam-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                  <div class="content-box-reklam-list-item_sub-item">
+                      <h3 class="content-box-reklam-list-item-text">ОПЕРАТОР СВЯЗИ МЕГАФОН</h3>
+                      <p class="content-box-reklam-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                      <div class="content-box-reklam-list-item-icon-box"><i class="i i_mg_act"></i></div>
+                  </div>
+                  <div class="content-box-reklam-list-item_active-item">   
+                     <h3 class="content-box-reklam-list-item-text">ОПЕРАТОР СВЯЗИ МЕГАФОН</h3>
+                     <div  class="content-box-reklam-list-item-icon-box"><i class="i i_mg"></i></div>
+                  </div>                
                 </div>
                 <!-- post #3 -->
-                <div class=" crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                   <h3 class="content-box-reklam-list-item-text">САЛОН СОТОВОЙ СВЯЗИ ЕВРОСЕТЬ</h3>
-                   <div  class="content-box-reklam-list-item-icon-box"><i class="i i_evr"></i></div>
+                <div id="btnEvr" class=" crsl-item content-box-reklam-list-item content-box-reklam-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                  <div class="content-box-reklam-list-item_sub-item">
+                      <h3 class="content-box-reklam-list-item-text">САЛОН СОТОВОЙ СВЯЗИ ЕВРОСЕТЬ</h3>
+                      <p class="content-box-reklam-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                      <div class="content-box-reklam-list-item-icon-box"><i class="i i_evr i_evr-act"></i></div>
+                  </div>
+                  <div class="content-box-reklam-list-item_active-item">   
+                     <h3 class="content-box-reklam-list-item-text">САЛОН СОТОВОЙ СВЯЗИ ЕВРОСЕТЬ</h3>
+                     <div  class="content-box-reklam-list-item-icon-box"><i class="i i_evr"></i></div>
+                  </div>
                 </div>
                 <!-- post #4 -->
-                <div class=" crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                   <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ GIWI КОШЕЛЕК</h3>
-                   <div  class="content-box-reklam-list-item-icon-box"><i class="i i_giwi"></i></div>
+                <div id="btnGiwi" class=" crsl-item content-box-reklam-list-item content-box-reklam-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                  <div class="content-box-reklam-list-item_sub-item">
+                      <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ GIWI КОШЕЛЕК</h3>
+                      <p class="content-box-reklam-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                      <div class="content-box-reklam-list-item-icon-box"><i class="i i_giwi_act"></i></div>
+                  </div>
+                  <div class="content-box-reklam-list-item_active-item">
+                     <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ GIWI КОШЕЛЕК</h3>
+                     <div  class="content-box-reklam-list-item-icon-box"><i class="i i_giwi"></i></div>
+                  </div>
                 </div>
                 <!-- post #5 -->
-                 <div class=" crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                   <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖИ ЯНДЕКС.ДЕНЬГИ</h3>
-                   <div  class="content-box-reklam-list-item-icon-box"><i class="i i_yandex"></i></div>
+                 <div id="btnYandex" class=" crsl-item content-box-reklam-list-item content-box-reklam-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                    <div class="content-box-reklam-list-item_sub-item">
+                      <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖИ ЯНДЕКС.ДЕНЬГИ</h3>
+                      <p class="content-box-reklam-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                      <div class="content-box-reklam-list-item-icon-box"><i class="i i_yandex_act"></i></div>
+                    </div>
+                    <div class="content-box-reklam-list-item_active-item">
+                      <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖИ ЯНДЕКС.ДЕНЬГИ</h3>
+                      <div  class="content-box-reklam-list-item-icon-box"><i class="i i_yandex"></i></div>
+                    </div>
                 </div>
               <!-- post #6 -->
-                <div class=" crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                   <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ WEBMONEY</h3>
-                   <div  class="content-box-reklam-list-item-icon-box"><i class="i i_webmoney"></i></div>
+                <div id="btnWebmoney" class=" crsl-item content-box-reklam-list-item content-box-reklam-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                  <div class="content-box-reklam-list-item_sub-item">
+                      <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ WEBMONEY</h3>
+                      <p class="content-box-reklam-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                      <div class="content-box-reklam-list-item-icon-box"><i class="i i_webmoney_act"></i></div>
+                  </div>
+                  <div class="content-box-reklam-list-item_active-item">    
+                      <h3 class="content-box-reklam-list-item-text">ПЛАТЕЖ WEBMONEY</h3>
+                      <div  class="content-box-reklam-list-item-icon-box"><i class="i i_webmoney"></i></div>
+                  </div>
                 </div>
                 <!-- post #7 -->
-                <div class=" crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                   <h3 class="content-box-reklam-list-item-text">ОПЛАТА ЧЕРЕЗ БАНК</h3>
-                   <div  class="content-box-reklam-list-item-icon-box"><i class="i i_bank"></i></div>
+                <div id="btnBank" class=" crsl-item content-box-reklam-list-item content-box-reklam-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                  <div class="content-box-reklam-list-item_sub-item">
+                      <h3 class="content-box-reklam-list-item-text">ОПЛАТА ЧЕРЕЗ БАНК</h3>
+                      <p class="content-box-reklam-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                      <div class="content-box-reklam-list-item-icon-box"><i class="i i_bank_act"></i></div>
+                  </div>
+                  <div class="content-box-reklam-list-item_active-item">
+                      <h3 class="content-box-reklam-list-item-text">ОПЛАТА ЧЕРЕЗ БАНК</h3>
+                     <div  class="content-box-reklam-list-item-icon-box"><i class="i i_bank"></i></div>
+                  </div>
                 </div>
                 <!-- post #8 -->
-                <div class=" crsl-item content-box-reklam-list-item" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                   <h3 class="content-box-reklam-list-item-text">НАЛИЧНЫЕ ДЕНЬГИ</h3>
-                   <div  class="content-box-reklam-list-item-icon-box"><i class="i i_money"></i></div>
+                <div id="btnMoney" class=" crsl-item content-box-reklam-list-item content-box-reklam-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                  <div class="content-box-reklam-list-item_sub-item">
+                      <h3 class="content-box-reklam-list-item-text">НАЛИЧНЫЕ ДЕНЬГИ</h3>
+                      <p class="content-box-reklam-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                      <div class="content-box-reklam-list-item-icon-box"><i class="i i_money_act"></i></div>
+                  </div>
+                  <div class="content-box-reklam-list-item_active-item">
+                     <h3 class="content-box-reklam-list-item-text">НАЛИЧНЫЕ ДЕНЬГИ</h3>
+                     <div  class="content-box-reklam-list-item-icon-box"><i class="i i_money"></i></div>
+                  </div>
                 </div>
             </div><!-- @end .crsl-wrap -->
           </div><!-- @end .crsl-items -->
         </div>
-       
+        <div class="content-box-reklam-text-bottom">
+          <span>И многие другие способы оплаты...</span>
+        </div>
       </div>
     </div>
+   
   <!-- footer -->
   <div class="footer">
           <div class="container">
@@ -352,101 +416,90 @@
   <script src="bootstrap/js/bootstrap.js"></script>
   <script  src="jquery/responsiveCarousel.min.js"></script>
       <script>
-      $(document).ready(function(){
+        $(document).ready(function(){
      
             //// Кнопки Pop-up
           
           
-			$('#show_button').on("click", function(){
-				$(document).find(".btn-togle-list").toggleClass("show");
-				$(document).find("#show_button").toggleClass("hidden");
-			})
-			$('#closet-button').on("click", function(){
-				$(document).find(".btn-togle-list").removeClass("show");
-				$(document).find("#show_button").toggleClass("hidden");
-               
-			})
-			$(".btn-call-me").on("click", function(){
-				$(".pop-up-call_me").toggleClass("show");
-               
-			})
-            $(".btn-login").on("click", function(){
-                $(".pop-up-login").toggleClass("show");
-               
-            }) 
-            
-          ////актив слайдера
-            $("#btnVisa").on("click", function(){
-               
-              
-            }) 
-            
+  			$('#show_button').on("click", function(){
+  				$(document).find(".btn-togle-list").toggleClass("show");
+  				$(document).find("#show_button").toggleClass("hidden");
+  			})
+  			$('#closet-button').on("click", function(){
+  				$(document).find(".btn-togle-list").removeClass("show");
+  				$(document).find("#show_button").toggleClass("hidden");
+                 
+  			})
+  			$(".btn-call-me").on("click", function(){
+  				$(".pop-up-call_me").toggleClass("show");
+                 
+  			})
+        $(".btn-login").on("click", function(){
+            $(".pop-up-login").toggleClass("show");
            
+        }) 
             
-          /// Скрытие Pop-up
-		
+        ////актив слайдера
+        $(".content-box-reklam-list-item_active-item").on("click", function(){
+            $(this).parent().find(".content-box-reklam-list-item_sub-item").css("display","block");
+        })
+
+          
+           /// Скрытие слайдера актив
+    
             $(document).mouseup(function (e){
-                var toggleMenu = $(".pop-up"); 
+                var toggleMenu = $(".content-box-reklam-list-item_sub-item"); 
                 if (!toggleMenu.is(e.target)
                     && toggleMenu.has(e.target).length === 0) { 
-                    toggleMenu.removeClass("show");
+                    toggleMenu.css("display","");
                 }
-                $(".btn-pop-up").on("click", function(){
-                    toggleMenu.removeClass("show");
-                })
            });
-          
-          ///Кнопка Up
-          
-            $( document ).ready(function() {
-                  $('#btn-up').mouseover( function(){
-                      $( this ).animate({opacity: 0.65},100);
-                  }).mouseout( function(){
-                      $( this ).animate({opacity: 1},100);
-                  }).click( function(){
-                      window.scroll(0 ,0); 
-                      return false;
-                  });
 
-                  $(window).scroll(function(){
-                      if ( $(document).scrollTop() > 0 ) {
-                          $('#btn-up').fadeIn('fast');
-                      } else {
-                          $('#btn-up').fadeOut('fast');
-                      }
-                  });
+
+          /// Скрытие Pop-up
+		
+          $(document).mouseup(function (e){
+              var toggleMenu = $(".pop-up"); 
+              if (!toggleMenu.is(e.target)
+                  && toggleMenu.has(e.target).length === 0) { 
+                  toggleMenu.removeClass("show");
+              }
+              $(".btn-pop-up").on("click", function(){
+                  toggleMenu.removeClass("show");
+              })
+         });
+          
+        ///Кнопка Up
+          
+        $( document ).ready(function() {
+              $('#btn-up').mouseover( function(){
+                  $( this ).animate({opacity: 0.65},100);
+              }).mouseout( function(){
+                  $( this ).animate({opacity: 1},100);
+              }).click( function(){
+                  window.scroll(0 ,0); 
+                  return false;
               });
+
+              $(window).scroll(function(){
+                  if ( $(document).scrollTop() > 0 ) {
+                      $('#btn-up').fadeIn('fast');
+                  } else {
+                      $('#btn-up').fadeOut('fast');
+                  }
+              });
+          });
             
        
                 
-           
-              $(function(){
-                $('.crsl-items').cacheli({
-                  visible: 4,
-                  itemMinWidth: 285,
-                  itemEqualHeight: 414,
-                });
-
-               ;
-              });
-
-
-                     
-           function checkWidth() {
-        var windowSize = $(window).width();
-            console.log(windowSize)
-        if (windowSize <= 768) {
-            $(".content-box-reklam-list-item").addClass("content-box-reklam-list-item_block");
-             $(".crsl-wrap").addClass("crsl-wrap_block");
-          
-        }
-       
-    }
-      // Execute on load
-      checkWidth();
-      // Bind event listener
-      $(window).resize(checkWidth);
-          
+        /// slider
+        $(function(){
+          $('.crsl-items').cacheli({
+            visible: 4,
+            itemMinWidth: 285,
+            itemEqualHeight: 414,
+          });
+        });
 
       });
 	</script>
