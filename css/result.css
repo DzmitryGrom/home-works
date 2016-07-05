@@ -29,6 +29,16 @@ a:focus {
   box-shadow: none;
   webkit-box-shadow: none;
 }
+.btn,
+a,
+.content-box-percent-item,
+.content-box-reklam-list-item,
+.btn-add-caption,
+.content-box-work-list-item i,
+.content-box-work-list-item_text span,
+.content-box-reviews_box-middle_arrows-list-item {
+  transition: all .3s;
+}
 .row-margin {
   margin: 0px 1px 0px 1px;
 }
@@ -375,13 +385,13 @@ select:focus {
 }
 .btn-call-me:hover {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #65beee;
+  opacity: .7;
 }
 .btn-login:hover {
   color: #fff;
-  background-color: #65a4cd;
-  border-color: #65a4cd;
+  background-color: #383760;
+  opacity: .9;
 }
 /* icon */
 .i {
@@ -510,7 +520,7 @@ select:focus {
 }
 .navbar-header-top_box-location {
   display: inline-block;
-  padding: 15px 10px 15px 37px;
+  padding: 16px 10px 15px 37px;
   margin-top: 0px;
   width: 27%;
   vertical-align: top;
@@ -602,7 +612,7 @@ a.navbar-brand {
 .navbar-default .navbar-nav .active a {
   background-color: transparent;
   border-bottom: 1px dashed #fff;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   color: #fff;
   font-weight: bold;
 }
