@@ -36,6 +36,12 @@ a,
 .btn-add-caption,
 .content-box-work-list-item i,
 .content-box-work-list-item_text span,
+.btn-call-me,
+.btn-login,
+.btns-send-pop-up,
+.pop-up,
+.btn-red,
+.btn-send,
 .content-box-reviews_box-middle_arrows-list-item {
   transition: all .3s;
 }
@@ -960,13 +966,16 @@ a.navbar-brand {
     text-align: center;
     display: block;
     width: 100%;
-    margin-bottom: 14px;
+    margin-bottom: 13px;
+  }
+  .content-box-percent .content-box-percent-item.content-box-percent-item_second {
+    margin-bottom: 11px;
   }
   .content-box-percent a.price {
     margin-top: 9px;
   }
   .content-box-percent {
-    padding: 2px 13px 0px 13px;
+    padding: 8px 13px 0px 13px;
   }
 }
 .content-box-percent-item:hover {
@@ -1214,8 +1223,8 @@ a.navbar-brand {
   .content-box-reklam-list {
     text-align: center;
     height: auto;
-    margin-top: 81px;
-    height: 1715px;
+    margin-top: 84px;
+    height: 1716px;
     overflow: hidden;
   }
   .content-box-reklam-list-item {

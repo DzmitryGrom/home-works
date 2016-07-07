@@ -29,8 +29,13 @@ a:focus {
 a,
 .content-box-percent-item,
 .content-box-reklam-list-item,
-.btn-add-caption,
+.content-box-label-list-item .btn-add-caption,
 .content-box-work-list-item i,
+.btn-add-caption-text,
+.btn-call-me,
+.btn-login,
+.btn-send,
+.pop-up,
 .content-box-work-list-item_text span,
 .content-box-reviews_box-middle_arrows-list-item {
   transition: all .3s;
@@ -405,15 +410,15 @@ select::-ms-expand {
 select.input-no-padding_l {
   padding-left: 10px;
 }
-button.btn-default.content-box-reklam_btn-top:hover {
+button.btn-default.content-box-label_btn-top:hover {
   background-color: #65beee;
   color: #fff;
 }
-button.btn-default.content-box-reklam_btn-top:focus {
+button.btn-default.content-box-label_btn-top:focus {
   color: #fff;
   background-color: #357598;
 }
-a.btn-default.content-box-reklam_btn-top:active {
+a.btn-default.content-box-label_btn-top:active {
   background-color: #357598;
 }
 input,
@@ -489,7 +494,7 @@ select:focus {
   background-image: url(../img/mts.png);
   width: 75px;
   height: 75px;
-  margin-right: 6px;
+  margin-right: 5px;
   margin-bottom: -3px;
 }
 .i_mc {
@@ -501,7 +506,7 @@ select:focus {
 }
 .i_mc-act {
   margin-bottom: -2px;
-  margin-right: -1px;
+  margin-right: -2px;
 }
 .i_mg {
   background-image: url(../img/megafon.png);
@@ -523,7 +528,7 @@ select:focus {
   margin-top: -30px;
 }
 .i_evr-act {
-  margin-right: -5px;
+  margin-right: -7px;
 }
 .i_giwi {
   background-image: url(../img/giwi.png);
@@ -560,6 +565,7 @@ select:focus {
   background-image: url(../img/yandex_act.png);
   width: 88px;
   height: 103px;
+  margin-right: -3px;
 }
 .i_bank {
   background-image: url(../img/bank.png);
@@ -571,7 +577,7 @@ select:focus {
   background-image: url(../img/bank_act.png);
   width: 78px;
   height: 76px;
-  margin-right: 6px;
+  margin-right: 2px;
 }
 .i_money {
   background-image: url(../img/money.png);
@@ -594,9 +600,12 @@ select:focus {
   border: none;
   text-align: center;
 }
+.navbar-collapse {
+  text-align: left;
+}
 .navbar-header-top_box-location {
   display: inline-block;
-  padding: 16px 10px 15px 37px;
+  padding: 15px 10px 15px 37px;
   margin-top: 0px;
   width: 27%;
   vertical-align: top;
@@ -797,6 +806,8 @@ a.navbar-brand {
   .navbar-nav {
     text-align: center;
     float: none;
+    display: inline-block;
+    margin-left: 39px;
   }
   .navbar-nav > li {
     display: inline-block;
@@ -813,7 +824,7 @@ a.navbar-brand {
     display: none;
   }
 }
-@media (max-width: 1215px) {
+@media (max-width: 1199px) {
   .navbar-nav > li {
     padding: 10px 15px 0px 12px;
   }
@@ -881,7 +892,7 @@ a.navbar-brand {
   margin: 0px 15px 0px 15px;
 }
 .content-box-breadcrumb {
-  padding: 8px 0px 8px 115px;
+  padding: 8px 0px 8px 80px;
 }
 @media (max-width: 768px) {
   .content-box-breadcrumb {
@@ -993,67 +1004,68 @@ a.navbar-brand {
     bottom: 7px;
   }
 }
-/* content-box-reklam */
-.content-box-reklam-list {
+/* content-box-label */
+.content-box-label-list {
   margin-top: -105px;
 }
-.content-box-reklam-list-item_active-item {
+.content-box-label-list-item_active-item {
   background-color: #fff;
   padding: 27px 0px 0px 0px;
   border: 1px solid #e6e6e6;
+  border-right: none;
   position: absolute;
   height: 100px;
   left: 0;
   right: 0;
   bottom: 0;
 }
-.content-box-reklam-text-bottom {
+.content-box-label-text-bottom {
   display: none;
 }
-#btnVisa .content-box-reklam-list-item_sub-item {
+#btnVisa .content-box-label-list-item_sub-item {
   background-color: #11357e;
 }
-#btnMts .content-box-reklam-list-item_sub-item {
+#btnMts .content-box-label-list-item_sub-item {
   background-color: #ff0000;
 }
-#btnMc .content-box-reklam-list-item_sub-item {
+#btnMc .content-box-label-list-item_sub-item {
   background-color: #11357e;
 }
-#btnMc .content-box-reklam-list-item_sub-item .content-box-reklam-list-item-icon-box {
+#btnMc .content-box-label-list-item_sub-item .content-box-label-list-item-icon-box {
   padding: 0;
   margin-left: 8px;
   margin-bottom: -18px;
 }
-#btnMg .content-box-reklam-list-item_sub-item {
+#btnMg .content-box-label-list-item_sub-item {
   background-color: #179f5c;
 }
-#btnEvr .content-box-reklam-list-item_sub-item {
+#btnEvr .content-box-label-list-item_sub-item {
   background-color: #ffc60e;
   color: #3d4955;
 }
-#btnEvr .content-box-reklam-list-item_sub-item .content-box-reklam-list-item-icon-box {
+#btnEvr .content-box-label-list-item_sub-item .content-box-label-list-item-icon-box {
   bottom: -20px;
 }
-#btnYandex .content-box-reklam-list-item_sub-item .content-box-reklam-list-item-icon-box {
+#btnYandex .content-box-label-list-item_sub-item .content-box-label-list-item-icon-box {
   bottom: -13px;
 }
-#btnGiwi .content-box-reklam-list-item_sub-item {
+#btnGiwi .content-box-label-list-item_sub-item {
   background-color: #ff9e16;
 }
-#btnYandex .content-box-reklam-list-item_sub-item {
+#btnYandex .content-box-label-list-item_sub-item {
   background-color: #ffcc00;
   color: #3d4955;
 }
-#btnWebmoney .content-box-reklam-list-item_sub-item {
+#btnWebmoney .content-box-label-list-item_sub-item {
   background-color: #006ab4;
 }
-#btnBank .content-box-reklam-list-item_sub-item {
+#btnBank .content-box-label-list-item_sub-item {
   background-color: #00bac1;
 }
-#btnMoney .content-box-reklam-list-item_sub-item {
+#btnMoney .content-box-label-list-item_sub-item {
   background-color: #e89912;
 }
-.content-box-reklam-list-item_sub-item {
+.content-box-label-list-item_sub-item {
   display: none;
   position: absolute;
   bottom: 0;
@@ -1064,15 +1076,15 @@ a.navbar-brand {
   height: 215px;
   z-index: 10;
 }
-.content-box-reklam-list-item_sub-item h3 {
+.content-box-label-list-item_sub-item h3 {
   color: #fff;
   padding-top: 20px;
 }
-#btnEvr .content-box-reklam-list-item_sub-item h3,
-#btnYandex .content-box-reklam-list-item_sub-item h3 {
+#btnEvr .content-box-label-list-item_sub-item h3,
+#btnYandex .content-box-label-list-item_sub-item h3 {
   color: #3d4955;
 }
-.content-box-reklam-list-item_sub-item .content-box-reklam-list-item-icon-box {
+.content-box-label-list-item_sub-item .content-box-label-list-item-icon-box {
   display: block;
   position: absolute;
   bottom: 0;
@@ -1080,10 +1092,10 @@ a.navbar-brand {
   text-align: right;
   padding-right: 15px;
 }
-.content-box-reklam-list-item_active-item:hover {
+.content-box-label-list-item_active-item:hover {
   cursor: pointer;
 }
-.content-box-reklam_btn {
+.content-box-label_btn {
   background-color: #7f7f7f;
   color: #fff;
   height: 100px;
@@ -1091,12 +1103,16 @@ a.navbar-brand {
   margin-top: 10px;
 }
 @media (max-width: 768px) {
-  div.content-box-reklam-list-item_block {
+  div.content-box-label-list-item_block {
     position: static!important;
     float: none!important;
     width: 100%!important;
     height: 100px!important;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    padding-top: 0;
+  }
+  .content-box-label-list-item_active-item {
+    border-right: 1px solid #e6e6e6;
   }
   .crsl-wrap_block {
     margin: 0!important;
@@ -1106,13 +1122,13 @@ a.navbar-brand {
   #btnMoney {
     display: none;
   }
-  .content-box-reklam-list {
+  .content-box-label-list {
     text-align: center;
     height: auto;
-    margin-top: 0;
+    margin-top: 25px;
     max-height: 595px;
   }
-  .content-box-reklam-text-bottom {
+  .content-box-label-text-bottom {
     display: block;
     font-size: 18px;
     font-family: "GothamProMedium";
@@ -1121,7 +1137,7 @@ a.navbar-brand {
     text-align: center;
     padding: 25px;
   }
-  .content-box-reklam-list-item {
+  .content-box-label-list-item {
     display: block;
     width: 100%;
   }
@@ -1129,12 +1145,12 @@ a.navbar-brand {
   .next {
     display: none;
   }
-  .content-box-reklam-list-item_active-item {
+  .content-box-label-list-item_active-item {
     position: static;
     font-size: 0;
     overflow: hidden;
   }
-  .content-box-reklam-list-item-text {
+  .content-box-label-list-item-text {
     font-size: 14px;
     font-family: "GothamProBold";
     line-height: 18px;
@@ -1146,35 +1162,35 @@ a.navbar-brand {
     text-align: left;
     vertical-align: top;
   }
-  .content-box-reklam-list-item-icon-box {
+  .content-box-label-list-item-icon-box {
     display: inline-block;
     width: 40%;
     text-align: right;
     padding-right: 25px;
   }
 }
-.content-box-reklam-list-item_information-list {
+.content-box-label-list-item_information-list {
   font-size: 0;
   margin-bottom: 0px;
   margin-top: 15px;
 }
-.content-box-reklam-list-item_information-list-item {
+.content-box-label-list-item_information-list-item {
   width: 33.3%;
   display: inline-block;
   vertical-align: text-top;
 }
 @media (min-width: 768px) {
-  .content-box-reklam-list {
+  .content-box-label-list {
     font-size: 0;
     text-align: center;
     height: 215px;
     position: relative;
   }
-  .content-box-reklam-list-item {
+  .content-box-label-list-item {
     display: inline-block;
     max-width: 360px;
   }
-  .content-box-reklam .container {
+  .content-box-label .container {
     position: relative;
   }
   .previous {
@@ -1189,10 +1205,10 @@ a.navbar-brand {
     z-index: 5;
     padding: 10px 45px 0px 21px;
   }
-  .content-box-reklam .container {
+  .content-box-label .container {
     max-width: 1200px;
   }
-  .content-box-reklam-list-item-text {
+  .content-box-label-list-item-text {
     font-size: 14px;
     font-family: "GothamProBold";
     color: #7f8892;
@@ -1203,29 +1219,29 @@ a.navbar-brand {
     text-align: left;
     padding-left: 21px;
   }
-  .content-box-reklam-list-item-text_bottom {
+  .content-box-label-list-item-text_bottom {
     font-size: 12px;
     font-family: "GothamProRegular";
     padding: 0px 105px 0px 20px;
   }
-  .content-box-reklam-list-item-icon-box {
+  .content-box-label-list-item-icon-box {
     display: inline-block;
     width: 40%;
   }
 }
 @media (max-width: 992px) {
-  .content-box-reklam-list {
+  .content-box-label-list {
     margin-bottom: 2px;
   }
 }
 @media (min-width: 992px) {
-  .content-box-reklam-list-item {
+  .content-box-label-list-item {
     display: inline-block;
     max-width: 313px;
   }
 }
 @media (max-width: 1201px) {
-  .content-box-reklam-list {
+  .content-box-label-list {
     margin-bottom: 2px;
   }
 }
@@ -1234,11 +1250,11 @@ a.navbar-brand {
     padding-right: 12px;
     padding-left: 12px;
   }
-  .content-box-reklam-list-item {
+  .content-box-label-list-item {
     max-width: 292px;
     font-size: 0;
   }
-  .content-box-reklam-list {
+  .content-box-label-list {
     margin-bottom: 3px;
   }
 }
