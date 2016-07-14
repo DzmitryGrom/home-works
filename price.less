@@ -22,7 +22,7 @@ a:focus{
 
   box-shadow: none!important;
 }
-.content-box-select .form-control:focus{
+.content-box-select-details .form-control:focus{
   border: 1px solid #7f8892!important;
 }
 .pop-up select:focus{
@@ -40,7 +40,7 @@ a:focus{
 .content-box-question-container-slider_arrows,
 .content-box-label-list-item_sub-item,
 .pop-up,
-.content-box-select-stox-box-list-item,
+.content-box-select-details-details-stox-box-list-item,
 .btn-send,
 .btn-call-me,
 .btn-login,
@@ -1237,16 +1237,16 @@ a.navbar-brand{
 
 
 
-/* container-fluid content-box-select */
+/* container-fluid content-box-select-details */
 
-.content-box-select .container{
+.content-box-select-details .container{
   padding: 0;
   margin: 0;
   width: 100%;
   overflow: hidden;
   font-size: 0;
 }
-.content-box-select input, .content-box-select select{
+.content-box-select-details input, .content-box-select-details select{
   font-size: 14px;
   margin-bottom: 10px;
   height: 48px;
@@ -1254,14 +1254,14 @@ a.navbar-brand{
   font-family: "GothamProLight";
   border: 1px solid #7f8892;
 }
-.content-box-select-caption-text-top{
+.content-box-select-details-caption-text-top{
   color: #eb4855;
   font-size: 14px;
   font-family: "GothamProBold";
   word-spacing: 3px;
   margin: 10px 0px 10px 0px;
 }
-.content-box-select-caption-text-middle{
+.content-box-select-details-caption-text-middle{
   margin: 0;
   color: #3d4955;
   font-family: "GothamProRegular";
@@ -1270,17 +1270,17 @@ a.navbar-brand{
   font-size: 36px;
   margin: 20px 0px 38px 0px;
 }
-.content-box-select-caption-text-bottom{
+.content-box-select-details-caption-text-bottom{
   color: #3d4955;
   font-size: 14px;
   font-family: "GothamProRegular";
   padding: 0px 32px 0px 32px;
 }
-.content-box-select_box-bottom{
+.content-box-select-details_box-bottom{
   position: relative;
 }
 
-.content-box-select-box_add-file-text{
+.content-box-select-details-box_add-file-text{
   font-size: 14px;
   font-family: "GothamProLight";
   line-height: 24px;
@@ -1288,13 +1288,13 @@ a.navbar-brand{
   width: 95%;
   vertical-align: top;
 }
-.content-box-select-box{
+.content-box-select-details-box{
   padding: 0px 30px;
   display: inline-block;
   width: 65%;
   vertical-align: top;
 }
-.content-box-select-box-text-top{
+.content-box-select-details-box-text-top{
   font-size: 36px;
   font-family: "GothamProLight";
   line-height: 36px;
@@ -1302,7 +1302,7 @@ a.navbar-brand{
   text-align: center;
   margin: 30px 0px 60px 0px;
 }
-.content-box-select-box-text-bottom{
+.content-box-select-details-box-text-bottom{
   font-size: 14px;
   font-family: "GothamProLight";
   line-height: 30px;
@@ -1310,7 +1310,7 @@ a.navbar-brand{
   width: 92%;
   margin: 0 auto;
 }
-.content-box-select-stox-box{
+.content-box-select-details-stox-box{
   background-color: #4e535c;
   text-align: center;
   margin-bottom: 60px;
@@ -1320,61 +1320,77 @@ a.navbar-brand{
   width: 35%;
   vertical-align: top
 }
-.content-box-select-stox-box-list{
+.content-box-select-details-stox-box-list{
   padding: 0;
   margin: 30px 0;
 }
-.content-box-select-stox-box-list-item{
+.content-box-select-details-stox-box-sub-list-item,
+.content-box-select-details-stox-box-list-item{
+  margin-bottom: 8px;
+  list-style-type: none;
+}
+.content-box-select-details-stox-box-sub-list{
+  padding: 0;
+}
+a.content-box-select-details-stox-box-sub-list-item-text{
+  padding-left: 100px;
+}
+.content-box-select-details-stox-box-list-item{
+  list-style: none;
+  text-align: left;
+  position: relative;
+}
+.content-box-select-details-stox-box-list-item-text,.content-box-select-details-stox-box-sub-list-item-text{
   font-size: 14px;
   font-family: "GothamProLight";
   line-height: 30px;
   color: #fff;
-  list-style: none;
-  text-align: left;
-  position: relative;
   padding:0px 0px 0px 80px;
+  display: block;
 }
-.content-box-select-stox-box-list-item-from{
+.content-box-select-details-stox-box-list-item-from{
   position: absolute;
   top: 0;
   right: 30px;
 }
-.content-box-select-stox-box-list-item-from_hot-price{
+.content-box-select-details-stox-box-list-item-from_hot-price{
   background-color: #eb4855;
   border-radius: 12px;
   padding: 0 10px;
   right: 20px;
 }
-.content-box-select-stox-box-list-item-tr{
+.content-box-select-details-stox-box-list-item-tr{
   position: absolute;
   width: 0;
+  top: 0;
   height: 0;
   right: -35px;
   border: 15px solid transparent;
   border-left: 20px solid #65beee;
   display: none;
 }
-.content-box-select-stox-box-list-item_active .content-box-select-stox-box-list-item-tr{
+.text_active>.content-box-select-details-stox-box-list-item-tr{
   display: inline-block;
 }
-.content-box-select-stox-box-list-item_active{
+.text_active{
   background-color: #65beee;
 }
-.content-box-select-stox-box-list-item:hover{
+.content-box-select-details-stox-box-list-item-text:hover{
   background-color: #65beee;
+  color: #fff;
 }
-.content-box-select-stox-box-list-value{
+.content-box-select-details-stox-box-list-value{
   margin-left: 5px;
   font-weight: bold;
 }
-.content-box-select-stox-box-list-value i{
+.content-box-select-details-stox-box-list-value i{
   margin-left: 2px;
 }
 .xs-value{
   width: 80%;
   margin: 0 auto;
 }
-.content-box-select-stox-box_tr{
+.content-box-select-details-stox-box_tr{
   position: absolute;
   width: 0;
   height: 0;
@@ -1384,38 +1400,38 @@ a.navbar-brand{
   border-left: 20px solid #4e535c;
 }
 
-.content-box-select-value-caption{
+.content-box-select-details-value-caption{
   background-color: #f7f7f7;
   margin: 0px 0px 30px 0px;
   border-radius: 2px;
 }
-.content-box-select-box-value-list{
+.content-box-select-details-box-value-list{
   margin-bottom: 65px;
 }
-.content-box-select-value-list-item{
+.content-box-select-details-value-list-item{
   display: inline-block;
   width: 25%;
   padding: 0px 5px 0px 5px;
   text-align: center;
   vertical-align: top;
 }
-.content-box-select-value-list-item-icon i{
+.content-box-select-details-value-list-item-icon i{
   font-size: 17px;
   width: 17px;
   height: 17px;
   color: #4e535c;
 }
-.content-box-select-value-list-item-number{
+.content-box-select-details-value-list-item-number{
   font-size: 16px;
   font-family: "GothamProRegular";
   margin-top: 6px;
   display: block;
   color: #4e535c;
 }
-.content-box-select-value-list-item-number_red{
+.content-box-select-details-value-list-item-number_red{
   color: #da4a56;
 }
-.content-box-select-value-list-item-description{
+.content-box-select-details-value-list-item-description{
   display: inline-block;
   padding: 0px 15px 0px 15px; 
   margin: 0;
@@ -1423,7 +1439,7 @@ a.navbar-brand{
   font-family: "GothamProRegular";
   color: #79828c;
 }
-.content-box-select-value-caption-box-red{
+.content-box-select-details-value-caption-box-red{
   font-size: 14px;
   font-family: "GothamProRegular";
   line-height: 30px;
@@ -1434,7 +1450,7 @@ a.navbar-brand{
   padding: 0px 24px;
   margin-bottom: 30px;
 }
-.content-box-select-value-caption-date{
+.content-box-select-details-value-caption-date{
   font-size: 14px;
   font-family: "GothamProRegular";
   line-height: 30px;
@@ -1444,7 +1460,7 @@ a.navbar-brand{
   text-align: center;
   margin-bottom: 20px;
 }
-.content-box-select-stox-box-percent-value-caption-text{
+.content-box-select-details-stox-box-percent-value-caption-text{
   font-size: 24px;
   font-family: "GothamProLight";
   line-height: 30px;
@@ -1452,7 +1468,7 @@ a.navbar-brand{
   padding: 0px 30px;
   margin: 0px 0px 20px 0px;
 }
-.content-box-select-stox-box-percent-value-caption-percent{
+.content-box-select-details-stox-box-percent-value-caption-percent{
   font-size: 100px;
   font-family: "GothamProLight";
   margin: 0;
@@ -1464,14 +1480,14 @@ a.navbar-brand{
   line-height: 1;
   padding-bottom: 35px;
 }
-.content-box-select .btn-send{
+.content-box-select-details .btn-send{
   padding: 17px 78px;
 }
-.content-box-select form{
+.content-box-select-details form{
   text-align: center;
   margin-top: 65px;
 }
-.content-box-select-text-bottom h3{
+.content-box-select-details-text-bottom h3{
   font-size: 14px;
   font-family: "GothamProRegular";
   line-height: 30px;
@@ -1480,64 +1496,64 @@ a.navbar-brand{
   padding: 0px 70px;
   margin: 0px 0px 60px 0px;
 }
-.content-box-select-stox-box_mobile{
+.content-box-select-details-box_mobile{
   display: none;
 }
 @media(max-width: 550px){
-  span.content-box-select-value-list-item-number{
+  span.content-box-select-details-value-list-item-number{
     width: 100%;
   }
-  span.content-box-select-value-list-item-description{
+  span.content-box-select-details-value-list-item-description{
     width: 100%;
     padding: 0;
   } 
 }
 @media(max-width: 768px){
-  .content-box-select-value-list-item{
+  .content-box-select-details-value-list-item{
     width: 50%;
     margin-bottom: 30px;
   }
-  .content-box-select .btn-send{
+  .content-box-select-details .btn-send{
     width: 100%;
     padding: 17px 0px;
   }
-  .content-box-select-value-list-item-description{
+  .content-box-select-details-value-list-item-description{
     width: 60%;
     margin: 0 auto;
   }
-  .content-box-select-value-list-item-number{
+  .content-box-select-details-value-list-item-number{
     width: 50%;
     margin: 15px auto;
   }
-  .content-box-select-box-value-list{
+  .content-box-select-details-box-value-list{
     margin-bottom: 0;
   }
-  .content-box-select-box-text-top{
+  .content-box-select-details-box-text-top{
     font-size: 24px;
     margin-bottom: 10px;
   }
-  .content-box-select-box-text-bottom{
+  .content-box-select-details-box-text-bottom{
     width: 100%;
   }
 }
 @media(max-width: 920px){
-  .content-box-select-stox-box{
+  .content-box-select-details-stox-box{
     display: block;
     background-color: transparent;
     width: 100%;
     max-width: 100%;
-    padding: 15px 15px 0px 15px;
+    padding: 15px 15px 30px 15px;
     margin-bottom: 0;
   }
-  .content-box-select form{
+  .content-box-select-details form{
     margin: 30px 0;
   }
-  .content-box-select-box{
+  .content-box-select-details-box{
     display: block;
     width: 100%;
     padding: 0 15px;
   }
-  .content-box-select-text-bottom h3{
+  .content-box-select-details-text-bottom h3{
     padding: 0 15px;
     margin-bottom: 15px;
   }
@@ -1545,35 +1561,41 @@ a.navbar-brand{
     display: block;
     margin: 0 auto;
   }
-  .content-box-select-stox-box-list{
+  .content-box-select-details-stox-box-list{
     display: none;
   }
-  .content-box-select-stox-box_mobile{
+  .content-box-select-details-box_mobile{
     display: block;
   }
-  .content-box-select select{
+  .content-box-select-details select{
     margin-bottom: 0;
   }
-  .content-box-select-box-text-bottom{
+  .content-box-select-details-box-text-bottom{
     text-align: center;
   }
 }
 @media(max-width: 1060px){
-  li.content-box-select-stox-box-list-item{
+   li.content-box-select-details-stox-box-list-item a{
     padding-left: 5px;
   }
-  .content-box-select-stox-box-list-item-from{
+  li.content-box-select-details-stox-box-sub-list-item a{
+    padding-left: 20px;
+  }
+  .content-box-select-details-stox-box-list-item-from{
     right: 10px;
   }
-  .content-box-select-stox-box-list-item-from_hot-price{
+  .content-box-select-details-stox-box-list-item-from_hot-price{
     right: 1px;
   }
   
 }
 @media(max-width: 1300px){
-  .content-box-select-stox-box-list-item{
+   .content-box-select-details-stox-box-list-item a{
     padding-left: 30px;
     font-size: 12px;
+  }
+  .content-box-select-details-stox-box-sub-list-item a{
+    padding-left: 60px;
   }
 }
 

@@ -1570,13 +1570,10 @@ a.navbar-brand {
 .content-box-select-details-stox-box-sub-list {
   padding: 0;
 }
-.content-box-select-details-stox-box-list-item,
-.content-box-select-details-stox-box-sub-list-item {
-  list-style-type: none;
-}
 .content-box-select-details-stox-box-sub-list-item,
 .content-box-select-details-stox-box-list-item {
   margin-bottom: 8px;
+  list-style-type: none;
 }
 a.content-box-select-details-stox-box-sub-list-item-text {
   padding-left: 100px;
