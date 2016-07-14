@@ -2235,6 +2235,7 @@ a.navbar-brand {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 1;
 }
 .content-box-label-text-bottom {
   display: none;
@@ -2319,7 +2320,7 @@ a.navbar-brand {
   border: none;
   margin-top: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   div.content-box-label-list-item_block {
     position: static!important;
     float: none!important;
@@ -2327,6 +2328,7 @@ a.navbar-brand {
     height: 100px!important;
     margin-bottom: 15px;
     padding-top: 0;
+    max-width: 100%;
   }
   .content-box-label-list-item_active-item {
     border-right: 1px solid #e6e6e6;
@@ -2339,11 +2341,10 @@ a.navbar-brand {
   #btnMoney {
     display: none;
   }
-  .content-box-label-list {
+  div.content-box-label-list {
     text-align: center;
-    height: auto;
     margin-top: 25px;
-    max-height: 595px;
+    height: 340px;
   }
   .content-box-label-text-bottom {
     display: block;
@@ -2396,7 +2397,7 @@ a.navbar-brand {
   display: inline-block;
   vertical-align: text-top;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .content-box-label-list {
     font-size: 0;
     text-align: center;

@@ -2463,6 +2463,7 @@ div.content-box-select input.btn-add-caption-element {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 1;
 }
 .content-box-label-text-bottom {
   display: none;
@@ -2547,7 +2548,7 @@ div.content-box-select input.btn-add-caption-element {
   border: none;
   margin-top: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   div.content-box-label-list-item_block {
     position: static!important;
     float: none!important;
@@ -2555,6 +2556,7 @@ div.content-box-select input.btn-add-caption-element {
     height: 100px!important;
     margin-bottom: 15px;
     padding-top: 0;
+    max-width: 100%;
   }
   .content-box-label-list-item_active-item {
     border-right: 1px solid #e6e6e6;
@@ -2567,11 +2569,10 @@ div.content-box-select input.btn-add-caption-element {
   #btnMoney {
     display: none;
   }
-  .content-box-label-list {
+  div.content-box-label-list {
     text-align: center;
-    height: auto;
     margin-top: 25px;
-    max-height: 595px;
+    height: 340px;
   }
   .content-box-label-text-bottom {
     display: block;
@@ -2624,7 +2625,7 @@ div.content-box-select input.btn-add-caption-element {
   display: inline-block;
   vertical-align: text-top;
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .content-box-label-list {
     font-size: 0;
     text-align: center;
