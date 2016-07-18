@@ -1263,33 +1263,54 @@ a.navbar-brand {
   vertical-align: top;
 }
 .content-box-select-details-stox-box-list {
-  padding: 0;
   margin: 30px 0;
 }
-.content-box-select-details-stox-box-sub-list-item,
 .content-box-select-details-stox-box-list-item {
   margin-bottom: 8px;
   list-style-type: none;
-}
-.content-box-select-details-stox-box-sub-list {
-  padding: 0;
+  text-align: left;
 }
 a.content-box-select-details-stox-box-sub-list-item-text {
   padding-left: 100px;
 }
-.content-box-select-details-stox-box-list-item {
-  list-style: none;
-  text-align: left;
-  position: relative;
+.content-box-select-details-stox-box-list-item-text-tr {
+  position: absolute;
+  width: 0;
+  top: 0;
+  height: 0;
+  right: -35px;
+  border: 15px solid transparent;
+  border-left: 20px solid #65beee;
+  display: none;
 }
-.content-box-select-details-stox-box-list-item-text,
-.content-box-select-details-stox-box-sub-list-item-text {
+.content-box-select-details-stox-box-list-item-text_active .content-box-select-details-stox-box-list-item-text-hover {
+  display: block;
+}
+.content-box-select-details-stox-box-list-item-text_active .content-box-select-details-stox-box-list-item-text-tr {
+  display: inline-block;
+}
+.content-box-select-details-stox-box-list-item-text {
   font-size: 14px;
   font-family: "GothamProLight";
   line-height: 30px;
   color: #fff;
-  padding: 0px 0px 0px 80px;
+  list-style: none;
+  text-align: left;
+  position: relative;
+  z-index: 1;
   display: block;
+  padding: 0px 0px 0px 40px;
+}
+.content-box-select-details-stox-box-list-item-text-hover {
+  background-color: #65beee;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin-left: -120px;
+  z-index: -1;
+  display: none;
 }
 .content-box-select-details-stox-box-list-item-from {
   position: absolute;
@@ -1302,25 +1323,11 @@ a.content-box-select-details-stox-box-sub-list-item-text {
   padding: 0 10px;
   right: 20px;
 }
-.content-box-select-details-stox-box-list-item-tr {
-  position: absolute;
-  width: 0;
-  top: 0;
-  height: 0;
-  right: -35px;
-  border: 15px solid transparent;
-  border-left: 20px solid #65beee;
-  display: none;
-}
-.text_active > .content-box-select-details-stox-box-list-item-tr {
-  display: inline-block;
-}
-.text_active {
-  background-color: #65beee;
-}
 .content-box-select-details-stox-box-list-item-text:hover {
-  background-color: #65beee;
   color: #fff;
+}
+.content-box-select-details-stox-box-list-item-text:hover .content-box-select-details-stox-box-list-item-text-hover {
+  display: block;
 }
 .content-box-select-details-stox-box-list-value {
   margin-left: 5px;
@@ -1529,10 +1536,13 @@ a.content-box-select-details-stox-box-sub-list-item-text {
   .content-box-select-details-stox-box-list-item-from_hot-price {
     right: 1px;
   }
+  .content-box-select-details-stox-box-list {
+    padding-left: 15px;
+  }
 }
 @media (max-width: 1300px) {
   .content-box-select-details-stox-box-list-item a {
-    padding-left: 30px;
+    padding-left: 0px;
     font-size: 12px;
   }
   .content-box-select-details-stox-box-sub-list-item a {
