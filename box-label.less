@@ -1,17 +1,90 @@
+.i_sprite {
+  background-image: url(../img/sprite.png);
+  width: 3262px;
+  height: 108px;
+}
+.i_visa{
+  background-position: 10px 15px;
+}
+.i_visa_act{
+  background-position: -200px 24px;
+}
+.i_mts{
+  background-position: -396px 9px;
+}
+.i_mts_act{
+  background-position: -396px 18px;
+}
+.i_mc{
+  background-position: -610px 26px;
+}
+.i_mc_act{
+  background-position: -610px 35px
+}
+.i_mg{
+  background-position: -844px 9px;
+}
+.i_mg_act{
+  background-position: -1039px 18px;
+}
+.i_evr{
+  background-position: -1234px 8px;
+}
+.i_evr_act{
+  background-position: -1234px 17px;
+}
+.i_giwi{
+  background-position: -1417px 10px;
+}
+.i_giwi_act{
+  background-position: -1599px 19px;
+}
+.i_yandex{
+  background-position: -1781px 8px;
+}
+.i_yandex_act{
+  background-position: -1978px 14px;
+}
+.i_webmoney{
+  background-position: -2191px 6px;
+}
+.i_webmoney_act{
+  background-position: -2381px 18px;
+}
+.i_bank{
+  background-position: -2563px 5px;
+}
+.i_bank_act{
+  background-position: -2759px 14px;
+}
+.i_money{
+  background-position: -3165px 11px;
+}
+.i_money_act{
+  background-position: -2962px 20px;
+}
 .content-box-label-list{
   margin-top: -105px;
 }
 .content-box-label-list-item_active-item{
   background-color: #fff;
-  padding: 27px 0px 0px 0px;
-  border: 1px solid #e6e6e6;
-  border-right: none;
+  padding: 0px;
+  border-top: 1px solid #e6e6e6;
   position: absolute;
   height: 100px;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 1;
+}
+.content-box-label-list-item_active-item:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 100px;
+  background: #d6d6d6;
 }
 .content-box-label-text-bottom{
   display: none;
@@ -25,23 +98,12 @@
 #btnMc .content-box-label-list-item_sub-item{
   background-color: #11357e;
 }
-#btnMc .content-box-label-list-item_sub-item .content-box-label-list-item-icon-box{
-  padding: 0;
-  margin-left: 8px;
-  margin-bottom: -18px;
-}
 #btnMg .content-box-label-list-item_sub-item{
   background-color: #179f5c;
 }
 #btnEvr .content-box-label-list-item_sub-item{
   background-color: #ffc60e;
   color: #3d4955;
-}
-#btnEvr .content-box-label-list-item_sub-item .content-box-label-list-item-icon-box{
-  bottom: -20px;
-}
-#btnYandex .content-box-label-list-item_sub-item .content-box-label-list-item-icon-box{
-  bottom: -13px;
 }
 #btnGiwi .content-box-label-list-item_sub-item{
   background-color: #ff9e16;
@@ -78,12 +140,10 @@
   color: #3d4955;
 }
 .content-box-label-list-item_sub-item .content-box-label-list-item-icon-box{
-  display: block;
   position: absolute;
   bottom: 0;
-  width: 100%;
   text-align: right;
-  padding-right: 15px;
+  right: 0;  
 }
 .content-box-label-list-item_active-item:hover{
   cursor: pointer;
@@ -105,8 +165,11 @@
     padding-top: 0;
     max-width: 100%;
   }
+  .content-box-label-list-item_active-item:before{
+    content: none;
+  }
   .content-box-label-list-item_active-item{
-    border-right: 1px solid #e6e6e6;
+    border: 1px solid #e6e6e6;
   }
   .crsl-wrap_block{
     margin: 0!important;
@@ -138,7 +201,7 @@
     display: none;
   }
   .content-box-label-list-item_active-item{
-    position: static;
+    position: relative;
     font-size: 0;
     overflow: hidden;
   }
@@ -146,19 +209,20 @@
     font-size: 14px;
     font-family: "GothamProBold";
     line-height: 18px;
-    display: inline-block;
-    width: 60%;
+    display: block;
     color: #7f8892;
-    margin-top: 0;
-    padding-left: 20px;
+    margin-top: 0px;
+    width: 56%;
+    padding: 24px 0px 0px 20px;
     text-align: left;
     vertical-align: top;
   }
   .content-box-label-list-item-icon-box{
     display: inline-block;
-    width: 40%;
-    text-align: right;
-    padding-right: 25px;
+    width: 130px;
+    top: 0;
+    right: 0;
+    position: absolute;
   }
 }
 .content-box-label-list-item_information-list{
@@ -202,16 +266,16 @@
   .content-box-label .container{
     max-width: 1200px;
   }
-   .content-box-label-list-item-text{
+  .content-box-label-list-item-text{
     font-size: 14px;
     font-family: "GothamProBold";
     color: #7f8892;
     display: inline-block;
     vertical-align: top;
-    width: 60%;
-    margin-top: 6px;
+    width: 55%;
+    margin-top: 25px;
     text-align: left;
-    padding-left: 21px;
+    padding-left: 19px;
   }
   .content-box-label-list-item-text_bottom{
     font-size: 12px;
@@ -220,13 +284,16 @@
   }
   .content-box-label-list-item-icon-box{
     display: inline-block;
-    width: 40%;
+    width: 45%;
   }
  
 }
 @media(max-width: 992px){
   .content-box-label-list{
     margin-bottom: 2px;
+  }
+  .crsl-active{
+    margin-right: -1px!important;
   }
 }
 @media(min-width: 992px){
