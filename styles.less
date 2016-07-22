@@ -156,15 +156,15 @@ select.input-no-padding_l{
   padding-left: 10px;
 }
 
-button.btn-default.content-box-reklam_btn-top:hover{
+button.btn-default.content-box-ad_btn-top:hover{
   background-color: #65beee;
   color: #fff;
 }
-button.btn-default.content-box-reklam_btn-top:focus{
+button.btn-default.content-box-ad_btn-top:focus{
   color: #fff;
   background-color: #357598;
 }
-a.btn-default.content-box-reklam_btn-top:active{
+a.btn-default.content-box-ad_btn-top:active{
   background-color: #357598;
   
 }
@@ -530,53 +530,58 @@ input,button,select:focus{
 }
 
 
-/* content-box-reklam */
+/* content-box-ad */
 
-.content-box-reklam{
+.content-box-ad{
   background-image: url(../img/bg_reklam.jpg);
   background-size: cover;
   padding-top: 60px;
 }
 
-.content-box-reklam-list .btn-more a{
+.content-box-ad-list .btn-more a{
   margin-top: 0px;
 }
-.content-box-reklam-list-item{
+.content-box-ad-list-item{
   background-color: #f7fcff;
   padding: 27px 0px 25px 0px;
   border: 1px solid #e6e6e6;
   margin-bottom: 15px;
 }
-.content-box-reklam-list-item:hover{
-  cursor: pointer;
+.content-box-ad-list-item-link{
+  display: block;
+}
+.content-box-ad-list-item-link:hover{
+  cursor: default;
+}
+.content-box-ad-list-item:hover{
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   z-index: 10;
 }
-.content-box-reklam-list-item:hover .content-box-reklam-list-item-text-top{
+.content-box-ad-list-item:hover .content-box-ad-list-item-text-top{
   color: #65beee;
 }
 
-.content-box-reklam .row-margin:first-child{
+.content-box-ad .row-margin:first-child{
   margin-bottom: 30px;
 }
-.content-box-reklam-text-top{
+.content-box-ad-text-top{
   font-size: 24px;
   font-family: "GothamProRegular";
   line-height: 30px;
   margin: 10px;
   letter-spacing: -0.8px;
 }
-.content-box-reklam-text-top-caption{
+.content-box-ad-text-top-caption{
   height: 75px;
   background-color: white;
   position: relative;
 }
-.content-box-reklam-list-item-text-top {
+.content-box-ad-list-item-text-top {
   font-size: 18px;
   font-family: "GothamProBold";
   margin: 15px 0px 15px 0px;
 }
-.content-box-reklam_btn-top{
+.content-box-ad_btn-top{
   background-color: white;
   width: 80px;
   border-radius: 0;
@@ -584,62 +589,62 @@ input,button,select:focus{
   position: absolute;
   z-index: 2;
 }
-.content-box-reklam_btn-top:first-child{
+.content-box-ad_btn-top:first-child{
   left: 0;
 }
-.content-box-reklam_btn-top:last-child{
+.content-box-ad_btn-top:last-child{
   right: 0;
 }
 
-.content-box-reklam_btn-top i{
+.content-box-ad_btn-top i{
   font-size: 22px;
   font-weight: bold;
 }
 
-.content-box-reklam-list-item-price{
+.content-box-ad-list-item-price{
   color: #eb4855;
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 5px;
   margin-top: -2px;
 }
-.content-box-reklam-list-item-price span{
+.content-box-ad-list-item-price span{
   color: #7f8892;
   text-decoration: line-through;
   font-size: 13px;
   margin-left: 5px;
 }
-.content-box-reklam-list-item_information-list{
+.content-box-ad-list-item_information-list{
   font-size: 0;
   margin-bottom: 0px;
   margin-top: 12px;
 }
-.content-box-reklam-list-item_information-list-item{
+.content-box-ad-list-item_information-list-item{
   width: 33.3%;
   display: inline-block;
   vertical-align: text-top;
 }
-.content-box-reklam-list-item_information-list-item-number{
+.content-box-ad-list-item_information-list-item-number{
   font-size: 16px;
   font-family: "GothamProRegular";
   margin-top: 6px;
   display: block;
 }
-.content-box-reklam-list-item_information-list-item-text{
+.content-box-ad-list-item_information-list-item-text{
   font-size: 12px;
   font-family: "GothamProRegular";
   color: #3d4955;
   display: block;
 }
-.content-box-reklam-list-item_information-list-item-text_middle{
+.content-box-ad-list-item_information-list-item-text_middle{
   display: inline-block;
   width: 80%;
   margin: 0;
 }
-.content-box-reklam-list-item .price{
+.content-box-ad-list-item .price{
   margin-top: 21px;
 }
-.content-box-reklam-list-item_information-list-item-icon i{
+.content-box-ad-list-item_information-list-item-icon i{
   font-size: 17px;
   color: #357598;
   width: 17px;
@@ -654,10 +659,10 @@ input,button,select:focus{
 }
 
 @media(max-width: 768px){
-  .content-box-reklam_btn-top{  
+  .content-box-ad_btn-top{  
     display: none;
   }
- .content-box-reklam-list-item_block{
+ .content-box-ad-list-item_block{
     position: static!important;
     float: none!important;
     width: 100%!important;
@@ -671,17 +676,17 @@ input,button,select:focus{
     background-color: transparent;
     color: #3d4955;
   }
-  .content-box-reklam .row-margin:first-child{
+  .content-box-ad .row-margin:first-child{
     position: absolute;
     left: 0;
     right: 0;
     margin: 0;
     color: #3d4955;
   }
-  .content-box-reklam .row-margin:last-child{
+  .content-box-ad .row-margin:last-child{
 	margin-top: 82px;
   }
-  .content-box-reklam{
+  .content-box-ad{
     padding-top: 20px;
   }
   .btn-more{
@@ -689,68 +694,68 @@ input,button,select:focus{
 	margin: 0px 0px 15px 0px;
     padding: 16px 20px;
   }
-  .content-box-reklam .btn-more-caption a
-  .content-box-reklam-list-item:nth-child(4){
+  .content-box-ad .btn-more-caption a
+  .content-box-ad-list-item:nth-child(4){
     margin-bottom: 20px;		
   }
-   .content-box-reklam-list{
+   .content-box-ad-list{
     text-align: center;
     height: auto;
     margin-top: 84px;
     height: 1716px;
     overflow: hidden;
   }
-  .content-box-reklam-list-item{
+  .content-box-ad-list-item{
     display: block;
     width: 100%;
   }
-  .content-box-reklam-text-top{
+  .content-box-ad-text-top{
     margin: 20px 4px 4px 4px;
   }
-  .content-box-reklam-text-top-caption{
+  .content-box-ad-text-top-caption{
     height: 71px;
     margin-top: -2px;
   }
 }
  
 @media(max-width: 361px){
-  h2.content-box-reklam-text-top{
+  h2.content-box-ad-text-top{
     margin: 11px 4px 4px 4px;
     line-height: 25px;
   }
 }
 
 @media(min-width: 768px){
-  .content-box-reklam{
+  .content-box-ad{
     background-image: url(../img/bg2.jpg);
     background-size: cover;
     padding-top: 60px;
   }
-  .content-box-reklam-list{
+  .content-box-ad-list{
     font-size: 0;
     text-align: center;
     height: 414px; /* вместо 414 */
     overflow: hidden;
   }
-  .content-box-reklam-list-item {
+  .content-box-ad-list-item {
     display: inline-block;
     max-width: 284px;
   }
-  .content-box-reklam-text-top{
+  .content-box-ad-text-top{
     font-size: 36px;
     margin-top: 25px;
   }
-  .content-box-reklam-text-top-caption{
+  .content-box-ad-text-top-caption{
     height: 82px;
   }
   .i_diplom{
     margin-top: 0;
   }
-  .content-box-reklam .container{
+  .content-box-ad .container{
     max-width: 1168px;
   }
  
-  .content-box-reklam .btn-more-caption a{
+  .content-box-ad .btn-more-caption a{
     margin-top: 13px;
     font-size: 18px;
   }
@@ -760,16 +765,16 @@ input,button,select:focus{
     padding-right: 0;
     padding-left: 0;
   }
-  .content-box-reklam-list-item{
+  .content-box-ad-list-item{
     max-width: 292px;
   }
-  .content-box-reklam-list-item-text-top{
+  .content-box-ad-list-item-text-top{
     margin: 15px 0px 15px 0px;
   }
   .fa-star, .fa-star-o{
     font-size: 20px;
   }
-  .content-box-reklam .btn-more-caption a{
+  .content-box-ad .btn-more-caption a{
     margin-top: 28px;
   }
 }

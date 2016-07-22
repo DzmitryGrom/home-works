@@ -248,6 +248,12 @@ button.more.btn-enter {
   font-size: 0;
   overflow: hidden;
 }
+.navbar-header-top_box-location a {
+  display: inline-block;
+}
+.navbar-header-top_box-location a:hover {
+  cursor: pointer;
+}
 .navbar-header-top_box-location-text {
   color: black;
   margin-left: 8px;
@@ -308,6 +314,7 @@ a.navbar-brand {
   color: #fff;
   font-family: "GothamProBold";
   line-height: 24px;
+  text-transform: uppercase;
 }
 .in .navbar-nav > li > a {
   color: black;
