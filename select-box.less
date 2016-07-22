@@ -1,0 +1,122 @@
+/* container-fluid content-box-select */
+
+.content-box-select{
+  background-image: url(../img/bg_form.jpg);
+  background-size: cover;
+}
+.content-box-select_without-bg{
+  background-image: none;
+}
+.content-box-select input, .content-box-select select{
+  font-size: 14px;
+  margin-bottom: 10px;
+  height: 48px;
+  padding-left: 20px;
+  font-family: "GothamProLight";
+  border: 1px solid #7f8892;
+}
+.content-box-select-caption-text-top{
+  color: #eb4855;
+  font-size: 14px;
+  font-family: "GothamProBold";
+  word-spacing: 3px;
+  margin: 10px 0px 10px 0px;
+}
+.content-box-select-caption-text-middle{
+  margin: 0;
+  color: #3d4955;
+  font-size: 24px;
+  font-family: "GothamProRegular";
+  word-spacing: -1px;
+  line-height: 30px;
+}
+.content-box-select-caption-text-bottom{
+  color: #3d4955;
+  font-size: 14px;
+  font-family: "GothamProRegular";
+  padding: 0px 32px 0px 32px;
+}
+.content-box-select_box-bottom{
+  position: relative;
+  z-index: 10;
+}
+
+
+@media(max-width: 768px){
+  .btn-send{
+     width: 100%;
+    margin: 34px 0px 12px 0px;
+  }
+   label.btn-add-caption{
+    bottom: 67px;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .btn-add-caption-icon{
+    position: static;
+    margin: 0px;
+  }
+  input[type=file]{
+    display: none;
+  }
+  .btn-add-caption-text{
+    position: static;
+  }    
+  a.btn.btn-retain {
+    width: 100%;
+    text-align: center;
+  }
+  select.form-item_last-child{
+    margin-bottom: 7px;
+  }
+  
+}
+@media(min-width: 768px){
+  .content-box-select{
+    background-image: url(../img/bg2_form.jpg);
+  }
+  .content-box-select_without-bg{
+    background-image: none;
+  }
+  .content-box-select_box-bottom{
+    margin-bottom: 20px;
+  }
+}
+@media(min-width: 992px){
+  .content-box-select-caption-text-middle{
+    font-size: 36px;
+  }
+  .content-box-select_box-bottom{
+    margin-bottom: 0px;
+  }
+  .content-box-select-caption-text-bottom{
+    font-size: 16px;
+  }
+  
+  .btn-add-caption-icon{
+    left: -5px;
+  }
+  .content-box-select-caption-text-top{
+    margin-top: 61px;
+  }
+  .content-box-select-caption-text-bottom{
+    margin-top: 17px;
+  }
+  .content-box-select form{
+    margin-top: 17px;
+    padding: 0px 12px 0px 12px;
+  }
+  .content-box-select form .row{
+    margin-bottom: 20px;
+  }
+  .content-box-select form button.btn-send{
+    margin: 6px 0px 37px 0px;
+  }
+}
+@media(max-width: 991px){
+   .btn-add-caption{
+    bottom: 7px;
+  }
+}

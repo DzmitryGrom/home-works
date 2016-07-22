@@ -422,12 +422,12 @@
   </div>
   <!-- content-box-reviews-->
   <div class="content-box-reviews">
-    	<div class="content-box-reviews_box">
+    	<div class="content-box-reviews_box content-box-reviews_box_with-video">
     		<div class="container">
     			<div class="row">
     				<div class="col-xs-0 col-sm-3 col-md-3"></div>
     				<div class="col-xs-12 col-sm-6 col-md-6 text-center">
-    					<h2 class="content-box-reviews_box-text">Отзывы о HomeWorks 5</h2>
+    					<h2 class="content-box-reviews_box-text ">Отзывы о HomeWorks 5</h2>
     				</div>
     				<div class="col-xs-12 col-sm-3 col-md-3 content-box-reviews_box-btn-caption">
     					<a href="#" class="btns btn-reviews ">НАПИСАТЬ ОТЗЫВ</a>
@@ -941,14 +941,29 @@
             
           /// суб-меню breadcrumb
           
-            $(window).resize(function(){
-              var windowWidth = $(window).width();
-              if(windowWidth > 768) {
+              
+             
                 $(".content-box-breadcrumb-sub-menu_btn").on("click", function(){
                   $(".content-box-breadcrumb-sub-menu").toggleClass("show");
-                }) 
-              }
-            })
+                  
+                })
+                if(screen.width < 768){
+                    $(".content-box-breadcrumb-sub-menu_btn").on("click", function(){
+                      $(".content-box-breadcrumb-sub-menu").addClass("hidden");
+                    })
+                }
+                $(window).on('resize', function () {
+                  $(".content-box-breadcrumb-sub-menu_btn").on("click", function(){
+                    $(".content-box-breadcrumb-sub-menu").toggleClass("show");
+                  
+                  })
+                  if(screen.width < 768){
+                    $(".content-box-breadcrumb-sub-menu_btn").on("click", function(){
+                      $(".content-box-breadcrumb-sub-menu").addClass("hidden");
+                    })
+                  }
+                });
+              
             
             
           

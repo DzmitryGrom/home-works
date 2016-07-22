@@ -84,7 +84,7 @@
       <a href="#" class="content-box-breadcrumb-text"><i class="fa fa-home" aria-hidden="true"></i>Главная<i class="fa fa-angle-right" aria-hidden="true"></i></a><span class="content-box-breadcrumb-text_active">Оформление заявки</span>
   </div>
   <!-- content-box-select-->    
-  <div class="content-box-select">
+  <div class="content-box-select content-box-select_without-bg">
           <div class="container">
             <div class="row">
               <div class="col-xs-12 col-sm-12 text-center">
@@ -436,10 +436,12 @@
         }) 
             
         ////актив слайдера
-        $(".content-box-label-list-item_active-item").on("click", function(){
-            $(this).parent().find(".content-box-label-list-item_sub-item").css("display","block");
-        })
-
+        
+          $(".content-box-label-list-item_active-item").on("click", function(){
+              $(this).parent().find(".content-box-label-list-item_sub-item").css("display","block");
+            
+          })
+    
           
         /// Скрытие слайдера актив
     
