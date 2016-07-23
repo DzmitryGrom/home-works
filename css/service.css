@@ -2962,6 +2962,7 @@ a.social-circle:focus {
   background-color: #fff;
   position: absolute;
   width: 360px;
+  z-index: 10;
   top: 80px;
   display: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);

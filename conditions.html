@@ -1,569 +1,379 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <title>Home work-conditions</title>
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/conditions.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Home work-conditions</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/conditions.css"> 
 </head>
+
 <body>
-  <!-- nav --> 
-  <nav class="navbar navbar-default">
-    <div class="navbar-header-top">
-          <a class="navbar-brand" href="#"></a>
-          <div class="navbar-header-top_box-location">
-                  <i class=" fa fa-map-marker" aria-hidden="true"></i>
-                  <span class="navbar-header-top_box-location-text">Ваш город:</span>
-              <a href="#">
-                  <span class="navbar-header-top_box-location-text text-dotted">Москва<i class=" i_dotted"></i></span>
-                  <i class="navbar-header-top_box-location-text fa fa-angle-down" aria-hidden="true"></i>
-              </a>
-              <span class="navbar-header-top_box-location_number"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 777 77 77</span> 
-          </div>
-          <div class="navbar-header-top_evaluation">
-            <i class="fa fa-check" aria-hidden="true"></i>Средний бал
-            <span class="navbar-header-top_evaluatio-value">4,9</span>
-          
-          </div>
-          <div class="navbar-header-top_buttons">
-             <button  type="button" class="btns btn-call-me btn-pop-up-xl">
-                <i class="fa fa-mobile" aria-hidden="true"></i>
-                ПЕРЕЗВОНИТЕ МНЕ
-            </button>
-            <button type="button" class="btn-login  btn-enter btn-pop-up-xl">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                ЛИЧНЫЙ КАБИНЕТ
-            </button>
-          </div>
+    <!-- nav -->
+    <nav class="navbar navbar-default">
+        <div class="navbar-header-top">
+            <a class="navbar-brand" href="#"></a>
+            <div class="navbar-header-top_box-location"> <i class=" fa fa-map-marker" aria-hidden="true"></i> <span class="navbar-header-top_box-location-text">Ваш город:</span>
+                <a href="#"> <span class="navbar-header-top_box-location-text text-dotted">Москва<i class=" i_dotted"></i></span> <i class="navbar-header-top_box-location-text fa fa-angle-down" aria-hidden="true"></i> </a> <span class="navbar-header-top_box-location_number"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 777 77 77</span> </div>
+            <div class="navbar-header-top_evaluation"> <i class="fa fa-check" aria-hidden="true"></i>Средний бал <span class="navbar-header-top_evaluatio-value">4,9</span> </div>
+            <div class="navbar-header-top_buttons">
+                <button type="button" class="btns btn-call-me btn-pop-up-xl"> <i class="fa fa-mobile" aria-hidden="true"></i> ПЕРЕЗВОНИТЕ МНЕ </button>
+                <button type="button" class="btn-login  btn-enter btn-pop-up-xl"> <i class="fa fa-user" aria-hidden="true"></i> ЛИЧНЫЙ КАБИНЕТ </button>
+            </div>
         </div>
         <div class="container-fluid navbar-header-bottom">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand_mobile" href="#"></a>
-           <div class="navbar-header">
-            <button id="show_button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-             <div class="btn-togle-list">
-				
-				<button type="button" class="btn btn-login btn-enter btn-lg btn-togle pull-right ">
-					<i class="fa fa-user" aria-hidden="true"></i>
-				</button>
-				<button type="button" class="btn btn-call-me btn-lg btn-togle pull-right">
-					<i class="fa fa-mobile" aria-hidden="true"></i>
-				</button>
-				<button id="closet-button" type="button" class="navbar-toggle collapsed btn-togle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				  <i class="fa fa-times" aria-hidden="true"></i>
-				</button>
-           </div>
-            
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a href="#">УСЛУГИ<span class="sr-only">(current)</span></a></li>
-              <li><a href="#">ЦЕНЫ И АКЦИИ</a></li>
-              <li><a href="#">ГОТОВЫЕ РАБОТЫ</a></li>
-              <li class="active"><a href="#">УСЛОВИЯ</a></li>
-              <li><a href="#">СТАТЬ АВТОРОМ</a></li>
-              <li><a href="#">О КОМПАНИИ</a></li>
-              <li><a href="#">КОНТАКТЫ</a></li>
-              <li><a href="#">ГАРАНТИИ</a></li>
-              <li><a href="#">ОТЗЫВЫ</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-  </nav>
-  <!-- Breadcrumb -->
-  <div class="content-box-breadcrumb">
-      <a href="#" class="content-box-breadcrumb-text"><i class="fa fa-home" aria-hidden="true"></i>Главная<i class="fa fa-angle-right" aria-hidden="true"></i></a><span class="content-box-breadcrumb-text_active">Условия</span>
-  </div>
-  <!-- content-box-working-conditions-->
-  <div class=" content-box-conditions-discription">
-    <div class="content-box-conditions-discription-list">
-      <div class="content-box-conditions-discription-list-item content-box-conditions-discription-list-item_conditions-work">
-        <h2 class="content-box-conditions-discription-list-item-text-top">Условия работы</h2>
-        <span class="content-box-conditions-discription-list-item-text-bottom">За годы успешной практики компания Homework выработала свою уникальную систему координации работы, что позволяет на профессионадбным уровне осуществлять профильную деятельность. Наши условию направлены на то,чтобы в максимальной степени учесть требования клиента и соблюсти его интересы</span>  
-      </div>
-      <div class="content-box-conditions-discription-list-item content-box-conditions-discription-list-item_drawing-order">
-        <h2 class="content-box-conditions-discription-list-item-text-top">Оформление заказа</h2>
-        <i class="i i_drawing-order"></i>
-        <span class="content-box-conditions-discription-list-item-text-bottom">Вы можете оформить в одном из наших офисов, через Интернет или через нашего куръера. Во всех случаях Вы заполняете бланк-заявку, где указываете подробные сведения о заказе - предмет, тему работы, объем, сроки выполнения и прочее. Вы также можете приложить необходимые материалы для выполнения работы. После согласования всех вопросов, вы подписываете договор  получаете чек о предоплате. Всю работу Вы получаете после внесения всей суммы, прописанной в договоре</span>  
-      </div>
-      <div class="content-box-conditions-discription-list-item content-box-conditions-discription-list-item_payment-order">
-        <h2 class="content-box-conditions-discription-list-item-text-top">Оплата заказа</h2>
-        <i class="i i_payment-order"></i>
-        <span class="content-box-conditions-discription-list-item-text-bottom">Оплата заказа происходит в два этапа Первая часть, которая составляет 50% от общей стоимости, вноситься в момент подписания договора и принития заказа в работу. После выполнения работы целиком, Вам приходит уведомление на электронную почту и в Личный кабинет. Оплатив оставшуюся сумму, Ваш заказ становиться доступным для скачивания в Личном кабинете. Оплатив заказ Вы можете наличными в наших офисах, а также банковскими картами, Qiwi-кошельком, Webmoney, Яндекс-деньги, через терминалы, мобильных операторов (Билайн, МТС, банковским переводом) и иными способами, указанными ниже
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand_mobile" href="#"></a>
+            <div class="navbar-header">
+                <button id="show_button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <div class="btn-togle-list">
+                    <button type="button" class="btn btn-login btn-enter btn-lg btn-togle pull-right "> <i class="fa fa-user" aria-hidden="true"></i> </button>
+                    <button type="button" class="btn btn-call-me btn-lg btn-togle pull-right"> <i class="fa fa-mobile" aria-hidden="true"></i> </button>
+                    <button id="closet-button" type="button" class="navbar-toggle collapsed btn-togle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <i class="fa fa-times" aria-hidden="true"></i> </button>
+                </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">УСЛУГИ<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">ЦЕНЫ И АКЦИИ</a></li>
+                    <li><a href="#">ГОТОВЫЕ РАБОТЫ</a></li>
+                    <li class="active"><a href="#">УСЛОВИЯ</a></li>
+                    <li><a href="#">СТАТЬ АВТОРОМ</a></li>
+                    <li><a href="#">О КОМПАНИИ</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                    <li><a href="#">ГАРАНТИИ</a></li>
+                    <li><a href="#">ОТЗЫВЫ</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- Breadcrumb -->
+    <div class="content-box-breadcrumb"> <a href="#" class="content-box-breadcrumb-text"><i class="fa fa-home" aria-hidden="true"></i>Главная<i class="fa fa-angle-right" aria-hidden="true"></i></a><span class="content-box-breadcrumb-text_active">Условия</span> </div>
+    <!-- content-box-working-conditions-->
+    <div class=" content-box-conditions-discription">
+        <div class="content-box-conditions-discription-list">
+            <div class="content-box-conditions-discription-list-item content-box-conditions-discription-list-item_conditions-work">
+                <h2 class="content-box-conditions-discription-list-item-text-top">Условия работы</h2> <span class="content-box-conditions-discription-list-item-text-bottom">За годы успешной практики компания Homework выработала свою уникальную систему координации работы, что позволяет на профессионадбным уровне осуществлять профильную деятельность. Наши условию направлены на то,чтобы в максимальной степени учесть требования клиента и соблюсти его интересы</span> </div>
+            <div class="content-box-conditions-discription-list-item content-box-conditions-discription-list-item_drawing-order">
+                <h2 class="content-box-conditions-discription-list-item-text-top">Оформление заказа</h2> <i class="i i_drawing-order"></i> <span class="content-box-conditions-discription-list-item-text-bottom">Вы можете оформить в одном из наших офисов, через Интернет или через нашего куръера. Во всех случаях Вы заполняете бланк-заявку, где указываете подробные сведения о заказе - предмет, тему работы, объем, сроки выполнения и прочее. Вы также можете приложить необходимые материалы для выполнения работы. После согласования всех вопросов, вы подписываете договор  получаете чек о предоплате. Всю работу Вы получаете после внесения всей суммы, прописанной в договоре</span> </div>
+            <div class="content-box-conditions-discription-list-item content-box-conditions-discription-list-item_payment-order">
+                <h2 class="content-box-conditions-discription-list-item-text-top">Оплата заказа</h2> <i class="i i_payment-order"></i> <span class="content-box-conditions-discription-list-item-text-bottom">Оплата заказа происходит в два этапа Первая часть, которая составляет 50% от общей стоимости, вноситься в момент подписания договора и принития заказа в работу. После выполнения работы целиком, Вам приходит уведомление на электронную почту и в Личный кабинет. Оплатив оставшуюся сумму, Ваш заказ становиться доступным для скачивания в Личном кабинете. Оплатив заказ Вы можете наличными в наших офисах, а также банковскими картами, Qiwi-кошельком, Webmoney, Яндекс-деньги, через терминалы, мобильных операторов (Билайн, МТС, банковским переводом) и иными способами, указанными ниже
           <span class="content-box-conditions-discription-list-item-text-bottom-inner-system-list">Для приема платежей мы используем систему 
-            <span class="content-box-conditions-discription-list-item-text-bottom-inner-system-list-item">CardPay ,</span><span class="content-box-conditions-discription-list-item-text-bottom-inner-system-list-item">Payonline ,</span><span class="content-box-conditions-discription-list-item-text-bottom-inner-system-list-item">PayMaster.</span>
-          </span>
-        </span>  
-      </div>
-      <div class="content-box-conditions-discription-list-item content-box-conditions-discription-list-item_adjustment-clearance">
-        <h2 class="content-box-conditions-discription-list-item-text-top">Оформление корректировок к заказу</h2>
-        <i class="i i_adjustment-clearance"></i>
-        <span class="content-box-conditions-discription-list-item-text-bottom">В течении двух рабочих дней с момента оформления заказа, клиент вправе внести уточнения и дополнения к заказу, не меняющие объём оказываемых услуг. При наличии обоснованных замечаний по качеству, мы выполняем бесплатные корректировки в кратчайшие сроки. Если Вам необходимо внести изменения, существенно меняющие первоначальные требования, то стоимость и сроки выполнения заказа обсуждаються в индивидуальном порядке. Стандартный срок предоставления замечаний - 30 дней с момента готовности работы. В случае, если Вы заранее предупреждаете о более длительном сроке проверки работы, возможность выполнения бесплатных корректировок обсуждаються в индивидульном порядке.
-        </span>  
-      </div>
-      <div class="content-box-conditions-discription-list-item content-box-conditions-discription-list-item_deadline">
-        <h2 class="content-box-conditions-discription-list-item-text-top">Сроки выполнения заказа</h2>
-        <i class="i i_deadline"></i>
-        <p class="content-box-conditions-discription-list-item-text-bottom">Существуют стандартные сроки выполнения заказов в нашей компании. Для дипломной работы - это 21 день, для остальных работ - 10 дней. В случае, если заказ необходимо выполнить за меньший срок, стоимость незначительно повысится, о чем Вас предупредят наши менеджеры. В случае, если работа Вам необходима очень срочно, рекомендуем обратиться к нашему  <a href="#" class="content-box-conditions-discription-list-item-text-bottom-link">Магазину Готовых работ</a>  О ходе выполнения заказа и его полной готовности Вы будете проинформированы путем sms-оповещения, а также информационных сообщений по электронной почте.
-        </p>  
-      </div>
-      <div class="content-box-conditions-discription-list-item content-box-conditions-discription-list-item_guarantee-collaboration">
-        <h2 class="content-box-conditions-discription-list-item-text-top">Гарантии сотрудничества</h2>
-        <i class="i i_guarantee-collaboration"></i>
-        <span class="content-box-conditions-discription-list-item-text-bottom">Гарантиями нашей честной работы являеться официальная регистрация компании, а также подписанный обеими сторонами договор и чеки, подтверждающие оплату заказа клиентом.
-        </span>  
-      </div>
-      <div class="content-box-conditions-discription-list-item content-box-conditions-discription-list-item_guarantee-refund">
-        <h2 class="content-box-conditions-discription-list-item-text-top">Условия расторжения договора и возврата денежных средств</h2>
-        <i class="i i_refund"></i>
-        <p class="content-box-conditions-discription-list-item-text-bottom">Заказчик вправе анулировать заказ и потребовать возврата оплаченной в порядке предоплаты суммы:
-        </p>
-        <ul class="content-box-conditions-discription-list-item-text-bottom-list">
-          <li class="content-box-conditions-discription-list-item-text-bottom-list-item"><i class="fa fa-check" aria-hidden="true"></i>При сроке выполнения заказа 10 и более дней - в течение 2(двух) рабочих дней(включая день подписания настоящего договора)</li>
-          <li class="content-box-conditions-discription-list-item-text-bottom-list-item"><i class="fa fa-check" aria-hidden="true"></i>При сроке выполнения заказа менее 10 дней - в течение 1(одного) рабочего дня(включая день подписания настоящего договора)</li>
-          <li class="content-box-conditions-discription-list-item-text-bottom-list-item"><i class="fa fa-check" aria-hidden="true"></i>При сроке выполнения заказа меньше трех дней - в течение 1(одного) часа после подписания договора.</li>
-          <li class="content-box-conditions-discription-list-item-text-bottom-list-item"><i class="fa fa-check" aria-hidden="true"></i>С момента оформления Заказа и потребовать в этом случае возврат оплаченной в порядке предоплаты суммы.</li>
-        </ul>
-        <p class="content-box-conditions-discription-list-item-text-bottom">Возврат денежных средств за выполненную работу осуществляеться после рассмотрения обоснованности Претензии, направленной клиентом в Отдел технического контроля, по результатам полученной экспертизы заказа. Обратите внимание, что при возврате денежных средств по способу оплаты взимаеться комиссия.
-      </div>
-      <div class="content-box-conditions-discription-list-item content-box-conditions-discription-list-item_payments-security">
-        <h2 class="content-box-conditions-discription-list-item-text-top">Безопасность он-лайн платежей</h2>
-        <i class="i i_payments-security"></i>
-        <p class="content-box-conditions-discription-list-item-text-bottom">Уважаемые клиенты! Обращаем Ваше внимание, что предоставляемая Вами персональная информация(имя, адрес, телефон, e-mail, номер кредитной карты) являеться конфиденциальной и не подлежит разглашению. Данные Вашей кредитной карты передаються только в зашифрованном виде и не сохраняються на нашем Web-сервере.
-        </p>
-        <p class="content-box-conditions-discription-list-item-text-bottom content-box-conditions-discription-list-item-text-bottom_no-margin">Безопасность обработки Интернет-платежей гарантирует ЗАО «Банк Русский Стандарт». Все операции с платежными картами происходят в соответсвии с требованиями VISA International, MasterCard и других платежных систем. При передаче информации используеться специальные технологии безопасности карточных онлайн-платежей, обработка данных ведется на безопасном высокотехнологичном сервере процессинговой компании. 
-        </p>
-        <p class="content-box-conditions-discription-list-item-text-bottom content-box-conditions-discription-list-item-text-bottom_no-margin">
-         В случае возникновения вопросов по поводу данной конфиденциальности предоставляемой Вами информации, Вы можете связаться с ЗАО «Банк Русский Стандарт» по телефону: 8 (800) 200-6-200
-        </p>
-      </div>
-    </div>
-    
-  </div>  
-  <!-- content-box-select-->    
-  <div class="content-box-select">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 text-center">
-                <h3 class="content-box-select-caption-text-top">ОДИН ИЗ ЛИДЕРОВ РЫНКА РОСИИ</h3>
-            <h2 class="content-box-select-caption-text-middle">Оформить заявку</h2>
-            <h4 class="content-box-select-caption-text-bottom">Вы просто оставляете заявку,а все остальное делаем мы!</h4>
+            <span class="content-box-conditions-discription-list-item-text-bottom-inner-system-list-item">CardPay ,</span><span class="content-box-conditions-discription-list-item-text-bottom-inner-system-list-item">Payonline ,</span><span class="content-box-conditions-discription-list-item-text-bottom-inner-system-list-item">PayMaster.</span> </span>
+                </span>
+            </div>
+            <div class="content-box-conditions-discription-list-item content-box-conditions-discription-list-item_adjustment-clearance">
+                <h2 class="content-box-conditions-discription-list-item-text-top">Оформление корректировок к заказу</h2> <i class="i i_adjustment-clearance"></i> <span class="content-box-conditions-discription-list-item-text-bottom">В течении двух рабочих дней с момента оформления заказа, клиент вправе внести уточнения и дополнения к заказу, не меняющие объём оказываемых услуг. При наличии обоснованных замечаний по качеству, мы выполняем бесплатные корректировки в кратчайшие сроки. Если Вам необходимо внести изменения, существенно меняющие первоначальные требования, то стоимость и сроки выполнения заказа обсуждаються в индивидуальном порядке. Стандартный срок предоставления замечаний - 30 дней с момента готовности работы. В случае, если Вы заранее предупреждаете о более длительном сроке проверки работы, возможность выполнения бесплатных корректировок обсуждаються в индивидульном порядке.
+        </span> </div>
+            <div class="content-box-conditions-discription-list-item content-box-conditions-discription-list-item_deadline">
+                <h2 class="content-box-conditions-discription-list-item-text-top">Сроки выполнения заказа</h2> <i class="i i_deadline"></i>
+                <p class="content-box-conditions-discription-list-item-text-bottom">Существуют стандартные сроки выполнения заказов в нашей компании. Для дипломной работы - это 21 день, для остальных работ - 10 дней. В случае, если заказ необходимо выполнить за меньший срок, стоимость незначительно повысится, о чем Вас предупредят наши менеджеры. В случае, если работа Вам необходима очень срочно, рекомендуем обратиться к нашему <a href="#" class="content-box-conditions-discription-list-item-text-bottom-link">Магазину Готовых работ</a> О ходе выполнения заказа и его полной готовности Вы будете проинформированы путем sms-оповещения, а также информационных сообщений по электронной почте. </p>
+            </div>
+            <div class="content-box-conditions-discription-list-item content-box-conditions-discription-list-item_guarantee-collaboration">
+                <h2 class="content-box-conditions-discription-list-item-text-top">Гарантии сотрудничества</h2> <i class="i i_guarantee-collaboration"></i> <span class="content-box-conditions-discription-list-item-text-bottom">Гарантиями нашей честной работы являеться официальная регистрация компании, а также подписанный обеими сторонами договор и чеки, подтверждающие оплату заказа клиентом.
+        </span> </div>
+            <div class="content-box-conditions-discription-list-item content-box-conditions-discription-list-item_guarantee-refund">
+                <h2 class="content-box-conditions-discription-list-item-text-top">Условия расторжения договора и возврата денежных средств</h2> <i class="i i_refund"></i>
+                <p class="content-box-conditions-discription-list-item-text-bottom">Заказчик вправе анулировать заказ и потребовать возврата оплаченной в порядке предоплаты суммы: </p>
+                <ul class="content-box-conditions-discription-list-item-text-bottom-list">
+                    <li class="content-box-conditions-discription-list-item-text-bottom-list-item"><i class="fa fa-check" aria-hidden="true"></i>При сроке выполнения заказа 10 и более дней - в течение 2(двух) рабочих дней(включая день подписания настоящего договора)</li>
+                    <li class="content-box-conditions-discription-list-item-text-bottom-list-item"><i class="fa fa-check" aria-hidden="true"></i>При сроке выполнения заказа менее 10 дней - в течение 1(одного) рабочего дня(включая день подписания настоящего договора)</li>
+                    <li class="content-box-conditions-discription-list-item-text-bottom-list-item"><i class="fa fa-check" aria-hidden="true"></i>При сроке выполнения заказа меньше трех дней - в течение 1(одного) часа после подписания договора.</li>
+                    <li class="content-box-conditions-discription-list-item-text-bottom-list-item"><i class="fa fa-check" aria-hidden="true"></i>С момента оформления Заказа и потребовать в этом случае возврат оплаченной в порядке предоплаты суммы.</li>
+                </ul>
+                <p class="content-box-conditions-discription-list-item-text-bottom">Возврат денежных средств за выполненную работу осуществляеться после рассмотрения обоснованности Претензии, направленной клиентом в Отдел технического контроля, по результатам полученной экспертизы заказа. Обратите внимание, что при возврате денежных средств по способу оплаты взимаеться комиссия. </div>
+            <div class="content-box-conditions-discription-list-item content-box-conditions-discription-list-item_payments-security">
+                <h2 class="content-box-conditions-discription-list-item-text-top">Безопасность он-лайн платежей</h2> <i class="i i_payments-security"></i>
+                <p class="content-box-conditions-discription-list-item-text-bottom">Уважаемые клиенты! Обращаем Ваше внимание, что предоставляемая Вами персональная информация(имя, адрес, телефон, e-mail, номер кредитной карты) являеться конфиденциальной и не подлежит разглашению. Данные Вашей кредитной карты передаються только в зашифрованном виде и не сохраняються на нашем Web-сервере. </p>
+                <p class="content-box-conditions-discription-list-item-text-bottom content-box-conditions-discription-list-item-text-bottom_no-margin">Безопасность обработки Интернет-платежей гарантирует ЗАО «Банк Русский Стандарт». Все операции с платежными картами происходят в соответсвии с требованиями VISA International, MasterCard и других платежных систем. При передаче информации используеться специальные технологии безопасности карточных онлайн-платежей, обработка данных ведется на безопасном высокотехнологичном сервере процессинговой компании. </p>
+                <p class="content-box-conditions-discription-list-item-text-bottom content-box-conditions-discription-list-item-text-bottom_no-margin"> В случае возникновения вопросов по поводу данной конфиденциальности предоставляемой Вами информации, Вы можете связаться с ЗАО «Банк Русский Стандарт» по телефону: 8 (800) 200-6-200 </p>
+            </div>
         </div>
-      </div>
-      <form>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4 form-item">
-
-                     <select class="form-control input-lg">
-                      <option>Выберите ТИП работы</option>
-                      <option>Диплом</option>
-                      <option>Контрольная</option>
-                      <option>Курсовая</option>
-                    </select>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                     <select class="form-control input-lg input-no-padding_l">
-                      <option>Ваш предмет</option>
-                      <option>Физика</option>
-                      <option>Алгебра</option>
-                      <option>Биология</option>
-                    </select>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                     <select class="form-control input-lg input-no-padding_l form-item_last-child">
-                      <option>Тема предмета</option>
-                      <option>Молекулярная физика</option>
-                      <option>Избавление от ирроциональности</option>
-                      <option>Примитивные оргонизмы</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4 form-item">
-                        <input type="text" class="form-control input-lg"  placeholder="Ваше имя">
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 form-item">
-                        <input type="email" class="form-control input-lg"  placeholder="Ваше E-mail">
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 form-item">
-                        <input type="text" class="form-control input-lg"  placeholder="Ваше номер телефона">
-                </div>
-
-            </div>
-            <div class="row">
-                 <div class="col-xs-12  col-md-12 text-center content-box-select_box-bottom">
-                    <button type="button" class="btns btn-send">Отправить заявку</button>
-                    <label  class="btn-add-caption">
-                        <i class="fa fa-paperclip btn-add-caption-icon"></i>
-                        <input class="btn-add-caption-element" type="file" name="photo" multiple accept="image/*,image/jpeg">
-                        <span class="btn-add-caption-text">Прикрепить файл</span>
-                    </label>
-                </div>
-            </div>
-        </form>
     </div>
-  </div>
-  <!-- content-box-label -->
-  <div class="content-box-label">
-       <div id="navbtns">
-           <button class="previous btn btn-default btn-lg content-box-label_btn"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-           <button class="next btn btn btn-default btn-lg content-box-label_btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-        </div>
-      <div class="container">
-        <div  class="content-box-label-list">
-          <div class="crsl-items" data-navigation="navbtns" style="width: 100%;">
-            <div  class="crsl-wrap crsl-wrap_block" style="width: 1752px; margin-left: -292px;">
-                <div id="btnVisa" class="crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; height: 414px; width: 292px; margin-right: 0px;">
-                  <div class="content-box-label-list-item_sub-item">
-                      <h3 class="content-box-label-list-item-text">ПЛАТЕЖ VISA</h3>
-                      <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашей банковской карточки</p>
-                      <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_visa_act"></i></div>
-                  </div>
-                  <div  class="content-box-label-list-item_active-item">
-                    <h3 class="content-box-label-list-item-text">ПЛАТЕЖ VISA</h3>
-                    <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_visa"></i></div>
-                  </div>
-                </div>
-                <div id="btnMts" class="crsl-item content-box-label-list-item crsl-active content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                  <div class="content-box-label-list-item_sub-item">
-                      <h3 class="content-box-label-list-item-text">ОПЕРАТОР СВЯЗИ МТС</h3>
-                      <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
-                      <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mts_act"></i></div>
-                  </div>
-                  <div class="content-box-label-list-item_active-item">  
-                    <h3 class="content-box-label-list-item-text">ОПЕРАТОР СВЯЗИ МТС</h3>
-                    <div  class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mts"></i></div>
-                  </div>                
-                </div>
-                <!-- post #1 -->
-                <div id="btnMc" class="crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                  <div class="content-box-label-list-item_sub-item">
-                      <h3 class="content-box-label-list-item-text">ПЛАТЕЖ MASTERCARD</h3>
-                      <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашей банковской карточки</p>
-                      <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mc_act"></i></div>
-                  </div>
-                  <div class="content-box-label-list-item_active-item">  
-                    <h3 class="content-box-label-list-item-text">ПЛАТЕЖ MASTERCARD</h3>
-                    <div  class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mc"></i></div>
-                  </div>                
-                </div>
-                <!-- post #2 -->
-                <div id="btnMg" class="crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                  <div class="content-box-label-list-item_sub-item">
-                      <h3 class="content-box-label-list-item-text">ОПЕРАТОР СВЯЗИ МЕГАФОН</h3>
-                      <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
-                      <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mg_act"></i></div>
-                  </div>
-                  <div class="content-box-label-list-item_active-item">   
-                     <h3 class="content-box-label-list-item-text">ОПЕРАТОР СВЯЗИ МЕГАФОН</h3>
-                     <div  class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mg"></i></div>
-                  </div>                
-                </div>
-                <!-- post #3 -->
-                <div id="btnEvr" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                  <div class="content-box-label-list-item_sub-item">
-                      <h3 class="content-box-label-list-item-text">САЛОН СОТОВОЙ СВЯЗИ ЕВРОСЕТЬ</h3>
-                      <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
-                      <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_evr_act"></i></div>
-                  </div>
-                  <div class="content-box-label-list-item_active-item">   
-                     <h3 class="content-box-label-list-item-text">САЛОН СОТОВОЙ СВЯЗИ ЕВРОСЕТЬ</h3>
-                     <div  class="content-box-label-list-item-icon-box"><i class="i i_sprite i_evr"></i></div>
-                  </div>
-                </div>
-                <!-- post #4 -->
-                <div id="btnGiwi" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                  <div class="content-box-label-list-item_sub-item">
-                      <h3 class="content-box-label-list-item-text">ПЛАТЕЖ GIWI КОШЕЛЕК</h3>
-                      <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
-                      <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_giwi_act"></i></div>
-                  </div>
-                  <div class="content-box-label-list-item_active-item">
-                     <h3 class="content-box-label-list-item-text">ПЛАТЕЖ GIWI КОШЕЛЕК</h3>
-                     <div  class="content-box-label-list-item-icon-box"><i class="i i_sprite i_giwi"></i></div>
-                  </div>
-                </div>
-                <!-- post #5 -->
-                 <div id="btnYandex" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                    <div class="content-box-label-list-item_sub-item">
-                      <h3 class="content-box-label-list-item-text">ПЛАТЕЖИ ЯНДЕКС.ДЕНЬГИ</h3>
-                      <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
-                      <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_yandex_act"></i></div>
+    <!-- content-box-select-->
+    <div class="content-box-select">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 text-center">
+                    <h3 class="content-box-select-caption-text-top">ОДИН ИЗ ЛИДЕРОВ РЫНКА РОСИИ</h3>
+                    <h2 class="content-box-select-caption-text-middle">Оформить заявку</h2>
+                    <h4 class="content-box-select-caption-text-bottom">Вы просто оставляете заявку,а все остальное делаем мы!</h4> </div>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4 form-item">
+                        <select class="form-control input-lg">
+                            <option>Выберите ТИП работы</option>
+                            <option>Диплом</option>
+                            <option>Контрольная</option>
+                            <option>Курсовая</option>
+                        </select>
                     </div>
-                    <div class="content-box-label-list-item_active-item">
-                      <h3 class="content-box-label-list-item-text">ПЛАТЕЖИ ЯНДЕКС.ДЕНЬГИ</h3>
-                      <div  class="content-box-label-list-item-icon-box"><i class="i i_sprite i_yandex"></i></div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <select class="form-control input-lg input-no-padding_l">
+                            <option>Ваш предмет</option>
+                            <option>Физика</option>
+                            <option>Алгебра</option>
+                            <option>Биология</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <select class="form-control input-lg input-no-padding_l form-item_last-child">
+                            <option>Тема предмета</option>
+                            <option>Молекулярная физика</option>
+                            <option>Избавление от ирроциональности</option>
+                            <option>Примитивные оргонизмы</option>
+                        </select>
                     </div>
                 </div>
-              <!-- post #6 -->
-                <div id="btnWebmoney" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                  <div class="content-box-label-list-item_sub-item">
-                      <h3 class="content-box-label-list-item-text">ПЛАТЕЖ WEBMONEY</h3>
-                      <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
-                      <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_webmoney_act"></i></div>
-                  </div>
-                  <div class="content-box-label-list-item_active-item">    
-                      <h3 class="content-box-label-list-item-text">ПЛАТЕЖ WEBMONEY</h3>
-                      <div  class="content-box-label-list-item-icon-box"><i class="i i_sprite i_webmoney"></i></div>
-                  </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4 form-item">
+                        <input type="text" class="form-control input-lg" placeholder="Ваше имя"> </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 form-item">
+                        <input type="email" class="form-control input-lg" placeholder="Ваше E-mail"> </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 form-item">
+                        <input type="text" class="form-control input-lg" placeholder="Ваше номер телефона"> </div>
                 </div>
-                <!-- post #7 -->
-                <div id="btnBank" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                  <div class="content-box-label-list-item_sub-item">
-                      <h3 class="content-box-label-list-item-text">ОПЛАТА ЧЕРЕЗ БАНК</h3>
-                      <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
-                      <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_bank_act"></i></div>
-                  </div>
-                  <div class="content-box-label-list-item_active-item">
-                      <h3 class="content-box-label-list-item-text">ОПЛАТА ЧЕРЕЗ БАНК</h3>
-                     <div  class="content-box-label-list-item-icon-box"><i class="i i_sprite i_bank"></i></div>
-                  </div>
+                <div class="row">
+                    <div class="col-xs-12  col-md-12 text-center content-box-select_box-bottom">
+                        <button type="button" class="btns btn-send">Отправить заявку</button>
+                        <label class="btn-add-caption"> <i class="fa fa-paperclip btn-add-caption-icon"></i>
+                            <input class="btn-add-caption-element" type="file" name="photo" multiple accept="image/*,image/jpeg"> <span class="btn-add-caption-text">Прикрепить файл</span> </label>
+                    </div>
                 </div>
-                <!-- post #8 -->
-                <div id="btnMoney" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
-                  <div class="content-box-label-list-item_sub-item">
-                      <h3 class="content-box-label-list-item-text">НАЛИЧНЫЕ ДЕНЬГИ</h3>
-                      <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
-                      <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_money_act"></i></div>
-                  </div>
-                  <div class="content-box-label-list-item_active-item">
-                     <h3 class="content-box-label-list-item-text">НАЛИЧНЫЕ ДЕНЬГИ</h3>
-                     <div  class="content-box-label-list-item-icon-box"><i class="i i_sprite i_money"></i></div>
-                  </div>
-                </div>
-            </div><!-- @end .crsl-wrap -->
-          </div><!-- @end .crsl-items -->
+            </form>
         </div>
-        <div class="content-box-label-text-bottom">
-          <span>И многие другие способы оплаты...</span>
-        </div>
-      </div>
     </div>
-   
-  <!-- footer -->
-  <div class="footer">
-      <div class="container">
+    <!-- content-box-label -->
+    <div class="content-box-label">
+        <div id="navbtns">
+            <button class="previous btn btn-default btn-lg content-box-label_btn"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+            <button class="next btn btn btn-default btn-lg content-box-label_btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+        <div class="container">
+            <div class="content-box-label-list">
+                <div class="crsl-items" data-navigation="navbtns" style="width: 100%;">
+                    <div class="crsl-wrap crsl-wrap_block" style="width: 1752px; margin-left: -292px;">
+                        <div id="btnVisa" class="crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖ VISA</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашей банковской карточки</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_visa_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖ VISA</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_visa"></i></div>
+                            </div>
+                        </div>
+                        <div id="btnMts" class="crsl-item content-box-label-list-item crsl-active content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">ОПЕРАТОР СВЯЗИ МТС</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mts_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">ОПЕРАТОР СВЯЗИ МТС</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mts"></i></div>
+                            </div>
+                        </div>
+                        <!-- post #1 -->
+                        <div id="btnMc" class="crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖ MASTERCARD</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашей банковской карточки</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mc_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖ MASTERCARD</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mc"></i></div>
+                            </div>
+                        </div>
+                        <!-- post #2 -->
+                        <div id="btnMg" class="crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">ОПЕРАТОР СВЯЗИ МЕГАФОН</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mg_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">ОПЕРАТОР СВЯЗИ МЕГАФОН</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mg"></i></div>
+                            </div>
+                        </div>
+                        <!-- post #3 -->
+                        <div id="btnEvr" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">САЛОН СОТОВОЙ СВЯЗИ ЕВРОСЕТЬ</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_evr_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">САЛОН СОТОВОЙ СВЯЗИ ЕВРОСЕТЬ</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_evr"></i></div>
+                            </div>
+                        </div>
+                        <!-- post #4 -->
+                        <div id="btnGiwi" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖ GIWI КОШЕЛЕК</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_giwi_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖ GIWI КОШЕЛЕК</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_giwi"></i></div>
+                            </div>
+                        </div>
+                        <!-- post #5 -->
+                        <div id="btnYandex" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖИ ЯНДЕКС.ДЕНЬГИ</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_yandex_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖИ ЯНДЕКС.ДЕНЬГИ</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_yandex"></i></div>
+                            </div>
+                        </div>
+                        <!-- post #6 -->
+                        <div id="btnWebmoney" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖ WEBMONEY</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_webmoney_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖ WEBMONEY</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_webmoney"></i></div>
+                            </div>
+                        </div>
+                        <!-- post #7 -->
+                        <div id="btnBank" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">ОПЛАТА ЧЕРЕЗ БАНК</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_bank_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">ОПЛАТА ЧЕРЕЗ БАНК</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_bank"></i></div>
+                            </div>
+                        </div>
+                        <!-- post #8 -->
+                        <div id="btnMoney" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">НАЛИЧНЫЕ ДЕНЬГИ</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_money_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">НАЛИЧНЫЕ ДЕНЬГИ</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_money"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- @end .crsl-wrap -->
+                </div>
+                <!-- @end .crsl-items -->
+            </div>
+            <div class="content-box-label-text-bottom"> <span>И многие другие способы оплаты...</span> </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
             <div class="footer-menu">
                 <div class="footer-menu-list-cols footer-menu-list_first-col">
                     <ul class="footer-menu-list">
                         <li class="footer-menu-list-item_caption">УСЛУГИ</li>
-                        <li class="footer-menu-list-item">
-                          <a href="#">Курсовые работы</a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                          <a href="#">Диплом</a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                          <a href="#">Контрольные работы</a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                          <a href="#">Рефераты</a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                          <a href="#">Эссе</a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                          <a href="#">Рецензии</a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                          <a href="#">Другие виды работ</a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                          <a href="#">Готовые работы</a>
-                        </li>
+                        <li class="footer-menu-list-item"> <a href="#">Курсовые работы</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Диплом</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Контрольные работы</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Рефераты</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Эссе</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Рецензии</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Другие виды работ</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Готовые работы</a> </li>
                     </ul>
                 </div>
                 <div class="footer-menu-list-cols footer-menu-list_second-col">
                     <ul class="footer-menu-list footer-menu-list_second-col">
                         <li class="footer-menu-list-item_caption">О НАС</li>
-                        <li class="footer-menu-list-item">
-                          <a href="#">Цены и акции</a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                          <a href="#">Условия работы</a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                          <a href="#">О компании</a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                          <a href="#">Отзывы</a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                          <a href="#">Контакты</a>
-                        </li>
+                        <li class="footer-menu-list-item"> <a href="#">Цены и акции</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Условия работы</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">О компании</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Отзывы</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Контакты</a> </li>
                     </ul>
                 </div>
                 <div class="footer-menu-list-cols footer-menu-list_third-col">
                     <ul class="footer-menu-list">
                         <li class="footer-menu-list-item_caption">СОТРУДНИЧЕСТВО</li>
-                        <li class="footer-menu-list-item">
-                          <a href="#">Стать автором</a>
-                        </li>
+                        <li class="footer-menu-list-item"> <a href="#">Стать автором</a> </li>
                     </ul>
                 </div>
             </div>
-           <div class="text-center footer-information-col">
-              <span class="footer_number">8 800 100 00 31</span>
-              <span class="footer_text">Бесплатный звонок по России</span>
-              <a href="#" class="i social-circle"><i class="fa fa-vk" aria-hidden="true"></i></a>
-              <a href="#" class="i social-circle"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
-              <a href="#" class="i social-circle social-circle_last"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <p class="footer_text_box-bottom">
-                <span class="footer_text footer_text-coperation">© 2001-2016 HomeWorks 5.</span>
-                <span class="footer_text">Все права защищены.</span>
-              </p>
-              <div class="footer_btn-caption">
-                <button id="btn-up" type="button" class="btn btn-default btn-lg btn-block ">НАВЕРХ</button>
-              </div>
-          </div>
-      </div>  
-  </div>
-  <!-- pop-up -->
-  <div class="pop-up-call_me pop-up">
-         <div class="pop-up_tr"></div>
-     	<form class="form-horizontal form-group">
-     		<p class="pop-up-item_phone"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 777 77 77</p>
+            <div class="text-center footer-information-col"> <span class="footer_number">8 800 100 00 31</span> <span class="footer_text">Бесплатный звонок по России</span> <a href="#" class="i social-circle"><i class="fa fa-vk" aria-hidden="true"></i></a> <a href="#" class="i social-circle"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a> <a href="#" class="i social-circle social-circle_last"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <p class="footer_text_box-bottom"> <span class="footer_text footer_text-coperation">© 2001-2016 HomeWorks 5.</span> <span class="footer_text">Все права защищены.</span> </p>
+                <div class="footer_btn-caption">
+                    <button id="btn-up" type="button" class="btn btn-default btn-lg btn-block ">НАВЕРХ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pop-up -->
+    <div class="pop-up-call_me pop-up">
+        <div class="pop-up_tr"></div>
+        <form class="form-horizontal form-group">
+            <p class="pop-up-item_phone"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 777 77 77</p>
             <div class="pop-up-item">
-     			<input type="tel" class="form-control input-lg input-position"  placeholder="Ваш номер телефона">
-     		</div>  
-			<div class="pop-up-item">
-     			<input type="text" class="form-control input-lg input-position"  placeholder="Ваше имя">
-     		</div>
-			<div class="pop-up-item pop-up-item_select">
-				<select class="form-control input-lg" >
-					  <option>В какое время Вам удобно?</option>
-					  <option>В любое время</option>
-					  <option>До обеда</option>
-					  <option>После обеда</option>
-					  <option>Вечером</option>
-					  
-				</select>
-			</div>  
-			<div class="btn-group btn-group-justified pop-up-item" role="group" aria-label="...">
-			  <div class="btn-group" role="group">
-				<button type="button" class="btn btn-default btn-today">СЕГОДНЯ</button>
-			  </div>
-			  <div class="btn-group" role="group">
-				<button type="button" class="btn btn-default btn-tomorrow">ЗАВТРА</button>
-			  </div>
-			</div>
-   			<button type="button" class="btn btn-danger btn-block btn-lg btn-pop-up">Отправить заявку</button>
-    	</form>
-     </div>
-  <div class="pop-up-login pop-up">
-      <div class="pop-up_tr"></div>
-      <form class="form-horizontal form-group">
-          <div class="pop-up-item">
-              <input type="email" class="form-control input-lg input-position"  placeholder="Логин/E-mail">
-          </div>
-          <div class="pop-up-item">
-              <input type="password" class="form-control input-lg input-position"  placeholder="Пороль">
-          </div>
+                <input type="tel" class="form-control input-lg input-position" placeholder="Ваш номер телефона"> </div>
+            <div class="pop-up-item">
+                <input type="text" class="form-control input-lg input-position" placeholder="Ваше имя"> </div>
+            <div class="pop-up-item pop-up-item_select">
+                <select class="form-control input-lg">
+                    <option>В какое время Вам удобно?</option>
+                    <option>В любое время</option>
+                    <option>До обеда</option>
+                    <option>После обеда</option>
+                    <option>Вечером</option>
+                </select>
+            </div>
+            <div class="btn-group btn-group-justified pop-up-item" role="group" aria-label="...">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default btn-today">СЕГОДНЯ</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default btn-tomorrow">ЗАВТРА</button>
+                </div>
+            </div>
+            <button type="button" class="btn btn-danger btn-block btn-lg btn-pop-up">Отправить заявку</button>
+        </form>
+    </div>
+    <div class="pop-up-login pop-up">
+        <div class="pop-up_tr"></div>
+        <form class="form-horizontal form-group">
+            <div class="pop-up-item">
+                <input type="email" class="form-control input-lg input-position" placeholder="Логин/E-mail"> </div>
+            <div class="pop-up-item">
+                <input type="password" class="form-control input-lg input-position" placeholder="Пороль"> </div>
             <button type="button" class="btn btn-danger btn-block btn-lg btn-pop-up">ВОЙТИ</button>
-             <div class="pop-up-login_sub-text-caption">
-                <a href="#" class="pop-up-login_sub-text">Забыли пароль?</a>
-             </div>   
-      </form>
-  </div>
-  <script src="jquery/jquery-1.12.4.js"></script>
-  <script src="bootstrap/js/bootstrap.js"></script>
-  <script  src="jquery/responsiveCarousel.min.js"></script>
-      <script>
-        $(document).ready(function(){
-     
-            //// Кнопки Pop-up
-          
-          
-  			$('#show_button').on("click", function(){
-  				$(document).find(".btn-togle-list").toggleClass("show");
-  				$(document).find("#show_button").toggleClass("hidden");
-  			})
-  			$('#closet-button').on("click", function(){
-  				$(document).find(".btn-togle-list").removeClass("show");
-  				$(document).find("#show_button").toggleClass("hidden");
-                 
-  			})
-  			$(".btn-call-me").on("click", function(){
-  				$(".pop-up-call_me").toggleClass("show");
-                 
-  			})
-        $(".btn-login").on("click", function(){
-            $(".pop-up-login").toggleClass("show");
-           
-        }) 
-            
-        ////актив слайдера
-        $(".content-box-label-list-item_active-item").on("click", function(){
-            $(this).parent().find(".content-box-label-list-item_sub-item").css("display","block");
-        })
-
-          
-        /// Скрытие слайдера актив
-    
-        $(document).mouseup(function (e){
-              var toggleMenu = $(".content-box-label-list-item_sub-item"); 
-              if (!toggleMenu.is(e.target)
-                  && toggleMenu.has(e.target).length === 0) { 
-                  toggleMenu.css("display","");
-              }
-         });
-
-
-          /// Скрытие Pop-up
-		
-          $(document).mouseup(function (e){
-              var toggleMenu = $(".pop-up"); 
-              if (!toggleMenu.is(e.target)
-                  && toggleMenu.has(e.target).length === 0) { 
-                  toggleMenu.removeClass("show");
-              }
-              $(".btn-pop-up").on("click", function(){
-                  toggleMenu.removeClass("show");
-              })
-         });
-          
-        ///Кнопка Up
-          
-        $( document ).ready(function() {
-              $('#btn-up').mouseover( function(){
-                  $( this ).animate({opacity: 0.65},100);
-              }).mouseout( function(){
-                  $( this ).animate({opacity: 1},100);
-              }).click( function(){
-                  window.scroll(0 ,0); 
-                  return false;
-              });
-
-              $(window).scroll(function(){
-                  if ( $(document).scrollTop() > 0 ) {
-                      $('#btn-up').fadeIn('fast');
-                  } else {
-                      $('#btn-up').fadeOut('fast');
-                  }
-              });
-          });
-            
+            <div class="pop-up-login_sub-text-caption"> <a href="#" class="pop-up-login_sub-text">Забыли пароль?</a> </div>
+        </form>
+    </div>
+    <script src="jquery/jquery-1.12.4.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="jquery/responsiveCarousel.min.js"></script>
+    <script>
        
-                
-        /// slider
-        $(function(){
-          $('.crsl-items').cacheli({
-            visible: 4,
-            itemMinWidth: 285,
-            itemEqualHeight: 414,
-          });
-        });
-
-      });
-	</script>
+    </script>
 </body>
+
 </html>
