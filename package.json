@@ -1,0 +1,29 @@
+{
+  "name": "home-works",
+  "version": "1.0.0",
+  "description": "home-works",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DzmitryGrom/home-works.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DzmitryGrom/home-works/issues"
+  },
+  "homepage": "https://github.com/DzmitryGrom/home-works#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

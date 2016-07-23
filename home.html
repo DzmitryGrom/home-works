@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <title>Home work</title>
-    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/result.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
@@ -632,11 +630,14 @@
                 <ul class="pop-up-item_btn-days-radio-group">
                     <li class="pop-up-item_btn-days-radio-group-item">
                         <label class="pop-up-item_btn-days-radio-button">
-                            <input type="radio" name="DayOfCall" class="pop-up-item_btn-days-radio-button-control" value="1" checked=""> <span class="pop-up-item_btn-days-radio-button-label btns btn-today">СЕГОДНЯ</span> </label>
+                            <input type="radio" name="DayOfCall" class="pop-up-item_btn-days-radio-button-control" value="1" checked=""> <span class="pop-up-item_btn-days-radio-button-label btns btn-today">СЕГОДНЯ</span>
+                        </label>
                     </li>
                     <li class="pop-up-item_btn-days-radio-group-item">
                         <label class="pop-up-item_btn-days-radio-button">
-                            <input type="radio" name="DayOfCall" class="pop-up-item_btn-days-radio-button-control" value="2"> <span class="pop-up-item_btn-days-radio-button-label btns btn-today">ЗАВТРА</span> </label>
+                            <input type="radio" name="DayOfCall" class="pop-up-item_btn-days-radio-button-control" value="2">
+                            <span class="pop-up-item_btn-days-radio-button-label btns btn-today">ЗАВТРА</span>
+                        </label>
                     </li>
                 </ul>
             </div>
@@ -650,72 +651,14 @@
                 <input type="email" class="form-control input-lg input-position" placeholder="Логин/E-mail"> </div>
             <div class="pop-up-item">
                 <input type="password" class="form-control input-lg input-position" placeholder="Пороль"> </div>
-            <button type="button" class="btns  btns-send-pop-up">ВОЙТИ</button>
+            <button class="btns btns-send-pop-up">ВОЙТИ</button>
             <div class="pop-up-login_sub-text-caption"> <a href="#" class="pop-up-login_sub-text">Забыли пароль?</a> </div>
         </form>
     </div>
-    <script src="jquery/jquery-1.12.4.js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
-    <script src="jquery/responsiveCarousel.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            //// Кнопки Pop-up
-            $('.navbar-toggle').on("click", function () {
-                $(".btn-togle-list").toggleClass("show");
-                $("#show_button").toggleClass("hidden");
-            })
-            $(".btn-call-me").on("click", function () {
-                $(".pop-up-call_me").toggleClass("show");
-            })
-            $(".btn-login").on("click", function () {
-                    $(".pop-up-login").toggleClass("show");
-                })
-                /// Скрытие Pop-up
-            $(document).mouseup(function (e) {
-                var toggleMenu = $(".pop-up");
-                if (!toggleMenu.is(e.target) && toggleMenu.has(e.target).length === 0) {
-                    toggleMenu.removeClass("show");
-                }
-            });
-            $(".btns-send-pop-up").on("click", function () {
-                    $(".pop-up").removeClass("show");
-                })
-                ///Кнопка Up
-            $('#btn-up').mouseover(function () {
-                $(this).animate({
-                    opacity: 0.65
-                }, 100);
-            }).mouseout(function () {
-                $(this).animate({
-                    opacity: 1
-                }, 100);
-            }).click(function () {
-                window.scroll(0, 0);
-                return false;
-            });
-            //Кнопка up
-            $(document).scroll(function () {
-                if ($(document).scrollTop() > 0) {
-                    $('#btn-up').fadeIn('fast');
-                }
-                else {
-                    $('#btn-up').fadeOut('fast');
-                }
-            });
-            $(function () {
-                $('.carousel').carousel({
-                    interval: false
-                });
-            });
-            $(function () {
-                $('.crsl-items').cacheli({
-                    visible: 4
-                    , itemMinWidth: 235
-                    , itemEqualHeight: 414
-                , });
-            });
-        });
-    </script>
+    <script src="js/libs/jquery-1.12.4.js"></script>
+    <script src="js/libs/bootstrap.js"></script>
+    <script src="js/libs/responsiveCarousel.min.js"></script>
+    <script src="js/home.js"></script>
 </body>
 
 </html>
