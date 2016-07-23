@@ -957,24 +957,35 @@
     <form class="form-horizontal form-group">
       <p class="pop-up-item_phone"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 777 77 77</p>
       <div class="pop-up-item">
-          <input type="tel" class="form-control input-lg input-position"  placeholder="Ваш номер телефона">
+        <input type="tel" class="form-control input-lg input-position"  placeholder="Ваш номер телефона">
       </div>  
       <div class="pop-up-item">
-          <input type="text" class="form-control input-lg input-position"  placeholder="Ваше имя">
+        <input type="text" class="form-control input-lg input-position"  placeholder="Ваше имя">
       </div>
       <div class="pop-up-item pop-up-item_select">
-          <select class="form-control input-lg" >
-                <option>В какое время Вам удобно?</option>
-                <option>В любое время</option>
-                <option>До обеда</option>
-                <option>После обеда</option>
-                <option>Вечером</option>
-
-          </select>
+        <select class="form-control input-lg" >
+          <option>В какое время Вам удобно?</option>
+          <option>В любое время</option>
+          <option>До обеда</option>
+          <option>После обеда</option>
+          <option>Вечером</option>
+        </select>
       </div>  
       <div class="pop-up-item pop-up-item_btn-days">
-          <button type="button" class="btns btn-today">СЕГОДНЯ</button>
-          <button type="button" class="btns btn-tomorrow">ЗАВТРА</button>
+        <ul class="pop-up-item_btn-days-radio-group">
+          <li class="pop-up-item_btn-days-radio-group-item">
+            <label class="pop-up-item_btn-days-radio-button">
+              <input type="radio" name="DayOfCall" class="pop-up-item_btn-days-radio-button-control" value="1" checked="">
+              <span class="pop-up-item_btn-days-radio-button-label btns btn-today">СЕГОДНЯ</span>
+            </label>
+          </li>
+          <li class="pop-up-item_btn-days-radio-group-item">
+            <label class="pop-up-item_btn-days-radio-button">
+              <input type="radio" name="DayOfCall" class="pop-up-item_btn-days-radio-button-control" value="2">
+              <span class="pop-up-item_btn-days-radio-button-label btns btn-today">ЗАВТРА</span>
+            </label>
+          </li>
+		</ul>  
       </div>
       <button type="button" class="btns  btns-send-pop-up">Отправить заявку</button>
     </form>
