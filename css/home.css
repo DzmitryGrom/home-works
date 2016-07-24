@@ -3249,17 +3249,6 @@ select::-ms-expand {
 select.input-no-padding_l {
   padding-left: 10px;
 }
-button.btn-default.content-box-ad_btn-top:hover {
-  background-color: #65beee;
-  color: #fff;
-}
-button.btn-default.content-box-ad_btn-top:focus {
-  color: #fff;
-  background-color: #357598;
-}
-a.btn-default.content-box-ad_btn-top:active {
-  background-color: #357598;
-}
 /* icon */
 .i {
   background-size: 100%;
@@ -3577,6 +3566,18 @@ a.btn-default.content-box-ad_btn-top:active {
     padding-left: 32px;
   }
 }
+/*ad-box */
+button.btn-default.content-box-ad_btn-top:hover {
+  background-color: #65beee;
+  color: #fff;
+}
+button.btn-default.content-box-ad_btn-top:focus {
+  color: #fff;
+  background-color: #357598;
+}
+a.btn-default.content-box-ad_btn-top:active {
+  background-color: #357598;
+}
 /* content-box-ad */
 .content-box-ad {
   background-image: url(../img/bg_reklam.jpg);
@@ -3818,6 +3819,14 @@ a.btn-default.content-box-ad_btn-top:active {
   }
 }
 /* select-box */
+button.btn-send {
+  font-size: 15px;
+  font-family: Aria, Helvetica;
+  color: #fff;
+  background-color: #eb4855;
+  border-color: #eb4855;
+  padding: 18px 56px;
+}
 /* container-fluid content-box-select */
 .content-box-select {
   background-image: url(../img/bg_form.jpg);
@@ -4843,6 +4852,25 @@ a.btn-reviews {
     padding: 15px 5px 14px 5px;
   }
 }
+/* Slider review */
+.carousel-caption {
+  width: 100%;
+  padding-bottom: 0;
+  bottom: 0;
+  text-align: center;
+  right: 0;
+  left: 0;
+  text-shadow: none;
+  color: black;
+  padding: 0;
+}
+.carousel-control {
+  z-index: 10;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
 /* content-box-autor */
 .btn-autor {
   background-color: transparent;
@@ -4960,31 +4988,4 @@ a.btn-more:focus {
     margin-left: 410px;
     font-size: 18px;
   }
-}
-/* Slider reklam   */
-.crsl-items {
-  display: block;
-}
-.crsl-item {
-  padding-top: 30px;
-  height: 414px!important;
-}
-/* Slider review */
-.carousel-caption {
-  width: 100%;
-  padding-bottom: 0;
-  bottom: 0;
-  text-align: center;
-  right: 0;
-  left: 0;
-  text-shadow: none;
-  color: black;
-  padding: 0;
-}
-.carousel-control {
-  z-index: 10;
-}
-.carousel-control.left,
-.carousel-control.right {
-  background-image: none;
 }

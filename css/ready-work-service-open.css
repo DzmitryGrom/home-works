@@ -3723,8 +3723,11 @@ span.content-box-select-details-box-content-open-list-item-text-top {
   font-weight: bold;
 }
 .content-box-select-details-box-content-open-list-item-text-block {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
+}
+.content-box-select-details-box-content-open-list-item-text-block:hover {
+  cursor: pointer;
 }
 .content-box-select-details-box-content-open-list-item ul {
   padding: 0;
@@ -4381,7 +4384,13 @@ span.content-box-select-details-box-content-open-list-item-text-top {
     margin-bottom: 3px;
   }
 }
-/*slider reklam*/
+.crsl-items {
+  display: block;
+}
+.crsl-item {
+  padding-top: 30px;
+  height: 414px!important;
+}
 .crsl-items {
   position: absolute;
 }

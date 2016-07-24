@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Home work-conditions</title>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/conditions.css"> 
 </head>
 
@@ -346,15 +344,22 @@
                     <option>Вечером</option>
                 </select>
             </div>
-            <div class="btn-group btn-group-justified pop-up-item" role="group" aria-label="...">
-                <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default btn-today">СЕГОДНЯ</button>
-                </div>
-                <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-default btn-tomorrow">ЗАВТРА</button>
-                </div>
+            <div class="pop-up-item pop-up-item_btn-days">
+                <ul class="pop-up-item_btn-days-radio-group">
+                    <li class="pop-up-item_btn-days-radio-group-item">
+                        <label class="pop-up-item_btn-days-radio-button">
+                            <input type="radio" name="DayOfCall" class="pop-up-item_btn-days-radio-button-control" value="1" checked=""> <span class="pop-up-item_btn-days-radio-button-label btns btn-today">СЕГОДНЯ</span>
+                        </label>
+                    </li>
+                    <li class="pop-up-item_btn-days-radio-group-item">
+                        <label class="pop-up-item_btn-days-radio-button">
+                            <input type="radio" name="DayOfCall" class="pop-up-item_btn-days-radio-button-control" value="2">
+                            <span class="pop-up-item_btn-days-radio-button-label btns btn-today">ЗАВТРА</span>
+                        </label>
+                    </li>
+                </ul>
             </div>
-            <button type="button" class="btn btn-danger btn-block btn-lg btn-pop-up">Отправить заявку</button>
+            <button type="button" class="btns  btns-send-pop-up">Отправить заявку</button>
         </form>
     </div>
     <div class="pop-up-login pop-up">
@@ -364,16 +369,14 @@
                 <input type="email" class="form-control input-lg input-position" placeholder="Логин/E-mail"> </div>
             <div class="pop-up-item">
                 <input type="password" class="form-control input-lg input-position" placeholder="Пороль"> </div>
-            <button type="button" class="btn btn-danger btn-block btn-lg btn-pop-up">ВОЙТИ</button>
+            <button class="btn btn-danger btn-block btn-lg btn-pop-up">ВОЙТИ</button>
             <div class="pop-up-login_sub-text-caption"> <a href="#" class="pop-up-login_sub-text">Забыли пароль?</a> </div>
         </form>
     </div>
-    <script src="jquery/jquery-1.12.4.js"></script>
+    <script src="js/libs/jquery-1.12.4.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
-    <script src="jquery/responsiveCarousel.min.js"></script>
-    <script>
-       
-    </script>
+    <script src="js/libs/responsiveCarousel.min.js"></script>
+    <script src="js/conditions.js"></script>
 </body>
 
 </html>

@@ -688,10 +688,12 @@ span.content-box-select-details-box-content-open-list-item-text-top {
 }
 
 .content-box-select-details-box-content-open-list-item-text-block {
-    display: block;
+    display: inline-block;
     margin-bottom: 20px;
 }
-
+.content-box-select-details-box-content-open-list-item-text-block:hover{
+    cursor: pointer;
+}
 .content-box-select-details-box-content-open-list-item ul {
     padding: 0;
     margin: 0;
@@ -916,20 +918,3 @@ span.content-box-select-details-box-content-open-list-item-text-top {
 
 @import "components/box-label.less";
 
-
-
-/*slider reklam*/
-
-.crsl-items {
-    position: absolute;
-}
-
-.crsl-item {
-    height: 215px!important;
-}
-
-@media(max-width: 768px) {
-    .crsl-items {
-        position: static;
-    }
-}

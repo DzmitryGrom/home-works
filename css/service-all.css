@@ -3989,330 +3989,175 @@ select:focus {
 }
 /* content-box-advantages */
 /* content-box-advantages */
-.i_time {
-  background-image: url(../img/time.png);
-  width: 190px;
-  height: 228px;
+.advantages-medal {
+  background-image: url(../img/advantages_i-medal.png);
+  width: 118px;
+  height: 160px;
 }
-.i_rocket {
-  background-image: url(../img/rocket.png);
-  width: 165px;
-  height: 156px;
-  background-size: 90%;
+.advantages-listsearch {
+  background-image: url(../img/advantages_i-listsearch.png);
+  width: 177px;
+  height: 160px;
+  margin-right: -65px;
 }
-.i_guarantee {
-  background-image: url(../img/guarantee.png);
-  width: 94px;
-  height: 124px;
+.advantages-cards {
+  background-image: url(../img/advantages_i-cards.png);
+  width: 108px;
+  height: 160px;
 }
-.i_author {
-  background-image: url(../img/author.png);
-  width: 130px;
-  height: 115px;
+.advantages-time {
+  background-image: url(../img/advantages_i-time.png);
+  width: 115px;
+  height: 160px;
+}
+.advantages-pencil {
+  background-image: url(../img/advantages_i-pencil.png);
+  width: 102px;
+  height: 160px;
+}
+.advantages-book {
+  background-image: url(../img/advantages_i-book.png);
+  width: 55px;
+  height: 71px;
+}
+.advantages-protractor {
+  background-image: url(../img/advantages_i-protractor.png);
+  width: 81px;
+  height: 53px;
+}
+.advantages-planet {
+  background-image: url(../img/advantages_i-planet.png);
+  width: 88px;
+  height: 63px;
+}
+.advantages-pen {
+  background-image: url(../img/advantages_i-pen.png);
+  width: 78px;
+  height: 54px;
+}
+.advantages-atom {
+  background-image: url(../img/advantages_i-atom.png);
+  width: 64px;
+  height: 64px;
+}
+.advantages-tube {
+  background-image: url(../img/advantages_i-tube.png);
+  width: 47px;
+  height: 73px;
+}
+.advantages-triangle {
+  background-image: url(../img/advantages_i-triangle.png);
+  width: 104px;
+  height: 67px;
+}
+.advantages-openbook {
+  background-image: url(../img/advantages_i-openbook.png);
+  width: 95px;
+  height: 80px;
+}
+.advantages-bulb {
+  background-image: url(../img/advantages_i-bulb.png);
+  width: 65px;
+  height: 71px;
+}
+.advantages-scroll {
+  background-image: url(../img/advantages_i-scroll.png);
+  width: 81px;
+  height: 67px;
 }
 .content-box-advantages {
-  background-color: #fff;
+  background-image: url(../img/service_advantages.jpg);
+  background-size: cover;
 }
-.content-box-advantages-list-item_service {
-  background-color: #75c4c8;
-}
-.content-box-advantages-list-item_experience {
-  background-color: #2a2949;
-  padding-bottom: 113px;
-}
-.content-box-advantages-list-item_guarantee {
-  background-color: #c54e75;
-  padding-bottom: 115px;
-}
-.content-box-advantages-list-item_guarantee h2 {
-  white-space: nowrap;
-}
-.content-box-advantages-list-item_author {
-  background-color: #fa991b;
-  padding-bottom: 145px;
-}
-.content-box-advantages-list-item_author h2 {
-  margin-bottom: 22px;
-}
-.content-box-advantages-list-item_guarantee .fa {
-  margin-right: 15px;
-}
-.content-box-advantages-list-item {
-  overflow: hidden;
-  position: relative;
-  min-height: 326px;
-}
-.content-box-advantages-list-item_text-top {
-  font-size: 24px;
-  font-family: "GothamProRegular";
-  padding: 0px 40px 0px 40px;
-  margin-top: 25px;
-}
-.content-box-advantages-list-item_text-bottom {
-  font-size: 14px;
-  font-family: "GothamProRegular";
-  color: #fff;
-  margin-top: 0px;
-  line-height: 24px;
-}
-.content-box-advantages-list-item_service h3 {
-  padding-bottom: 90px;
-}
-.content-box-advantages-list-item_text-bottom-padding {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.content-box-advantages-list-item_guarantee-text-list {
+.content-box-advantages_icons-top,
+.content-box-advantages_icons-bottom-list {
+  text-align: center;
   font-size: 0;
 }
-.content-box-advantages-list-item_guarantee-text-list-item {
-  padding-top: 17px;
-  padding-bottom: 10px;
-}
-.content-box-advantages-list-item_guarantee-text-list-item div {
-  display: table-cell;
-}
-.content-box-advantages-list-item h2,
-.content-box-advantages-list-item span {
-  color: #fff;
-}
-.content-box-advantages-list-item_value {
-  font-size: 24px;
-  font-weight: bolder;
-  margin-top: 18px;
-}
-.content-box-advantages-list-item_big-value {
-  font-size: 50px;
-  margin-top: 13px;
-  margin-bottom: -8px;
-  font-weight: bolder;
-  display: block;
-}
-.block_i {
+.content-box-advantages_icons-bottom-list-item {
   display: inline-block;
-  position: absolute;
+  width: 20%;
+  text-align: center;
+  vertical-align: top;
 }
-.block_i_time {
-  left: -26px;
-  bottom: -110px;
-}
-.block_i_roket {
-  bottom: -32px;
-  right: -21px;
-}
-.block_i_guarantee {
-  right: 22px;
-  bottom: 0;
-}
-.block_i_author {
-  bottom: 5px;
-  right: 0px;
-  left: 0;
-  display: block;
+.content-box-advantages_bg-bottom {
+  background-color: #2e2d60;
   width: 100%;
+  height: 125px;
+  margin-top: -72px;
 }
-@media (min-width: 768px) {
-  .content-box-advantages {
-    font-size: 0;
-  }
-  .content-box-advantages-list-item {
-    padding-left: 15px;
-  }
-  .content-box-advantages-list-item {
-    display: inline-block;
+.content-box-advantages_icons-bottom-list-item .i {
+  margin-bottom: 25px;
+}
+.content-box-advantages_icons-top span {
+  display: inline-block;
+  margin: 65px 20px 50px 20px;
+}
+.content-box-advantages-text-middle h3 {
+  font-size: 14px;
+  font-family: "GothamProRegular";
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  padding: 0px 105px;
+  margin: 0px 0px 60px 0px;
+}
+.content-box-advantages_icons-bottom-list-item-text {
+  font-size: 12px;
+  font-family: "GothamProRegular";
+  line-height: 24px;
+  color: #fff;
+  display: block;
+  width: 63%;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 393px) {
+  div div.content-box-advantages_icons-bottom-list-item span.content-box-advantages_icons-bottom-list-item-text {
     width: 50%;
-    vertical-align: top;
-    height: 474px;
-    text-align: center;
   }
-  .content-box-advantages-list-item_value {
-    display: block;
+}
+@media (max-width: 563px) {
+  div.content-box-advantages_icons-bottom-list-item span.content-box-advantages_icons-bottom-list-item-text {
+    width: 35%;
   }
-  .content-box-advantages-list-item_guarantee-text-list-item div {
-    text-align: left;
+}
+@media (max-width: 781px) {
+  .content-box-advantages {
+    background-image: url(../img/service_advantages-mobile.jpg);
+    background-size: cover;
+    padding-top: 30px;
   }
-  .content-box-advantages-list-item_value-tab {
+  .content-box-advantages-text-middle h3 {
+    padding: 0px 10px;
+  }
+  .content-box-advantages_icons-top,
+  .content-box-advantages_bg-bottom {
     display: none;
   }
-}
-@media (max-width: 768px) {
-  .content-box-advantages-list-item_experience,
-  .content-box-advantages-list-item_value,
-  .content-box-advantages-list-item_service h2,
-  .content-box-advantages-list-item_service h3,
-  .content-box-advantages-list-item_author {
-    text-align: center;
-  }
-  .content-box-advantages-list-item_value {
+  .content-box-advantages_icons-bottom-list-item {
     display: block;
-  }
-  .content-box-advantages-list-item_value-tab {
-    display: none;
-  }
-  span.block_i_roket {
-    bottom: -32px;
-  }
-  .content-box-advantages-list-item_service h2 {
-    padding: 7px 50px 0px 50px;
-    margin-bottom: 5px;
-  }
-  .content-box-advantages-list-item_experience h2 {
-    margin-bottom: 22px;
-  }
-  content-box-advantages-list-item_guarantee-text-list h2 {
-    margin-left: 5px;
-    margin-bottom: 5px;
-  }
-  .content-box-advantages-list-item_author h2 {
-    margin-top: 34px;
-    margin-bottom: 21px;
-  }
-  .content-box-advantages-list-item_author {
-    padding-bottom: 138px;
-  }
-  .content-box-advantages-list-item_guarantee .fa {
-    margin-right: 11px;
-  }
-  .block_i_time {
-    left: -22px;
-    bottom: -118px;
-  }
-  .content-box-advantages-list-item_big-value {
-    margin-top: 10px;
-  }
-  .block_i_author {
-    bottom: 15px;
-  }
-  .content-box-advantages-list-item_service h3 {
-    padding: 0px 22px 90px 22px;
-  }
-  .content-box-advantages-list-item_guarantee-text-list-item {
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 5px;
-  }
-  .content-box-advantages-list-item_text-bottom_author {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .content-box-advantages-list-item_experience {
-    padding-bottom: 106px;
-  }
-  content-box-advantages-list-item_guarantee {
-    padding-bottom: 120px;
-  }
-  .block_i_guarantee {
-    bottom: -3px;
-  }
-}
-@media (min-width: 1070px) {
-  .content-box-advantages-list-item {
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
-    text-align: inherit;
-  }
-  .content-box-advantages-list-item_text-top {
-    font-size: 36px;
-  }
-  .i_rocket {
-    width: 234px;
-    height: 194px;
-    background-size: 100%;
-  }
-  .block_i_roket {
-    bottom: -5px;
-    right: 0;
-  }
-  .i_author {
-    width: 240px;
-    height: 215px;
-    margin-right: 25px;
-  }
-  .block_i_author {
-    text-align: right;
-    bottom: 15px;
-  }
-  .block_i_guarantee {
-    right: 10px;
-    bottom: 10px;
-  }
-  .i_guarantee {
-    width: 153px;
-    height: 194px;
-  }
-  .i_time {
-    width: 394px;
-    height: 394px;
-  }
-  .block_i_time {
-    left: -92px;
-    bottom: -166px;
-  }
-  .content-box-advantages-list-item_guarantee-text-list-item {
-    padding-right: 143px;
-  }
-  .content-box-advantages-list-item {
-    height: 500px;
-  }
-  .content-box-advantages-list-item_text-top {
-    margin-top: 53px;
-    padding-left: 14px;
-  }
-  .content-box-advantages-list-item_service h3 {
-    margin-top: 31px;
-  }
-  .content-box-advantages-list-item_value {
-    display: inline-block;
-  }
-  .content-box-advantages-list-item_value-tab {
-    display: inline-block;
-  }
-  .content-box-advantages-list-item_value {
-    margin-top: 0;
-  }
-  .content-box-advantages-list-item_experience .content-box-advantages-list-item_text-middle {
-    margin-bottom: 8px;
-  }
-  .content-box-advantages-list-item_guarantee-text-list h2 {
-    margin-bottom: 10px;
-  }
-  .content-box-advantages-list-item_text-middle {
-    padding-left: 18px;
-  }
-  .content-box-advantages-list-item_value {
-    font-size: 37px;
-  }
-  .content-box-advantages-list-item_experience .content-box-advantages-list-item_text-top {
-    margin-bottom: 23px;
-  }
-  .content-box-advantages-list-item_experience .content-box-advantages-list-item_value-tab {
-    margin-left: 5px;
-    margin-right: 8px;
-  }
-  .content-box-advantages-list-item_author h2 {
-    margin-bottom: 56px;
-  }
-  .content-box-advantages-list-item_author .content-box-advantages-list-item_text-bottom-padding {
-    padding-right: 35px;
-  }
-  .content-box-advantages-list-item_big-value {
-    margin-top: 45px;
-  }
-}
-@media (min-width: 1200px) {
-  .content-box-advantages {
     width: 100%;
-    margin: 0 auto;
+  }
+  .content-box-advantages_icons-bottom-list {
+    background-color: #2e2d60;
+    padding-bottom: 30px;
+  }
+  .content-box-advantages_icons-bottom-list-item .i {
+    margin-top: 30px;
+  }
+  div span.content-box-advantages_icons-bottom-list-item-text {
+    width: 25%;
   }
 }
-@media (max-width: 993px) {
-  .i_rocket {
-    background-size: 75%;
+@media (max-width: 880px) {
+  span.content-box-advantages_icons-bottom-list-item-text {
+    width: 92%;
   }
-  .block_i_roket {
-    bottom: -27px;
-    right: -30px;
+}
+@media (max-width: 1133px) {
+  .content-box-advantages_icons-bottom-list-item-text {
+    width: 82%;
   }
 }
 /* content-box-reviews */
@@ -4707,6 +4552,25 @@ a.btn-reviews {
   .content-box-reviews_box a {
     padding: 15px 5px 14px 5px;
   }
+}
+/* Slider review */
+.carousel-caption {
+  width: 100%;
+  padding-bottom: 0;
+  bottom: 0;
+  text-align: center;
+  right: 0;
+  left: 0;
+  text-shadow: none;
+  color: black;
+  padding: 0;
+}
+.carousel-control {
+  z-index: 10;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
 }
 /* content-box-causes */
 /* content-box-causes */
@@ -5170,7 +5034,6 @@ a.btn-reviews {
     margin-bottom: 3px;
   }
 }
-/* Slider reklam   */
 .crsl-items {
   display: block;
 }
@@ -5178,26 +5041,6 @@ a.btn-reviews {
   padding-top: 30px;
   height: 414px!important;
 }
-/* Slider review */
-.carousel-caption {
-  width: 100%;
-  padding-bottom: 0;
-  bottom: 0;
-  text-align: center;
-  right: 0;
-  left: 0;
-  text-shadow: none;
-  color: black;
-  padding: 0;
-}
-.carousel-control {
-  z-index: 10;
-}
-.carousel-control.left,
-.carousel-control.right {
-  background-image: none;
-}
-/*slider reklam*/
 .crsl-items {
   position: absolute;
 }
