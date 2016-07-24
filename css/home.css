@@ -3095,6 +3095,16 @@ a.social-circle:focus {
     top: 80px;
   }
 }
+.content-box-select-details-stox-box {
+  background-color: #4e535c;
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  display: inline-block;
+  max-width: 520px;
+  width: 35%;
+  vertical-align: top;
+}
 /* btn */
 .btn-red {
   background-color: #eb4855;
@@ -3264,27 +3274,6 @@ select.input-no-padding_l {
   bottom: -3px;
   border-bottom: 1px dashed #65beee;
   padding-bottom: 5px;
-}
-.i_diplom {
-  background-image: url(../img/diplom.png);
-  width: 90px;
-  height: 90px;
-  margin-top: 5px;
-}
-.i_kurs {
-  background-image: url(../img/kurs.png);
-  width: 90px;
-  height: 90px;
-}
-.i_kontr {
-  background-image: url(../img/kontr.png);
-  width: 90px;
-  height: 90px;
-}
-.i_ref {
-  background-image: url(../img/ref.png);
-  width: 90px;
-  height: 90px;
 }
 .fa-star {
   color: #ffa200;
@@ -3584,6 +3573,9 @@ a.btn-default.content-box-ad_btn-top:active {
   background-size: cover;
   padding-top: 60px;
 }
+div.content-box-ad_noslider {
+  background-image: none;
+}
 .content-box-ad-list .btn-more a {
   margin-top: 0px;
 }
@@ -3592,6 +3584,11 @@ a.btn-default.content-box-ad_btn-top:active {
   padding: 27px 0px 25px 0px;
   border: 1px solid #e6e6e6;
   margin-bottom: 15px;
+}
+.content-box-ad_noslider .content-box-ad-list-item {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 5;
 }
 .content-box-ad-list-item-link {
   display: block;
@@ -3614,7 +3611,15 @@ a.btn-default.content-box-ad_btn-top:active {
   font-family: "GothamProRegular";
   line-height: 30px;
   margin: 10px;
+  text-align: center;
   letter-spacing: -0.8px;
+}
+.content-box-ad-text-top_bottom {
+  font-size: 14px;
+  font-family: "GothamProLight";
+  line-height: 30px;
+  width: 75%;
+  margin: 0 auto 15px;
 }
 .content-box-ad-text-top-caption {
   height: 75px;
@@ -3625,6 +3630,10 @@ a.btn-default.content-box-ad_btn-top:active {
   font-size: 18px;
   font-family: "GothamProBold";
   margin: 15px 0px 15px 0px;
+  display: block;
+}
+.content-box-ad_noslider .content-box-ad-list-item-text-top {
+  height: 38px;
 }
 .content-box-ad_btn-top {
   background-color: white;
@@ -3704,6 +3713,9 @@ a.btn-default.content-box-ad_btn-top:active {
   .content-box-ad_btn-top {
     display: none;
   }
+  .content-box-ad-text-top_bottom {
+    width: 85%;
+  }
   .content-box-ad-list-item_block {
     position: static!important;
     float: none!important;
@@ -3731,6 +3743,9 @@ a.btn-default.content-box-ad_btn-top:active {
   .content-box-ad {
     padding-top: 20px;
   }
+  div.content-box-ad_noslider {
+    padding-top: 0;
+  }
   .btn-more {
     width: 100%;
     margin: 0px 0px 15px 0px;
@@ -3745,6 +3760,15 @@ a.btn-default.content-box-ad_btn-top:active {
     margin-top: 84px;
     height: 1716px;
     overflow: hidden;
+  }
+  .content-box-ad_noslider .content-box-ad-list {
+    margin-top: 0;
+    padding: 0 15px;
+    height: auto;
+    overflow: inherit;
+  }
+  div.content-box-ad_noslider .content-box-ad-list-item {
+    margin-bottom: 15px;
   }
   .content-box-ad-list-item {
     display: block;
@@ -3770,12 +3794,18 @@ a.btn-default.content-box-ad_btn-top:active {
     background-size: cover;
     padding-top: 60px;
   }
+  .content-box-ad.content-box-ad_noslider {
+    background-image: none;
+  }
   .content-box-ad-list {
     font-size: 0;
     text-align: center;
     height: 414px;
-    /* вместо 414 */
     overflow: hidden;
+  }
+  .content-box-ad_noslider .content-box-ad-list {
+    height: auto;
+    overflow: inherit;
   }
   .content-box-ad-list-item {
     display: inline-block;
