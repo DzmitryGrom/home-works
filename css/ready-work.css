@@ -2730,6 +2730,14 @@ button.btn-togle {
   font-size: 0;
   padding: 60px 0 90px 0;
   transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  /* Для Firefox */
+  -ms-transform: translateY(-100%);
+  /* Для IE */
+  -webkit-transform: translateY(-100%);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: translateY(-100%);
+  /* Для Opera */
   position: absolute;
   left: 0;
   right: 0;
