@@ -11,12 +11,54 @@
 </head>
 
 <body>
+    <!--top-panel-->
+    <div class="top-panel">
+        <div class="top-panel-left-side">
+            <span class="top-panel-left-side-text-top">Выбрать город</span>
+            <span class="top-panel-left-side-text-bottom">Города в каторых есть  офисы  HomeWork5</span>
+            <ul class="top-panel-left-side-list">
+                <li class="top-panel-left-side-list-item"><a href="#">Екатеренбург</a></li>
+                <li class="top-panel-left-side-list-item"><a href="#">Казань</a></li>
+                <li class="top-panel-left-side-list-item"><a href="#">Москва</a></li>
+                <li class="top-panel-left-side-list-item"><a href="#">Нижний новгород</a></li>
+                <li class="top-panel-left-side-list-item"><a href="#">Новосибирск</a></li>
+                <li class="top-panel-left-side-list-item"><a class="active" href="#">Санкт-Петербург</a></li>
+            </ul>
+            <div class="top-panel-left-side-search">
+                <form>
+                    <input type="text" placeholder="Название города">
+                    <button class="btns">Выбрать</button>
+                </form>
+            </div>
+        </div>
+        <div class="top-panel-right-side">
+            <i class="i map_countries">
+                <i class="i i_dot i_dot-one"></i>
+                <i class="i i_dot i_dot-two"></i>
+                <i class="i i_dot i_dot-three"></i>
+                <i class="i i_dot i_dot-four"></i>
+                <i class="i i_dot i_dot-five"></i>
+                <i class="i i_dot i_dot-six"></i>
+            </i>
+            <span class="btns top-panel-closet"><i class="i panel-closet"></i></span>
+        </div>
+        <div class="top-panel-bottom">
+            <ul class="top-panel-bottom-list">
+                <li class="top-panel-bottom-list-item"><a href="#">Архангельск</a></li>
+                <li class="top-panel-bottom-list-item"><a href="#">Ижевск</a></li>
+                <li class="top-panel-bottom-list-item"><a href="#">Махачкала</a></li>
+                <li class="top-panel-bottom-list-item"><a href="#">Подольск</a></li>
+                <li class="top-panel-bottom-list-item"><a  class="active" href="#">Тольятти</a></li>
+                <li class="top-panel-bottom-list-item"><a href="#">Астрахань</a></li>
+            </ul>
+        </div>
+    </div>
     <!-- nav -->
     <nav class="navbar navbar-default">
         <div class="navbar-header-top">
             <a class="navbar-brand" href="#"></a>
             <div class="navbar-header-top_box-location"> <i class=" fa fa-map-marker" aria-hidden="true"></i> <span class="navbar-header-top_box-location-text">Ваш город:</span>
-                <a href="#"> <span class="navbar-header-top_box-location-text text-dotted">Москва<i class=" i_dotted"></i></span> <i class="navbar-header-top_box-location-text fa fa-angle-down" aria-hidden="true"></i> </a> <span class="navbar-header-top_box-location_number"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 777 77 77</span> </div>
+                <a href="#" class="btn-open-top-panel"> <span class="navbar-header-top_box-location-text text-dotted">Москва<i class=" i_dotted"></i></span> <i class="navbar-header-top_box-location-text fa fa-angle-down" aria-hidden="true"></i> </a> <span class="navbar-header-top_box-location_number"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 777 77 77</span> </div>
             <div class="navbar-header-top_evaluation"> <i class="fa fa-check" aria-hidden="true"></i>Средний бал <span class="navbar-header-top_evaluatio-value">4,9</span> </div>
             <div class="navbar-header-top_buttons">
                 <button type="button" class="btns btn-call-me btn-pop-up-xl"> <i class="fa fa-mobile" aria-hidden="true"></i> ПЕРЕЗВОНИТЕ МНЕ </button>
@@ -334,6 +376,7 @@
     <script src="js/libs/bootstrap.js"></script>
     <script src="js/libs/responsiveCarousel.min.js"></script>
     <script src="js/select.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
