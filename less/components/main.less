@@ -28,7 +28,14 @@ a:focus{
     font-size: 14px;
     border: 1px solid #fff;
 }
-
+.btn-red {
+    background-color: #eb4855;
+    border-color: #eb4855;
+    color: #fff;
+    font-size: 15px;
+    padding: 17px 11px;
+    white-space: nowrap;
+}
 .btn-red:hover,
 .btn-send:hover,
 .btns-send-pop-up:hover {
@@ -544,6 +551,9 @@ button.btn-togle{
     padding: 60px 0 90px 0;
     transform: translateY(-100%);
     position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
     z-index: 20;
 }
 .top-panel-left-side{
@@ -671,7 +681,7 @@ button.btn-togle{
 }
 .top-panel-closet{
     position: absolute;
-    top: -40px;
+    top: 20px;
     right: 120px;
 }
 .panel-closet{
@@ -704,7 +714,28 @@ button.btn-togle{
     color: #484863;
     border-radius: 2px;
 }
-
+@media(max-width: 768px){
+    .top-panel{
+        display: none;
+    }
+}
+@media(max-width: 1180px){
+    .top-panel-left-side,
+    .top-panel-right-side{
+        display: block;
+        width: 100%;
+        padding: 0 30px;
+        text-align: center;
+    }
+    .top-panel-left-side-list-item,
+    .top-panel-bottom-list-item{
+        text-align: center;
+    }
+    .top-panel-bottom{
+        padding: 0 30px;
+        width: 100%;
+    }
+}
 /* nav */
 
 
