@@ -48,15 +48,43 @@ button.btn-send {
   position: relative;
   z-index: 10;
 }
+.btn-add-caption-icon{
+   background-color: transparent;
+   top: 5px;
+   color: black;
+}
+input[type=file] {
+    display: none;
+}
 
+.btn-add-caption {
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    bottom: 42px;
+    margin-left: 40px;
+}
+
+.btn-add-caption:hover, .btn-add-caption:hover .btn-add-caption-icon{
+    color: red;
+    cursor: pointer;
+}
+.btn-add-caption-text{
+    border-bottom: 1px dashed black;
+}
+.btn-add-caption:hover .btn-add-caption-text {
+    border-bottom: 1px dashed red;
+    cursor: pointer;
+}
 
 @media(max-width: 768px){
   .btn-send{
-     width: 100%;
+    width: 100%;
     margin: 34px 0px 12px 0px;
   }
    label.btn-add-caption{
-    bottom: 67px;
+    bottom: 65px;
     left: 0;
     width: 100%;
     margin-left: 0;
@@ -64,13 +92,15 @@ button.btn-send {
   }
   .btn-add-caption-icon{
     position: static;
-    margin: 0px;
+    margin: 0px 0px 0px -30px;
+    padding-right: 0;
   }
   input[type=file]{
     display: none;
   }
   .btn-add-caption-text{
     position: static;
+    margin-right: -12px;
   }    
   a.btn.btn-retain {
     width: 100%;
@@ -102,9 +132,8 @@ button.btn-send {
   .content-box-select-caption-text-bottom{
     font-size: 16px;
   }
-  
   .btn-add-caption-icon{
-    left: -5px;
+     left: -5px;
   }
   .content-box-select-caption-text-top{
     margin-top: 61px;
