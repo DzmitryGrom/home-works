@@ -3340,33 +3340,6 @@ a.social-circle:focus {
   width: 35%;
   vertical-align: top;
 }
-/* btn */
-a.btn-send {
-  font-size: 15px;
-  font-family: Aria, Helvetica;
-  color: #fff;
-  background-color: #eb4855;
-  border-color: #eb4855;
-  padding: 18px 56px;
-  width: 100%;
-  white-space: nowrap;
-}
-@media (max-width: 768px) {
-  div a.btn-send {
-    padding: 18px 0;
-  }
-}
-button.btn-default.content-box-reklam_btn-top:hover {
-  background-color: #65beee;
-  color: #fff;
-}
-button.btn-default.content-box-reklam_btn-top:focus {
-  color: #fff;
-  background-color: #357598;
-}
-a.btn-default.content-box-reklam_btn-top:active {
-  background-color: #357598;
-}
 /*breadcrumb-box */
 /* breadcrumb-box */
 .content-box-breadcrumb {
@@ -3923,7 +3896,7 @@ a.content-box-select-details-stox-box-sub-list-item-text {
   padding: 0 10px;
   right: 20px;
 }
-.content-box-select-details-stox-box-reklam {
+.content-box-select-details-stox-box-ad {
   background-color: #fff;
   margin: 30px 30px 30px 80px;
   padding: 30px;
@@ -3936,12 +3909,23 @@ button.btn-send {
   border-color: #eb4855;
   padding: 18px 56px;
 }
-.content-box-select-details-stox-box-reklam h2 {
+.content-box-select-details-stox-box-ad h2 {
   font-size: 24px;
   font-family: "GothamProLightItalic";
   color: #3d4955;
   width: 80%;
   margin: 0 auto 25px;
+}
+.content-box-select-stox-box {
+  background-color: #4e535c;
+  text-align: center;
+  padding: 0px 30px 0px 80px;
+  margin-bottom: 60px;
+  position: relative;
+  display: inline-block;
+  max-width: 520px;
+  width: 35%;
+  vertical-align: top;
 }
 .content-box-select-details-stox-box-list-item-text:hover {
   color: #fff;
@@ -4012,8 +3996,35 @@ a.content-box-select-details-stox-box-list-item-text:focus {
   margin-bottom: 15px;
   font-size: 14px;
 }
+.content-box-select-details-stox-box-order .btn-send:hover {
+  background-color: #3d8eb9;
+  border-color: #3d8eb9;
+}
+.content-box-select-details-stox-box-order .btn-send:active {
+  background-color: #fff;
+  border-color: #fff;
+  color: #3d4955;
+}
+button.content-box-select-details-stox-box-order .btn-send {
+  width: 100%;
+}
+a.btn-send {
+  font-size: 15px;
+  font-family: Aria, Helvetica;
+  color: #fff;
+  background-color: #eb4855;
+  border-color: #eb4855;
+  padding: 18px 56px;
+  width: 100%;
+  white-space: nowrap;
+}
 @media (max-width: 768px) {
-  div.content-box-select-details-stox-box-reklam {
+  div a.btn-send {
+    padding: 18px 0;
+  }
+}
+@media (max-width: 768px) {
+  div.content-box-select-details-stox-box-ad {
     margin: 0;
   }
 }
@@ -4025,10 +4036,10 @@ a.content-box-select-details-stox-box-list-item-text:focus {
     padding: 15px 15px 30px 15px;
     margin-bottom: 0;
   }
-  div.content-box-select-details-stox-box-reklam h2 {
+  div.content-box-select-details-stox-box-ad h2 {
     font-size: 24px;
   }
-  .content-box-select-details-stox-box-reklam {
+  .content-box-select-details-stox-box-ad {
     margin: 30px 30px 0px 30px;
   }
   .content-box-select-details-stox-box-list {
