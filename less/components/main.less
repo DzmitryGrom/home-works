@@ -688,9 +688,34 @@ button.btn-togle{
     top: 20px;
     right: 120px;
 }
+.panel-closet:before,
+.panel-closet:after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0px;
+    width: 36px;
+    height: 2px;
+    background: #c0c1c1;
+}
+
+.panel-closet:before {
+    webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.panel-closet:after {
+    webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
 .panel-closet{
-    background-image: url(../img/btn-closed.png);
-    width: 30px;
+    width: 35px;
     height: 30px;
 }
 .top-panel-bottom{

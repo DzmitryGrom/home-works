@@ -2872,9 +2872,32 @@ button.btn-togle {
   top: 20px;
   right: 120px;
 }
+.panel-closet:before,
+.panel-closet:after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0px;
+  width: 36px;
+  height: 2px;
+  background: #c0c1c1;
+}
+.panel-closet:before {
+  webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.panel-closet:after {
+  webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
 .panel-closet {
-  background-image: url(../img/btn-closed.png);
-  width: 30px;
+  width: 35px;
   height: 30px;
 }
 .top-panel-bottom {
@@ -3551,48 +3574,6 @@ a.social-circle:focus {
   width: 35%;
   vertical-align: top;
 }
-/* icon */
-.i_dotted_add-file:hover,
-.btn-add-caption-text:hover,
-.btn-add-caption-icon:hover {
-  cursor: pointer;
-}
-.i_drawing-order {
-  background-image: url(../img/drawing-order.png);
-  width: 187px;
-  height: 198px;
-}
-.i_payment-order {
-  background-image: url(../img/payment-order.png);
-  width: 217px;
-  height: 138px;
-}
-.i_adjustment-clearance {
-  background-image: url(../img/adjustment-clearance.png);
-  width: 208px;
-  height: 197px;
-  margin-right: -65px;
-}
-.i_deadline {
-  background-image: url(../img/deadline.png);
-  width: 196px;
-  height: 196px;
-}
-.i_guarantee-collaboration {
-  background-image: url(../img/guarantee-collaboration.png);
-  width: 141px;
-  height: 196px;
-}
-.i_refund {
-  background-image: url(../img/refund.png);
-  width: 113px;
-  height: 183px;
-}
-.i_payments-security {
-  background-image: url(../img/payments-security.png);
-  width: 330px;
-  height: 163px;
-}
 /* content-box-breadcrumb */
 /* breadcrumb-box */
 .content-box-breadcrumb {
@@ -3654,6 +3635,63 @@ a.social-circle:focus {
   margin-top: -10px;
 }
 /* content-box-conditions-discription */
+/* icon */
+.i_dotted_add-file:hover,
+.btn-add-caption-text:hover,
+.btn-add-caption-icon:hover {
+  cursor: pointer;
+}
+.i_tabs {
+  background-image: url(../img/tabs.png);
+  width: 187px;
+  height: 198px;
+}
+.i_payment-order {
+  background-image: url(../img/payment-order.png);
+  width: 217px;
+  height: 138px;
+}
+.i_adjustment-clearance {
+  background-image: url(../img/adjustment-clearance.png);
+  width: 208px;
+  height: 197px;
+  margin-right: -65px;
+}
+.i_deadline {
+  background-image: url(../img/deadline.png);
+  width: 196px;
+  height: 196px;
+}
+.i_guarantee-collaboration {
+  background-image: url(../img/guarantee-collaboration.png);
+  width: 141px;
+  height: 196px;
+}
+.i_refund {
+  background-image: url(../img/refund.png);
+  width: 113px;
+  height: 183px;
+}
+.i_payments-security {
+  background-image: url(../img/payments-security.png);
+  width: 330px;
+  height: 163px;
+}
+.i_stamp {
+  background-image: url(../img/i_stamp.png);
+  width: 149px;
+  height: 196px;
+}
+.i_list-compleet {
+  background-image: url(../img/list-compleet.png);
+  width: 164px;
+  height: 197px;
+}
+.i_superman {
+  background-image: url(../img/superman.png);
+  width: 185px;
+  height: 196px;
+}
 .content-box-conditions-discription-list-item {
   text-align: center;
   padding: 60px 0;
@@ -3685,35 +3723,35 @@ a.social-circle:focus {
   margin-right: 10px;
   border-bottom: 1px dashed #fff;
 }
-.content-box-conditions-discription-list-item_conditions-work {
+.content-box-conditions-discription-list-item_conditions-white {
   background-color: #fff;
 }
-.content-box-conditions-discription-list-item_conditions-work .content-box-conditions-discription-list-item-text-top {
+.content-box-conditions-discription-list-item_conditions-white .content-box-conditions-discription-list-item-text-top {
   margin-bottom: 0px;
 }
-.content-box-conditions-discription-list-item_conditions-work .content-box-conditions-discription-list-item-text-bottom {
+.content-box-conditions-discription-list-item_conditions-white .content-box-conditions-discription-list-item-text-bottom {
   margin: 60px auto 0;
 }
-.content-box-conditions-discription-list-item_drawing-order {
+.content-box-conditions-discription-list-item_conditions-gray {
   background-color: #f4f4f4;
 }
-.content-box-conditions-discription-list-item_drawing-order i {
+.content-box-conditions-discription-list-item_conditions-gray i {
   margin-right: -48px;
 }
-.content-box-conditions-discription-list-item_payment-order {
+.content-box-conditions-discription-list-item_conditions-dark-blue {
   background-color: #383760;
 }
-.content-box-conditions-discription-list-item_payment-order .content-box-conditions-discription-list-item-text-top,
-.content-box-conditions-discription-list-item_payment-order .content-box-conditions-discription-list-item-text-bottom,
-.content-box-conditions-discription-list-item_adjustment-clearance .content-box-conditions-discription-list-item-text-top,
-.content-box-conditions-discription-list-item_adjustment-clearance .content-box-conditions-discription-list-item-text-bottom,
-.content-box-conditions-discription-list-item_guarantee-collaboration .content-box-conditions-discription-list-item-text-top,
-.content-box-conditions-discription-list-item_guarantee-collaboration .content-box-conditions-discription-list-item-text-bottom,
-.content-box-conditions-discription-list-item_payments-security .content-box-conditions-discription-list-item-text-bottom,
-.content-box-conditions-discription-list-item_payments-security .content-box-conditions-discription-list-item-text-top {
+.content-box-conditions-discription-list-item_conditions-dark-blue .content-box-conditions-discription-list-item-text-top,
+.content-box-conditions-discription-list-item_conditions-dark-blue .content-box-conditions-discription-list-item-text-bottom,
+.content-box-conditions-discription-list-item_conditions-orange .content-box-conditions-discription-list-item-text-top,
+.content-box-conditions-discription-list-item_conditions-orange .content-box-conditions-discription-list-item-text-bottom,
+.content-box-conditions-discription-list-item_conditions-blue .content-box-conditions-discription-list-item-text-top,
+.content-box-conditions-discription-list-item_conditions-blue .content-box-conditions-discription-list-item-text-bottom,
+.content-box-conditions-discription-list-item_conditions-pink .content-box-conditions-discription-list-item-text-bottom,
+.content-box-conditions-discription-list-item_conditions-pink .content-box-conditions-discription-list-item-text-top {
   color: #fff;
 }
-.content-box-conditions-discription-list-item_adjustment-clearance {
+.content-box-conditions-discription-list-item_conditions-orange {
   background-color: #fa991b;
 }
 .content-box-conditions-discription-list-item-text-bottom-link {
@@ -3721,7 +3759,7 @@ a.social-circle:focus {
   color: #3d4955;
   font-weight: bold;
 }
-.content-box-conditions-discription-list-item_guarantee-collaboration {
+.content-box-conditions-discription-list-item_conditions-blue {
   background-color: #75c4c8;
 }
 .content-box-conditions-discription-list-item-text-bottom-list {
@@ -3737,7 +3775,7 @@ a.social-circle:focus {
 .content-box-conditions-discription-list-item-text-bottom-list-item i {
   margin-right: 10px;
 }
-.content-box-conditions-discription-list-item_payments-security {
+.content-box-conditions-discription-list-item_conditions-pink {
   background-color: #c54e75;
 }
 .content-box-conditions-discription-list-item-text-bottom_no-margin {
