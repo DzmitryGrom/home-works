@@ -32,10 +32,24 @@ a.btn-autor:focus,a.btn-more:focus{
   left: -17px;
   bottom: 70px;
 }
-
+.i_arrow_orange{
+  background-image: url(../img/arrow_orange.png);
+  background-size: inherit;
+  width: 19px;
+  height: 39px;
+  position: absolute;
+  right: -17px;
+  bottom: 70px; 
+}
 
 .content-box-author{
   background-image: url(../img/bg4.png);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.content-box-author_bottom{
+  background-image: url(../img/bg-orange.jpg);
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -61,9 +75,7 @@ a.btn-autor:focus,a.btn-more:focus{
   .content-box-author-img-caption{
     display: none;
   }
-  .i_arrow_bg-blue{
-    display: none;
-  }
+  
   .content-box-author-caption{
     text-align: center;
     margin-bottom: 28px;
@@ -100,6 +112,7 @@ a.btn-autor:focus,a.btn-more:focus{
     padding-bottom: 240px;
     padding-right: 16px;
   }
+  
   .content-box-author-img-caption{
     padding-left: 0;
     padding-right: 0;
@@ -117,6 +130,9 @@ a.btn-autor:focus,a.btn-more:focus{
     vertical-align: top;
     position: relative;
   }
+  .content-box-author_bottom .content-box-author-caption{
+    padding: 0 59px 0 0;    
+  }
   .btn-autor-caption{
     bottom: 62px;
   }
@@ -124,4 +140,18 @@ a.btn-autor:focus,a.btn-more:focus{
     margin-left: 410px;
     font-size: 18px;
   }
+  .content-box-author_bottom .btn-autor{
+     margin: 0 410px 0 0;  
+   }
+}
+@media (min-width: 1200px){
+    .content-box-author div.container {
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+}
+@media (max-width: 1201px){
+    .i_arrow_orange, .i_arrow_bg-blue {
+        display: none;
+    }
 }

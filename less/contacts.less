@@ -1,0 +1,156 @@
+@import "components/main.less";
+
+
+/* breadcrumb-box */
+
+
+@import "components/breadcrumb-box.less";
+
+/*content-box-contacts*/
+h1 { margin: 0; padding: 0; }
+
+#map {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.custom_layout {
+    background-color: white;
+    width: 150px;
+    height: 600px;
+}
+       
+#map {
+    width: 100%;
+    height: 420px;
+}
+.map-pop-up{
+    background-image: url(../img/map-pop-up.png);
+    width: 650px;
+    height: 420px;
+    background-size: 100% 100%;
+    padding: 60px 0px 0px 80px;
+    position: relative;
+    z-index: 10;
+    display: none;
+}
+.map-pop-up h2{
+   font-size: 36px;
+    font-family: "GothamProLight";
+    line-height: 30px;
+    margin: 0 0 30px 0;
+    color: #fff; 
+}
+.map-pop-up p{
+   font-size: 14px;
+    font-family: "GothamProLight";
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 19px;
+    padding-left: 20px;
+    width: 85%;
+    text-align: left;
+    position: relative;
+}
+.map-pop-up .fa-angle-down{
+    position: static;
+    margin: 0px 10px 0 0;
+    color: #fff;
+}
+.map-pop-up i{
+   position: absolute;
+    left: 0;
+    top: 4px;
+}
+.map-pop-up-text-top{
+    font-size: 36px;
+    font-family: "GothamProLight";
+    line-height: 30px;
+    margin: 0 0 30px 0;
+    color: #fff;
+}
+.map-pop-up-text-bottom{
+    font-size: 14px;
+    font-family: "GothamProLight";
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 19px;
+    padding-left: 20px;
+    width: 85%;
+    text-align: left;
+    position: relative;
+}
+.map-pop-up-text-bottom i{
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+.map-pop-up-text-bottom-number{
+    display: block;
+}
+.map-pop-up-text-bottom-city{
+    font-weight: bold;
+    border-bottom: 1px dashed #fff;
+    position: relative;
+    margin-right: 5px;
+}
+.map-pop-up-text-bottom-city i{
+    position: absolute;
+    left: inherit;
+    right: -12px;
+    top: 0;
+    color: #fff;
+}
+@media(max-width: 1000px){
+    .map-pop-up{
+        padding: 60px 0px 0px 20px;
+        width: 500px;
+    }
+}
+@media(max-width: 900px){
+    .map-pop-up h2{
+        font-size: 24px;
+    }
+    .map-pop-up{
+        height: 370px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 30px 0px 0px 0px;
+    }
+    #map{
+        height: 800px;
+    }
+    .map-pop-up h2, .map-pop-up p{
+        text-align: center;
+        display: block;
+        width: 90%;
+        margin: 0 auto 10px;
+    }
+    .map-pop-up span{
+        text-align: center;
+    }
+    .map-pop-up i {
+        position: static;
+        margin-right: 5px;
+    }
+    .map-pop-up p{
+        padding-left: 0;
+    }
+    .ymaps-2-1-41-controls__control{
+        width: 100%;
+    }
+}
+@import "components/select-box.less";
+
+
+/* content-box-label */
+
+
+@import "components/box-label.less";
+
+
+
