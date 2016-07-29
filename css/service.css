@@ -3675,6 +3675,14 @@ button.btn-send {
   .content-box-breadcrumb-text_hidden {
     display: none;
   }
+  .content-box-breadcrumb-text_active {
+    max-width: 105px;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    overflow: hidden;
+  }
 }
 /* container-fluid content-box-select */
 .content-box-select .container {
