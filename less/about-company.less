@@ -1,0 +1,186 @@
+@import "components/main.less";
+
+
+
+
+
+/* breadcrumb-box */
+
+
+@import "components/breadcrumb-box.less";
+
+
+
+/* content-box-about-company */
+.content-box-about-company{
+    padding-bottom: 20px;
+}
+.content-box-about-company-img{
+    width: 100%;
+}
+.content-box-about-company .content-box-question-container-slider_arrows{
+    background-color: #7f7f7f;
+    opacity: 0.9;
+}
+.slick-arrow:active{
+    background-color: #65beee;
+}
+.slider{
+    margin-bottom: 30px;
+}
+.content-box-about-company-text-top{
+    font-size: 36px;
+    font-family: "GothamProLight";
+    line-height: 30px;
+    text-align: center;
+    color: #3d4955;
+    margin: 60px 0 30px 0;
+}
+.content-box-about-company-text-bottom{
+    font-size: 14px;
+    font-family: "GothamProLight";
+    line-height: 24px;
+    color: #000000;
+    margin: 0 auto 40px;
+    width: 85%;
+}
+img.img-mobile{
+    display: none;
+}
+@media(max-width: 768px){
+    div img.img-mobile{
+        display: block;
+    }
+    img.img-desctop{
+        display: none;
+    }
+    .content-box-about-company span.content-box-question-container-slider_arrows{
+        display: none!important;
+    }
+    .content-box-about-company-text-bottom{
+        text-align: center;
+    }
+    .slider{
+        padding: 0 15px;
+    }
+    
+}
+
+
+/*content-box-news-and-articles*/
+.content-box-news-and-articles-list{
+    padding: 60px 80px 0 80px;
+    font-size: 0;
+}
+.content-box-news-and-articles-list-item-text-top{
+    font-size: 36px;
+    font-family: "GothamProLight";
+    color: #3d4955;
+    margin: 0 0 30px 0;
+}
+.content-box-news-and-articles-list-item_news-inner{
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 15px;
+    width: 95%;
+    text-align: left;
+}
+.content-box-news-and-articles-list-item_news-inner-date i{
+    margin-right: 10px;
+}
+.content-box-news-and-articles-list-item_news-inner-date{
+    color: #939292;
+    font-size: 10px;
+}
+.content-box-news-and-articles-list-item_news-inner-text-bottom{
+    font-size: 14px;
+    font-family: "GothamProLight";
+    color: #000000;
+}
+.content-box-news-and-articles-list-item{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 50%;
+}
+.content-box-news-and-articles-list-item_articles .content-box-news-and-articles-list-item_news-inner-text-bottom{
+    font-size: 16px;
+    font-family: "GothamProMedium";
+}
+.content-box-news-and-articles-list-item:hover .btn-all-news{
+    display: block;
+}
+.btn-all-news{
+    font-size: 18px;
+    font-family: "GothamProLight";
+    color: #3d4955;
+    border-bottom: 1px dashed  #3d4955;
+    position: absolute;
+    top: 15px;
+    right: 32px;
+    display: none;
+}
+.btn-all-news:hover{
+    color: #3d4955;
+}
+@media(max-width: 768px){
+    .content-box-news-and-articles-list{
+        padding: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .content-box-news-and-articles{
+        padding-bottom: 30px;
+    }
+    .content-box-news-and-articles-list-item{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .content-box-news-and-articles-list-item_news-inner{
+        text-align: center;
+        width: 100%;
+    }
+    .content-box-news-and-articles-list-item-text-top{
+        margin-top: 30px;
+    }
+    .btn-all-news{
+        display: inline-block;
+        position: static;
+    }
+}
+@import "components/question-box.less";
+
+
+/* select-box */
+
+@import "components/select-box.less";
+
+
+/* advantages-box */
+
+@import "components/advantages-box.less";
+
+/* content-box-reviews */
+
+
+/* work-box */
+
+@import "components/work-box.less";
+
+@import "components/box-reviews.less";
+
+
+/* content-box-autor */
+
+@import "components/author-box.less";
+.content-box-author_bottom{
+    margin-bottom: -10px;
+}
+
+
+/* content-box-label */
+
+
+@import "components/box-label.less";
+
+
