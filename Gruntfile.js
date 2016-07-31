@@ -20,7 +20,8 @@ module.exports = function (grunt) {
                     'css/news.css': 'less/news.less',
                     'css/about-company.css': 'less/about-company.less',
                     'css/about-company-students.css': 'less/about-company-students.less',
-                    'css/reviews.css': 'less/reviews.less'
+                    'css/reviews.css': 'less/reviews.less',
+                    'css/articles.css': 'less/articles.less'
                 }
             }
         },
