@@ -57,8 +57,17 @@
     <nav class="navbar navbar-default">
         <div class="navbar-header-top">
             <a class="navbar-brand" href="#"></a>
-            <div class="navbar-header-top_box-location"> <i class=" fa fa-map-marker" aria-hidden="true"></i> <span class="navbar-header-top_box-location-text">Ваш город:</span>
-                <a href="#" class="btn-open-top-panel"> <span class="navbar-header-top_box-location-text text-dotted">Москва<i class=" i_dotted"></i></span> <i class="navbar-header-top_box-location-text fa fa-angle-down" aria-hidden="true"></i> </a> <span class="navbar-header-top_box-location_number"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 777 77 77</span> </div>
+            <div class="navbar-header-top_box-location"> 
+                <i class=" fa fa-map-marker" aria-hidden="true"></i> 
+                <span class="navbar-header-top_box-location-text">Ваш город:</span>
+                <a href="#" class="btn-open-top-panel"> 
+                    <span class="navbar-header-top_box-location-text text-dotted">Москва
+                        <i class=" i_dotted"></i>
+                    </span> 
+                    <i class="navbar-header-top_box-location-text fa fa-angle-down" aria-hidden="true"></i> 
+                </a> 
+                <span class="navbar-header-top_box-location_number"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 777 77 77</span> 
+            </div>
             <div class="navbar-header-top_evaluation"> <i class="fa fa-check" aria-hidden="true"></i>Средний бал <span class="navbar-header-top_evaluatio-value">4,9</span> </div>
             <div class="navbar-header-top_buttons">
                 <button type="button" class="btns btn-call-me btn-pop-up-xl"> <i class="fa fa-mobile" aria-hidden="true"></i> ПЕРЕЗВОНИТЕ МНЕ </button>
@@ -101,8 +110,11 @@
         </a>
         <span class="content-box-breadcrumb-text_active">Контакты</span> </div>
     <!-- content-box-contacts-->
-    <div id="map"></div>
-    
+    <div id="map">
+    </div>
+    <div class="content-box-contacts">
+        <p>Контактный номер<span>8 800 100-00-31</span></p>
+    </div>
     <!-- content-box-select-->
     <div class="content-box-select content-box-select_without-bg">
         <div class="container">
@@ -383,8 +395,9 @@
     <script src="js/libs/bootstrap.js"></script>
     <script src="js/libs/responsiveCarousel.min.js"></script>
     <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=package.full"></script>
-    <script src="js/contacts.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/contacts.js"></script>
+    
 </body>
 
 </html>
