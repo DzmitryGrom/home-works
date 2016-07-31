@@ -21,7 +21,8 @@ module.exports = function (grunt) {
                     'css/about-company.css': 'less/about-company.less',
                     'css/about-company-students.css': 'less/about-company-students.less',
                     'css/reviews.css': 'less/reviews.less',
-                    'css/articles.css': 'less/articles.less'
+                    'css/articles.css': 'less/articles.less',
+                    'css/articles-open.css': 'less/articles-open.less'
                 }
             }
         },

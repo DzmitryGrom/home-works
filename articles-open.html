@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Home work-articles-open</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/libs/slick.css">
+    <link rel="stylesheet" href="css/articles-open.css"> 
+</head>
+
+<body>
+    <!--top-panel-->
+    <div class="top-panel">
+        <span class="btns top-panel-closet"><i class="i panel-closet"></i></span>
+        <div class="top-panel-left-side">
+            <span class="top-panel-left-side-text-top">Выбрать город</span>
+            <span class="top-panel-left-side-text-bottom">Города в каторых есть  офисы  HomeWork5</span>
+            <ul class="top-panel-left-side-list">
+                <li class="top-panel-left-side-list-item"><a href="#">Екатеренбург</a></li>
+                <li class="top-panel-left-side-list-item"><a href="#">Казань</a></li>
+                <li class="top-panel-left-side-list-item"><a href="#">Москва</a></li>
+                <li class="top-panel-left-side-list-item"><a href="#">Нижний новгород</a></li>
+                <li class="top-panel-left-side-list-item"><a href="#">Новосибирск</a></li>
+                <li class="top-panel-left-side-list-item"><a class="active" href="#">Санкт-Петербург</a></li>
+            </ul>
+            <div class="top-panel-left-side-search">
+                <form>
+                    <input type="text" placeholder="Название города">
+                    <button class="btns">Выбрать</button>
+                </form>
+            </div>
+        </div>
+        <div class="top-panel-right-side">
+            <i class="i map_countries">
+                <i class="i i_dot i_dot-one"></i>
+                <i class="i i_dot i_dot-two"></i>
+                <i class="i i_dot i_dot-three"></i>
+                <i class="i i_dot i_dot-four"></i>
+                <i class="i i_dot i_dot-five"></i>
+                <i class="i i_dot i_dot-six"></i>
+            </i>
+        </div>
+        <div class="top-panel-bottom">
+            <ul class="top-panel-bottom-list">
+                <li class="top-panel-bottom-list-item"><a href="#">Архангельск</a></li>
+                <li class="top-panel-bottom-list-item"><a href="#">Ижевск</a></li>
+                <li class="top-panel-bottom-list-item"><a href="#">Махачкала</a></li>
+                <li class="top-panel-bottom-list-item"><a href="#">Подольск</a></li>
+                <li class="top-panel-bottom-list-item"><a  class="active" href="#">Тольятти</a></li>
+                <li class="top-panel-bottom-list-item"><a href="#">Астрахань</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- nav -->
+    <nav class="navbar navbar-default">
+        <div class="navbar-header-top">
+            <a class="navbar-brand" href="#"></a>
+            <div class="navbar-header-top_box-location"> <i class=" fa fa-map-marker" aria-hidden="true"></i> <span class="navbar-header-top_box-location-text">Ваш город:</span>
+                <a href="#" class="btn-open-top-panel"> <span class="navbar-header-top_box-location-text text-dotted">Москва<i class=" i_dotted"></i></span> <i class="navbar-header-top_box-location-text fa fa-angle-down" aria-hidden="true"></i> </a> <span class="navbar-header-top_box-location_number"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 777 77 77</span> </div>
+            <div class="navbar-header-top_evaluation"> <i class="fa fa-check" aria-hidden="true"></i>Средний бал <span class="navbar-header-top_evaluatio-value">4,9</span> </div>
+            <div class="navbar-header-top_buttons">
+                <button type="button" class="btns btn-call-me btn-pop-up-xl"> <i class="fa fa-mobile" aria-hidden="true"></i> ПЕРЕЗВОНИТЕ МНЕ </button>
+                <button type="button" class="btn-login  btn-enter btn-pop-up-xl"> <i class="fa fa-user" aria-hidden="true"></i> ЛИЧНЫЙ КАБИНЕТ </button>
+            </div>
+        </div>
+        <div class="container-fluid navbar-header-bottom">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand_mobile" href="#"></a>
+            <div class="navbar-header">
+                <button id="show_button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <div class="btn-togle-list">
+                    <button type="button" class="btn btn-login btn-enter btn-lg btn-togle pull-right "> <i class="fa fa-user" aria-hidden="true"></i> </button>
+                    <button type="button" class="btn btn-call-me btn-lg btn-togle pull-right"> <i class="fa fa-mobile" aria-hidden="true"></i> </button>
+                    <button id="closet-button" type="button" class="navbar-toggle collapsed btn-togle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <i class="fa fa-times" aria-hidden="true"></i> </button>
+                </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">УСЛУГИ<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">ЦЕНЫ И АКЦИИ</a></li>
+                    <li><a href="#">ГОТОВЫЕ РАБОТЫ</a></li>
+                    <li><a href="#">УСЛОВИЯ</a></li>
+                    <li><a href="#">СТАТЬ АВТОРОМ</a></li>
+                    <li class="active"><a href="#">О КОМПАНИИ</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                    <li><a href="#">ГАРАНТИИ</a></li>
+                    <li><a href="#">ОТЗЫВЫ</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- Breadcrumb -->
+    <div class="content-box-breadcrumb">
+        <a href="#" class="content-box-breadcrumb-text"> 
+            <i class="fa fa-home" aria-hidden="true"></i>Главная
+            <i class="fa fa-angle-right" aria-hidden="true"></i> 
+        </a>
+        <a href="#" class="content-box-breadcrumb-text content-box-breadcrumb-text_more">...
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>  
+        <a href="#" class="content-box-breadcrumb-text content-box-breadcrumb-text_hidden">О компании
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="content-box-breadcrumb-text content-box-breadcrumb-text_hidden">Статьи
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a> 
+        <span class="content-box-breadcrumb-text_active">
+            Дипломная работа по судебной экспертизе. Очень интересная статья
+        </span>
+    </div>
+    <!-- content -->
+    <!-- content-box-articles-open-->
+    <div class="content-box-articles-open">
+        <h2 class="content-box-articles-open-text-top">Дипломная работа по судебной экспертизе. Очень интересная статья</h2>
+        <p class="content-box-articles-open-text-bottom">
+            Дипломная работа является самым важным событием в жизни студента. Выполненная безукоризненно, она являеться отражением всех полученных на протяжении лет учебы знаний.
+        </p>
+        <p class="content-box-articles-open-text-bottom">
+            Это показатель того, насколько студент готов к работе в юриспруденции. Его димлоный проект по судебной экспертизе должен отражать теории различных видов судебных, экспертиз, навыки студента правильного применения им вида экспертизы, использованной на законодательном уровне и правомерно. На основании дипломной работы также выясняется, понял ли студент порядок реализации в до-судебном процессе полученных результатов.
+        </p>
+        <h3 class="content-box-articles-open-text-bottom-caption">Где искать помощь в написании дипломной работы?</h3>
+        <p class="content-box-articles-open-text-bottom">
+            Успешную защиту гарантирует правильное написание, и сдав работу нужно лишь подготовиться к защите: составить и выучить речь, запомнить регламентирующие правовые акты, которые приняты за основу для решений и вывод. По части оформления, требования и дипломной работе более стоги, ежели к курсовой. Абзацы, пробелы, заглавные буквы и прочее требует усидчивости и скрупулёзности. Диплом должен быть выверен до последней точки и соответвствовать принятым стандартам.
+        </p>
+        <p class="content-box-articles-open-text-bottom">
+            У студентов всегда возникали проблемы с написанием и оформлением работы. Во многом этот факт объясняется нехваткой времени, поскольку многие сочетают учебу с семьей и работой.
+        </p>
+        <h3 class="content-box-articles-open-text-bottom-caption">Где  же искать исполнителя, способного выполнить работу качественно?</h3>
+        <p class="content-box-articles-open-text-bottom">
+            Судебная экспертиза - предмет сложной и объемный, поэтому его должен писать только человек юридическим образованием и хорошим опытом в до-судебной практике.
+        </p>
+        <p class="content-box-articles-open-text-bottom">
+            Естественно,такого рода работу не доверишь любому исполнителю, если нужен качественный и своевременным результат.
+        </p>
+        <p class="content-box-articles-open-text-bottom">
+            Не стоит заказывать работу одногрупникам или выпускникам прошлого года - безупречность в данном случае не гарантируеться.
+        </p>
+        <p class="content-box-articles-open-text-bottom">
+            Тем более, не следует рассчитывать на неизвестном фрилансеров, которые предлагают свои услуги на просторах Интернет - уровень их компетентности неизвестен, так зачем рисковать?
+        </p>
+        <p class="content-box-articles-open-text-bottom">
+            Отличным решением могут стать специализированные фирмы, и то, только в тех, где большой штат персонала и есть специалисты узких направлений. Перед тем, как обращаться в интересующую вас фирму, посмотрите сайт внимательно, почитайте отзывы, узнайте сколько лет компания занимаеться написанием дипломов и насколько безупречна её репутация.
+        </p>
+        <h3 class="content-box-articles-open-text-bottom-caption">Как снизить затраты на дипломную работу на заказ?</h3>
+        <p class="content-box-articles-open-text-bottom">
+            Дипломная работа по дисциплине «Судебная экспертиза», независимо от выбранного направления (криминалистическое, судебно-бухгалтерское и пр.),относится к дорогим видам услуг. Это обусловлено большим объемом информации и сложностью. Качественная работа не может стоить дешево, но есть несколько способов, как снизить цену.
+        </p>
+        <p class="content-box-articles-open-text-bottom">
+            Заказывать диплом рекомендуется заранее. Специалисту необходимо изучить всю информацию по нужной теме.
+        </p>
+        <p class="content-box-articles-open-text-bottom">
+            В крайнем случае, не возбраняеся заказать только часть работы, которая самой сложной. Получается существенная экономия. Как правило, сложности вызывает заключительная практическая часть и оформление приложений. Студенты сами пишут речь на основе уже готового диплома.
+        </p>
+        <p class="content-box-articles-open-text-bottom">
+            Исполнителя не возбраняется просить о скидке, предварительно обсудив с ним стоимость услуг.
+        </p>
+        <ol class="content-box-articles-open-text-bottom-list">
+            <li class="content-box-articles-open-text-bottom-list-item">
+                <span>Куда же обрашаться по поводу написания диплома по судебной экспертизе?</span>
+            </li>
+            <li class="content-box-articles-open-text-bottom-list-item">
+                <span>Дипломная «на носу», а времени на поиски ответсвенного автора нет?</span>   
+            </li>
+        </ol>
+        <p class="content-box-articles-open-text-bottom">
+            Не стоит переживать, есть смысл обратиться в нашу фирму. Здесь работают опытные профессионалы, пишущие работы по любой теме дисциплины «Судебная экспертиза», заслуживающие самой оценке. Репутация нашей фирмы сохраняется на протяжении существования компании - восьми лет работы, отличный результат гарантируется!
+        </p>
+    </div>
+    <!-- content-box-select-->
+    <div class="content-box-select">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 text-center">
+                    <h3 class="content-box-select-caption-text-top">ОДИН ИЗ ЛИДЕРОВ РЫНКА РОСИИ</h3>
+                    <h2 class="content-box-select-caption-text-middle">Выбирая HomeWorks 5, Вы выбираете лучший сервис</h2>
+                    <h4 class="content-box-select-caption-text-bottom">Вы просто оставляете заявку,а все остальное делаем мы!</h4> 
+                </div>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4 form-item">
+                        <select class="form-control input-lg">
+                            <option>Выберите ТИП работы</option>
+                            <option>Диплом</option>
+                            <option>Контрольная</option>
+                            <option>Курсовая</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <select class="form-control input-lg input-no-padding_l">
+                            <option>Ваш предмет</option>
+                            <option>Физика</option>
+                            <option>Алгебра</option>
+                            <option>Биология</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <select class="form-control input-lg input-no-padding_l form-item_last-child">
+                            <option>Тема предмета</option>
+                            <option>Молекулярная физика</option>
+                            <option>Избавление от ирроциональности</option>
+                            <option>Примитивные оргонизмы</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4 form-item">
+                        <input type="text" class="form-control input-lg" placeholder="Ваше имя"> </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 form-item">
+                        <input type="email" class="form-control input-lg" placeholder="Ваше E-mail"> </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 form-item">
+                        <input type="text" class="form-control input-lg" placeholder="Ваше номер телефона"> </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12  col-md-12 text-center content-box-select_box-bottom">
+                        <button type="button" class="btns btn-send">Отправить заявку</button>
+                        <label class="btn-add-caption"> <i class="fa fa-paperclip btn-add-caption-icon"></i>
+                            <input class="btn-add-caption-element" type="file" name="photo" multiple accept="image/*,image/jpeg"> <span class="btn-add-caption-text">Прикрепить файл</span> </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- content-box-articles -->
+    <div class="content-box-articles">
+        <div class="content-box-articles-select-box">
+            <select class="form-control input-lg">
+                <option>Выберете раздел</option>
+                <option>Дипломная работа</option>
+                <option>Контрольная работа</option>
+                <option>Курсовая работа</option>
+            </select>
+        </div>
+        <div class="content-box-articles-list">
+            <div class="content-box-articles-list-item">
+                <a href="#">
+                    <p class="content-box-articles-list-item-img-inner">
+                        <img  src="img/cap.png" alt="Диплом">
+                    </p>
+                    <p class="content-box-articles-list-item-text-inner">Дипломную работу
+                        <span class="content-box-articles-list-item-text-inner-date">(7)</span>
+                    </p>
+                </a>
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">
+                    <p class="content-box-articles-list-item-img-inner">
+                        <img class="content-box-articles-list-item-img" src="img/book-work.png" alt="Курсовая">
+                    </p> 
+                    <p class="content-box-articles-list-item-text-inner">Курсовую работу
+                        <span class="content-box-articles-list-item-text-inner-date">(24)</span>
+                    </p>
+                </a>      
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">
+                    <p class="content-box-articles-list-item-img-inner">   
+                        <img class="content-box-articles-list-item-img" src="img/essay.png" alt="Реферат">
+                    </p>
+                    <p class="content-box-articles-list-item-text-inner">Реферат
+                        <span class="content-box-articles-list-item-text-inner-date">(1&nbsp;024)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">   
+                    <p class="content-box-articles-list-item-img-inner">
+                        <img class="content-box-articles-list-item-img" src="img/open-book-control.png" alt="Контрольная">
+                    </p>
+                    <p class="content-box-articles-list-item-text-inner">Контрольную работу
+                        <span class="content-box-articles-list-item-text-inner-date">(154)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">
+                    <p class="content-box-articles-list-item-img-inner">   
+                        <img class="content-box-articles-list-item-img" src="img/scientific-research.png" alt="исследования">
+                    </p>    
+                    <p class="content-box-articles-list-item-text-inner">Научно-исследовательская работа
+                        <span class="content-box-articles-list-item-text-inner-date">(12)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#"> 
+                    <p class="content-box-articles-list-item-img-inner">  
+                        <img class="content-box-articles-list-item-img" src="img/report-practic.png" alt="практика">
+                    </p>
+                    <p class="content-box-articles-list-item-text-inner">Отчёт по практике
+                        <span class="content-box-articles-list-item-text-inner-date">(2&nbsp;098)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">
+                    <p class="content-box-articles-list-item-img-inner">   
+                        <img class="content-box-articles-list-item-img" src="img/test-online.png" alt="тест">
+                    </p>    
+                    <p class="content-box-articles-list-item-text-inner">Тест/экзамен online
+                        <span class="content-box-articles-list-item-text-inner-date">(98)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">
+                    <p class="content-box-articles-list-item-img-inner">   
+                        <img class="content-box-articles-list-item-img" src="img/magistr-work.png" alt="магистерская работа">
+                    </p>    
+                    <p class="content-box-articles-list-item-text-inner">Магистерская работа
+                        <span class="content-box-articles-list-item-text-inner-date">(198)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">
+                    <p class="content-box-articles-list-item-img-inner">   
+                        <img class="content-box-articles-list-item-img" src="img/answers-questions.png" alt="ответы">
+                    </p>    
+                    <p class="content-box-articles-list-item-text-inner">Ответы на билеты
+                        <span class="content-box-articles-list-item-text-inner-date">(435)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">   
+                    <p class="content-box-articles-list-item-img-inner"> 
+                        <img class="content-box-articles-list-item-img" src="img/monograph-work.png" alt="монография">
+                    </p>
+                    <p class="content-box-articles-list-item-text-inner">Монография
+                        <span class="content-box-articles-list-item-text-inner-date">(423)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">
+                    <p class="content-box-articles-list-item-img-inner">   
+                        <img class="content-box-articles-list-item-img" src="img/esse-work.png" alt="эссе">
+                    </p>    
+                    <p class="content-box-articles-list-item-text-inner">Эссе
+                        <span class="content-box-articles-list-item-text-inner-date">(10&nbsp;876)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">
+                    <p class="content-box-articles-list-item-img-inner">   
+                        <img class="content-box-articles-list-item-img" src="img/report-work.png" alt="доклад">
+                    </p>    
+                    <p class="content-box-articles-list-item-text-inner">Написание докладов
+                        <span class="content-box-articles-list-item-text-inner-date">(9)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#"> 
+                    <p class="content-box-articles-list-item-img-inner">   
+                        <img class="content-box-articles-list-item-img" src="img/typing.png" alt="набор текста">
+                    </p>    
+                    <p class="content-box-articles-list-item-text-inner">Набор текста
+                        <span class="content-box-articles-list-item-text-inner-date">(43)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">
+                    <p class="content-box-articles-list-item-img-inner">   
+                        <img class="content-box-articles-list-item-img" src="img/blueprints.png" alt="чертежи">
+                    </p>    
+                    <p class="content-box-articles-list-item-text-inner">Чертежи
+                        <span class="content-box-articles-list-item-text-inner-date">(435)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">
+                    <p class="content-box-articles-list-item-img-inner">   
+                        <img class="content-box-articles-list-item-img" src="img/review.png" alt="рецензия">
+                    </p>    
+                    <p class="content-box-articles-list-item-text-inner">Рецензия
+                        <span class="content-box-articles-list-item-text-inner-date">(13)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">   
+                    <p class="content-box-articles-list-item-img-inner"> 
+                        <img class="content-box-articles-list-item-img" src="img/transfer.png" alt="перевод">
+                    </p>    
+                    <p class="content-box-articles-list-item-text-inner">Перевод
+                        <span class="content-box-articles-list-item-text-inner-date">(65)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">
+                    <p class="content-box-articles-list-item-img-inner">   
+                        <img class="content-box-articles-list-item-img" src="img/coach.png" alt="репетитор">
+                    </p>    
+                    <p class="content-box-articles-list-item-text-inner">Репетитор
+                        <span class="content-box-articles-list-item-text-inner-date">(76)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">
+                    <p class="content-box-articles-list-item-img-inner">   
+                        <img class="content-box-articles-list-item-img" src="img/business-plan.png" alt="план">
+                    </p>    
+                    <p class="content-box-articles-list-item-text-inner">Бизнес-план
+                        <span class="content-box-articles-list-item-text-inner-date">(84)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">
+                    <p class="content-box-articles-list-item-img-inner">   
+                        <img class="content-box-articles-list-item-img" src="img/task-compleet.png" alt="решение">
+                    </p>    
+                    <p class="content-box-articles-list-item-text-inner">Решение задач
+                        <span class="content-box-articles-list-item-text-inner-date">(38)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">
+                    <p class="content-box-articles-list-item-img-inner">   
+                        <img class="content-box-articles-list-item-img" src="img/quality-checking.png" alt="качество">
+                    </p>    
+                    <p class="content-box-articles-list-item-text-inner">Проверка качества
+                        <span class="content-box-articles-list-item-text-inner-date">(47)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#">
+                    <p class="content-box-articles-list-item-img-inner">   
+                        <img class="content-box-articles-list-item-img" src="img/while-consultation.png" alt="консультация">
+                    </p>    
+                    <p class="content-box-articles-list-item-text-inner">Единовременная консультация
+                        <span class="content-box-articles-list-item-text-inner-date">(64)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#"> 
+                    <p class="content-box-articles-list-item-img-inner">  
+                        <img class="content-box-articles-list-item-img" src="img/abstract.png" alt="аспирантский реферат">
+                    </p>
+                    <p class="content-box-articles-list-item-text-inner">Аспирантский реферат
+                        <span class="content-box-articles-list-item-text-inner-date">(4)</span>
+                    </p>
+                </a> 
+            </div>
+            <div class="content-box-articles-list-item">
+                <a href="#"> 
+                    <p class="content-box-articles-list-item-img-inner">  
+                        <img class="content-box-articles-list-item-img" src="img/publication-article.png" alt="публикация">
+                    </p>
+                    <p class="content-box-articles-list-item-text-inner">Публикация статьи в ВАК
+                        <span class="content-box-articles-list-item-text-inner-date">(0)</span>
+                    </p>
+                </a> 
+            </div>
+        </div>
+    </div>
+    <!-- content-box-author-->
+    <div class="content-box-author">
+        <div class="container">
+            <div class="content-box-author-img-caption"><img class="content-box-author_img" src="img/author.jpg" alt=""></div>
+            <div class="content-box-author-caption">
+                <h2 class="content-box-author-caption_text-top">Станьте нашим автором</h2>
+                <p class="content-box-author-caption_text-bottom"> Компания HomeWorks 5 приглашает всех заинтересованных высококвалифицированных преподователей и специалистов, готовых работать на рынке написания научных и студенческих работ, к сотрудничеству. </p> <i class="i i_arrow_bg-blue"></i> </div>
+            <div class="row btn-autor-caption">
+                <div class="col-xs-12 col-sm-12 col-md-12"><a href="#" class="btns  btn-autor">СТАТЬ АВТОРОМ</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="content-box-author content-box-author_bottom">
+        <div class="container">
+            <div class="content-box-author-caption">
+                <h2 class="content-box-author-caption_text-top">Помощь студентам</h2>
+                <p class="content-box-author-caption_text-bottom">Наши консультанты всегда готовы ответить на Ваши вопросы online или по телефону 8-800-100-00-31. Также, Вы можете воспользоваться готовыми ответами на популярные вопросы</p> <i class="i i_arrow_orange"></i> 
+            </div>
+            <div class="content-box-author-img-caption"><img class="content-box-author_img" src="img/students.jpg" alt=""></div>
+            <div class="row btn-autor-caption">
+                <div class="col-xs-12 col-sm-12 col-md-12"><a href="#" class="btns  btn-autor">получить помощь</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- content-box-label -->
+    <div class="content-box-label">
+        <div id="navbtns">
+            <button class="previous btn btn-default btn-lg content-box-label_btn"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+            <button class="next btn btn btn-default btn-lg content-box-label_btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+        <div class="container">
+            <div class="content-box-label-list">
+                <div class="crsl-items" data-navigation="navbtns" style="width: 100%;">
+                    <div class="crsl-wrap crsl-wrap_block" style="width: 1752px; margin-left: -292px;">
+                        <div id="btnVisa" class="crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖ VISA</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашей банковской карточки</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_visa_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖ VISA</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_visa"></i></div>
+                            </div>
+                        </div>
+                        <div id="btnMts" class="crsl-item content-box-label-list-item crsl-active content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">ОПЕРАТОР СВЯЗИ МТС</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mts_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">ОПЕРАТОР СВЯЗИ МТС</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mts"></i></div>
+                            </div>
+                        </div>
+                        <!-- post #1 -->
+                        <div id="btnMc" class="crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖ MASTERCARD</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашей банковской карточки</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mc_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖ MASTERCARD</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mc"></i></div>
+                            </div>
+                        </div>
+                        <!-- post #2 -->
+                        <div id="btnMg" class="crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">ОПЕРАТОР СВЯЗИ МЕГАФОН</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mg_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">ОПЕРАТОР СВЯЗИ МЕГАФОН</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_mg"></i></div>
+                            </div>
+                        </div>
+                        <!-- post #3 -->
+                        <div id="btnEvr" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">САЛОН СОТОВОЙ СВЯЗИ ЕВРОСЕТЬ</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_evr_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">САЛОН СОТОВОЙ СВЯЗИ ЕВРОСЕТЬ</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_evr"></i></div>
+                            </div>
+                        </div>
+                        <!-- post #4 -->
+                        <div id="btnGiwi" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖ GIWI КОШЕЛЕК</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_giwi_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖ GIWI КОШЕЛЕК</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_giwi"></i></div>
+                            </div>
+                        </div>
+                        <!-- post #5 -->
+                        <div id="btnYandex" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖИ ЯНДЕКС.ДЕНЬГИ</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_yandex_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖИ ЯНДЕКС.ДЕНЬГИ</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_yandex"></i></div>
+                            </div>
+                        </div>
+                        <!-- post #6 -->
+                        <div id="btnWebmoney" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖ WEBMONEY</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_webmoney_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">ПЛАТЕЖ WEBMONEY</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_webmoney"></i></div>
+                            </div>
+                        </div>
+                        <!-- post #7 -->
+                        <div id="btnBank" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">ОПЛАТА ЧЕРЕЗ БАНК</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_bank_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">ОПЛАТА ЧЕРЕЗ БАНК</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_bank"></i></div>
+                            </div>
+                        </div>
+                        <!-- post #8 -->
+                        <div id="btnMoney" class=" crsl-item content-box-label-list-item content-box-label-list-item_block" style="position: relative; float: left; overflow: hidden; height: 414px; width: 292px; margin-right: 0px;">
+                            <div class="content-box-label-list-item_sub-item">
+                                <h3 class="content-box-label-list-item-text">НАЛИЧНЫЕ ДЕНЬГИ</h3>
+                                <p class="content-box-label-list-item-text_bottom">Вы можете оплатить заказ с помощью Вашего мобильного счета</p>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_money_act"></i></div>
+                            </div>
+                            <div class="content-box-label-list-item_active-item">
+                                <h3 class="content-box-label-list-item-text">НАЛИЧНЫЕ ДЕНЬГИ</h3>
+                                <div class="content-box-label-list-item-icon-box"><i class="i i_sprite i_money"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- @end .crsl-wrap -->
+                </div>
+                <!-- @end .crsl-items -->
+            </div>
+            <div class="content-box-label-text-bottom"> <span>И многие другие способы оплаты...</span> </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-menu">
+                <div class="footer-menu-list-cols footer-menu-list_first-col">
+                    <ul class="footer-menu-list">
+                        <li class="footer-menu-list-item_caption">УСЛУГИ</li>
+                        <li class="footer-menu-list-item"> <a href="#">Курсовые работы</a></li>
+                        <li class="footer-menu-list-item"> <a href="#">Диплом</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Контрольные работы</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Рефераты</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Эссе</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Рецензии</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Другие виды работ</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Готовые работы</a> </li>
+                    </ul>
+                </div>
+                <div class="footer-menu-list-cols footer-menu-list_second-col">
+                    <ul class="footer-menu-list footer-menu-list_second-col">
+                        <li class="footer-menu-list-item_caption">О НАС</li>
+                        <li class="footer-menu-list-item"> <a href="#">Цены и акции</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Условия работы</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">О компании</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Отзывы</a> </li>
+                        <li class="footer-menu-list-item"> <a href="#">Контакты</a> </li>
+                    </ul>
+                </div>
+                <div class="footer-menu-list-cols footer-menu-list_third-col">
+                    <ul class="footer-menu-list">
+                        <li class="footer-menu-list-item_caption">СОТРУДНИЧЕСТВО</li>
+                        <li class="footer-menu-list-item"> <a href="#">Стать автором</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center footer-information-col"> <span class="footer_number">8 800 100 00 31</span> <span class="footer_text">Бесплатный звонок по России</span> <a href="#" class="i social-circle"><i class="fa fa-vk" aria-hidden="true"></i></a> <a href="#" class="i social-circle"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a> <a href="#" class="i social-circle"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <p class="footer_text_box-bottom"> <span class="footer_text footer_text-coperation">© 2001-2016 HomeWorks 5.</span> <span class="footer_text">Все права защищены.</span> </p>
+                <div class="footer_btn-caption">
+                    <button id="btn-up" type="button" class="btns">НАВЕРХ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pop-up -->
+    <div class="pop-up-call_me pop-up">
+        <div class="pop-up_tr"></div>
+        <form class="form-horizontal form-group">
+            <p class="pop-up-item_phone"><i class="fa fa-phone" aria-hidden="true"></i>+7 (495) 777 77 77</p>
+            <div class="pop-up-item">
+                <input type="tel" class="form-control input-lg input-position" placeholder="Ваш номер телефона"> </div>
+            <div class="pop-up-item">
+                <input type="text" class="form-control input-lg input-position" placeholder="Ваше имя"> </div>
+            <div class="pop-up-item pop-up-item_select">
+                <select class="form-control input-lg">
+                    <option>В какое время Вам удобно?</option>
+                    <option>В любое время</option>
+                    <option>До обеда</option>
+                    <option>После обеда</option>
+                    <option>Вечером</option>
+                </select>
+            </div>
+            <div class="pop-up-item pop-up-item_btn-days">
+                <ul class="pop-up-item_btn-days-radio-group">
+                    <li class="pop-up-item_btn-days-radio-group-item">
+                        <label class="pop-up-item_btn-days-radio-button">
+                            <input type="radio" name="DayOfCall" class="pop-up-item_btn-days-radio-button-control" value="1" checked=""> <span class="pop-up-item_btn-days-radio-button-label btns btn-today">СЕГОДНЯ</span> 
+                        </label>
+                    </li>
+                    <li class="pop-up-item_btn-days-radio-group-item">
+                        <label class="pop-up-item_btn-days-radio-button">
+                            <input type="radio" name="DayOfCall" class="pop-up-item_btn-days-radio-button-control" value="2"> <span class="pop-up-item_btn-days-radio-button-label btns btn-today">ЗАВТРА</span> 
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <button  class="btns  btns-send-pop-up">Отправить заявку</button>
+        </form>
+    </div>
+    <div class="pop-up-login pop-up">
+        <div class="pop-up_tr"></div>
+        <form class="form-horizontal form-group">
+            <div class="pop-up-item">
+                <input type="email" class="form-control input-lg input-position" placeholder="Логин/E-mail"> </div>
+            <div class="pop-up-item">
+                <input type="password" class="form-control input-lg input-position" placeholder="Пороль"> </div>
+            <button type="button" class="btns  btns-send-pop-up">ВОЙТИ</button>
+            <div class="pop-up-login_sub-text-caption"> <a href="#" class="pop-up-login_sub-text">Забыли пароль?</a> </div>
+        </form>
+    </div>
+    <script src="js/libs/jquery-1.12.4.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/libs/responsiveCarousel.min.js"></script>
+    <script src="js/libs/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/news.js"></script>
+</body>
+
+</html>

@@ -14,80 +14,11 @@
     height: 40px;
 }
 
-/*content-box-articles*/
-.content-box-articles-text-top{
-    font-size: 36px;
-    font-family: "GothamProLight";
-    line-height: 30px;
-    text-align: center;
-    color: #3d4955;
-    margin: 60px 0 35px 0;
-}
-.content-box-articles-select-box{
-    display: none;
-}
-.content-box-articles-list{
-    font-size: 0;
-    width: 85%;
-    margin: 0 auto;
-    text-align: center;
-}
-.content-box-articles-list-item{
-    display: inline-block;
-    width: 33.3%;
-    min-width: 375px;
-    margin-bottom: 45px;
-}
-.content-box-articles-list-item a{
-    color: #3d4955;
-    font-size: 0;
-    display: inline-block;
-}
-.content-box-articles-list-item-text-inner,
-.content-box-articles-list-item-img-inner
-{
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
-}
-.content-box-articles-list-item-img-inner{
-    width: 55px;
-    text-align: center;
-}
-.content-box-articles-list-item-text-inner{
-    padding-left: 25px;
-    font-size: 18px;
-    font-family: "GothamProBold";
-    line-height: 24px;
-    width: 300px;
-    text-align: left;    
-}
-.content-box-articles-list-item-text-inner-date{
-    margin-left: 6px;
-}
-.content-box-articles-list-item:hover .content-box-articles-list-item-text-inner {
-    color: #65beee;
-}
-@media(max-width: 768px){
-    .content-box-articles-text-top{
-        font-size: 24px;
-        margin: 30px 0;
-    }
-    .content-box-articles-list{
-        display: none;
-    }
-    .content-box-articles-select-box{
-        display: block;
-        width: 90%;
-        margin: 0 auto 30px;
-    }
-    h3.content-box-news-list-item-text-inner-text-top{
-        font-size: 16px;
-    }
-    div.content-box-news-list{
-        padding: 0;
-    }
-}
+/*articles-box*/
+
+@import "components/articles-box.less";
+
+
 /* select-box */
 
 @import "components/select-box.less";
